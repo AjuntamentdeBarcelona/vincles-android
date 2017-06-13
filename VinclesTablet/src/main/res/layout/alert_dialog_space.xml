@@ -1,0 +1,82 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/alert_dialog"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="@drawable/dialog_background"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="@dimen/padding_xxlarge"
+        >
+
+            <TextView
+                android:id="@+id/item_message_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/TextLargeBold"
+                android:gravity="center"
+                android:textSize="@dimen/text_size_large"
+                android:visibility="visible"
+                android:text="@string/free_space_low_message"
+                android:layout_marginBottom="@dimen/padding_large"
+                />
+
+            <!--<ImageView-->
+                <!--android:layout_width="@dimen/dialog_button_width"-->
+                <!--android:layout_height="@dimen/dialog_button_width"-->
+                <!--android:tint="@color/gray"-->
+                <!--android:src="@drawable/icon"-->
+                <!--/>-->
+
+        <LinearLayout
+            android:id="@+id/buttonLayout"
+            android:orientation="horizontal"
+            android:layout_width="450dp"
+            android:layout_height="@dimen/task_network_button_heigh"
+            android:layout_margin="@dimen/padding_medium"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:paddingLeft="@dimen/padding_xlarge"
+            android:paddingRight="@dimen/padding_xlarge"
+            android:gravity="center_horizontal"
+            >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:clickable="true"
+                android:id="@+id/btnClose"
+                style="@style/clara_my_button_black"
+                >
+                <cat.bcn.vincles.lib.widget.TintableImageView
+                    android:layout_width="@dimen/configure_button_confirm_imagesize"
+                    android:layout_height="@dimen/task_network_button_heigh"
+                    android:tint="@color/white"
+                    android:padding="@dimen/padding_medium"
+                    android:src="@drawable/ic_no_x_30dp"
+                    />
+                <cat.bcn.vincles.lib.widget.AkkuratTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/button_remove"
+                    android:paddingLeft="@dimen/padding_medium"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/text_size_main"
+                    android:textAllCaps="false"
+                    android:text="@string/task_groups_close"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+        </LinearLayout>
+
+</LinearLayout>

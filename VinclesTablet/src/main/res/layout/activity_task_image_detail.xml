@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:layout_margin="10sp">
+
+    <fragment
+        android:id="@+id/menuOperation"
+        android:name="cat.bcn.vincles.tablet.fragment.MenuOperationFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        tools:layout="@layout/menu_operation_fragment" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/texRequestMsg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="@string/task_network_detail_request"
+            android:textSize="20dp"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal|bottom">
+
+            <Button
+                android:id="@+id/btnNetworkDetailCancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/no"
+                android:onClick="goBack" />
+
+            <Button
+                android:id="@+id/btnNetworkDetailOK"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/yes"
+                android:onClick="removeNetworkUser" />
+
+            <Button
+                android:id="@+id/btnNetworkDetailBack"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/network_back"
+                android:onClick="goBack" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

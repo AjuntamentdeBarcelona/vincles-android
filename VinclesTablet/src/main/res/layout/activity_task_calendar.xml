@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    >
+
+    <fragment
+        android:id="@+id/menuOperation"
+        android:name="cat.bcn.vincles.tablet.fragment.MenuOperationFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        tools:layout="@layout/menu_operation_fragment" />
+
+    <TabHost
+        android:id="@android:id/tabhost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                >
+
+                <TextView
+                    android:id="@+id/txTaskTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:layout_toLeftOf="@+id/lisPagination"
+                    android:text="title"
+                    android:padding="@dimen/padding_medium"
+                    android:textSize="@dimen/text_size_large"
+                    android:textStyle="bold"
+                    android:textColor="?android:textColor"
+                    />
+
+                <FrameLayout
+                    android:id="@android:id/tabcontent"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/txTaskTitle"
+                    android:layout_above="@android:id/tabs"
+                    android:layout_toLeftOf="@+id/lisPagination"
+                    android:paddingLeft="@dimen/padding_large"
+                    android:paddingRight="@dimen/padding_large"
+                    >
+
+                    <LinearLayout
+                        android:id="@+id/tab1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center_horizontal"
+                        />
+
+                    <LinearLayout
+                        android:id="@+id/tab2"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        />
+
+                    <LinearLayout
+                        android:id="@+id/tab3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            >
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:layout_toLeftOf="@+id/calContainer"
+                                android:layout_centerInParent="true"
+                                >
+                                <ImageButton
+                                    android:layout_width="@dimen/calendar_button_width"
+                                    android:layout_height="@dimen/calendar_button_height"
+                                    android:background="@drawable/my_btn_gris"
+                                    android:src="@drawable/icon_flecha_izq"
+                                    android:tint="@color/white"
+                                    android:onClick="prevMonth"
+                                    />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/calContainer"
+                                android:orientation="vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_centerInParent="true"
+                                />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_toRightOf="@+id/calContainer"
+                                android:layout_centerInParent="true"
+                                android:gravity="center"
+                                >
+                                <ImageButton
+                                    android:layout_width="@dimen/calendar_button_width"
+                                    android:layout_height="@dimen/calendar_button_height"
+                                    android:layout_margin="@dimen/padding_xlarge"
+                                    android:background="@drawable/my_btn_gris"
+                                    android:src="@drawable/icon_flecha_derch"
+                                    android:tint="@color/white"
+                                    android:onClick="nextMonth"
+                                    />
+                            </LinearLayout>
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ghostTab"
+                        android:visibility="gone"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        />
+
+                    <ListView
+                        android:id="@+id/lisTask"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:divider="@null"
+                        android:dividerHeight="0dp"
+                        />
+
+                    <TextView
+                        android:visibility="gone"
+                        android:id="@+id/txTaskResul"
+                        android:text="@string/task_calendar_no_result"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textSize="@dimen/text_size_large"
+                        android:textStyle="bold"
+                        android:textColor="?android:textColor"
+                        android:gravity="center_vertical|center_horizontal"
+                        />
+                </FrameLayout>
+
+                <LinearLayout
+                    android:id="@+id/lisPagination"
+                    android:layout_width="@dimen/menu_button_size"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="@dimen/padding_medium"
+                    android:padding="@dimen/padding_small"
+                    android:orientation="vertical"
+                    android:visibility="visible"
+                    android:background="?android:textColorSecondary"
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/ll_prev"
+                        android:layout_weight="1"
+                        android:layout_marginTop="@dimen/padding_small"
+                        android:orientation="vertical"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:clickable="true"
+                        android:onClick="previousTask"
+                        android:background="@drawable/my_btn_gris"
+                        android:padding="@dimen/padding_small"
+
+                        >
+                        <cat.bcn.vincles.lib.widget.TintableImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/icon_flecha_up"
+                            android:tint="@color/white"
+                            android:clickable="false"
+                            />
+                        <cat.bcn.vincles.lib.widget.AkkuratTextView
+                            android:paddingTop="@dimen/padding_small"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:clickable="false"
+                            android:text="@string/task_calendar_detail_prev"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/text_size_small"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/ll_next"
+                        android:layout_weight="1"
+                        android:layout_marginTop="@dimen/padding_small"
+                        android:orientation="vertical"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:clickable="true"
+                        android:onClick="nextTask"
+                        android:background="@drawable/my_btn_gris"
+                        android:padding="@dimen/padding_small"
+                        >
+                        <cat.bcn.vincles.lib.widget.AkkuratTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:clickable="false"
+                            android:text="@string/task_calendar_detail_next"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/text_size_small"
+                            />
+                        <cat.bcn.vincles.lib.widget.TintableImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:tint="@color/white"
+                            android:paddingTop="@dimen/padding_small"
+                            android:src="@drawable/icon_flecha_down"
+                            android:clickable="false"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TabWidget
+                    android:id="@android:id/tabs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/padding_small"
+                    android:layout_toLeftOf="@+id/lisPagination"
+                    android:layout_alignParentBottom="true"
+                    />
+            </RelativeLayout>
+        </LinearLayout>
+    </TabHost>
+</LinearLayout>

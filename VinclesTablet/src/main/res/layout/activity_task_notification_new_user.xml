@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent">
+
+    <fragment
+        android:id="@+id/menuOperation"
+        android:name="cat.bcn.vincles.tablet.fragment.MenuOperationFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        tools:layout="@layout/menu_operation_fragment" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <LinearLayout
+            android:id="@+id/imgLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_above="@+id/buttonLayout"
+            android:gravity="center">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textSize="@dimen/text_size_large"
+                android:text="@string/task_notification_user_title" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/imgPhoto"
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:layout_margin="@dimen/padding_large"
+                android:src="@drawable/user"
+                app:civ_border_width="15px"
+                app:civ_border_color="?android:textColorSecondary" />
+
+            <TextView
+                android:id="@+id/textUser"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textSize="@dimen/text_size_large"
+                android:text="@string/task_notification_user_title" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/buttonLayout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/task_network_button_heigh"
+            android:orientation="horizontal"
+            android:layout_margin="@dimen/padding_large"
+            android:gravity="center_horizontal"
+            android:layout_alignParentBottom="true">
+
+            <LinearLayout
+                android:id="@+id/btnPickUp"
+                android:layout_width="@dimen/task_network_button_width"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginLeft="@dimen/padding_xlarge"
+                style="?my_button_red">
+
+                <cat.bcn.vincles.lib.widget.TintableImageView
+                    android:layout_width="@dimen/configure_button_confirm_imagesize"
+                    android:layout_height="@dimen/task_network_button_heigh"
+                    android:tint="@color/white"
+                    android:src="@drawable/icon_user" />
+
+                <cat.bcn.vincles.lib.widget.AkkuratTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="@dimen/padding_medium"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/text_size_main"
+                    android:textAllCaps="false"
+                    android:onClick="goToNetwork"
+                    android:text="@string/task_notification_user_view_network" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

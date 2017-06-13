@@ -1,0 +1,45 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/task_network_list_image_height"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:weightSum="4"
+    >
+
+    <include
+        android:id="@+id/groupCircle1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_margin="@dimen/padding_large"
+        layout="@layout/item_list4_user"
+        />
+
+    <include
+        android:id="@+id/groupCircle2"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_margin="@dimen/padding_large"
+        layout="@layout/item_list4_user"
+        />
+
+    <include
+        android:id="@+id/groupCircle3"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_margin="@dimen/padding_large"
+        layout="@layout/item_list4_user"
+        />
+
+    <include
+        android:id="@+id/groupCircle4"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_margin="@dimen/padding_large"
+        layout="@layout/item_list4_user"
+        />
+
+</LinearLayout>

@@ -1,0 +1,82 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <dimen name="padding_small">8dp</dimen>
+    <dimen name="padding_medium">16dp</dimen>
+    <dimen name="padding_large">24dp</dimen>
+    <dimen name="padding_xlarge">30dp</dimen>
+    <dimen name="padding_xxlarge">60dp</dimen>
+    <dimen name="padding_xxxlarge">120dp</dimen>
+
+    <!-- MAIN -->
+    <dimen name="main_icon_max_height">60dp</dimen>
+    <dimen name="main_app_bar">70dp</dimen>
+    <dimen name="main_app_footer">60dp</dimen>
+
+    <dimen name="calendar_button_width">100dp</dimen>
+    <dimen name="calendar_button_height">240dp</dimen>
+
+    <dimen name="configure_image_logo">200dp</dimen>
+    <dimen name="configure_image_size">220dp</dimen>
+    <dimen name="configure_image_size_in">200dp</dimen>
+    <dimen name="configure_volume_image_size">140dp</dimen>
+    <dimen name="configure_volume_image_padding">50dp</dimen>
+    <dimen name="configure_button_confirm_imagesize">50dp</dimen>
+    <dimen name="configure_button_confirm_width">500px</dimen>
+    <dimen name="configure_button_confirm_heigh">120px</dimen>
+    <dimen name="configure_name_edittext_width">600px</dimen>
+    <dimen name="configure_maring_button_size">100dp</dimen>
+    <dimen name="configure_number_size">80dp</dimen>
+    <dimen name="button_shadow">10px</dimen>
+    <dimen name="button_radius">25px</dimen>
+
+    <dimen name="groups_image_width">80dp</dimen>
+    <dimen name="groups_title_image_width">70dp</dimen>
+    <dimen name="agenda_image_width">90dp</dimen>
+
+    <dimen name="task_notification_user_image_height">150dp</dimen>
+    <dimen name="task_network_button_width">600px</dimen>
+    <dimen name="task_network_button_heigh">150px</dimen>
+    <dimen name="task_message_button_size">400dp</dimen>
+    <dimen name="task_message_button_padding">50dp</dimen>
+    <dimen name="task_network_list_image_height">300dp</dimen>
+    <dimen name="task_network_list4_padding">80dp</dimen>
+    <dimen name="task_message_detail_image_height">220dp</dimen>
+    <dimen name="task_message_button_width">600dp</dimen>
+
+    <dimen name="task_message_micro_size">400dp</dimen>
+    <dimen name="task_message_micro_padding">100dp</dimen>
+
+    <dimen name="task_network_roundlist_size">400dp</dimen>
+    <dimen name="task_network_roundlist_item_size">100dp</dimen>
+    <dimen name="task_network_roundlist_user_size">150dp</dimen>
+
+    <dimen name="task_user_request_action_user_size">250dp</dimen>
+
+    <dimen name="text_size_small">20sp</dimen>
+    <dimen name="text_size_main">30sp</dimen>
+    <dimen name="text_size_large">40sp</dimen>
+    <dimen name="text_size_config_title">40sp</dimen>
+    <dimen name="text_size_main_panel">66sp</dimen>
+    <dimen name="menu_button_size">200px</dimen>
+    <dimen name="text_size_code">75sp</dimen>
+
+    <dimen name="calling_image_size">150dp</dimen>
+    <dimen name="calling_image_inside_size">40dp</dimen>
+
+    <!-- Switch -->
+    <dimen name="switch_height">36dp</dimen>
+    <dimen name="switch_radius">15dp</dimen>
+    <dimen name="switch_size_h">36dp</dimen>
+    <dimen name="switch_size_w_total">320dp</dimen>
+    <dimen name="switch_size_w">160dp</dimen>
+    <dimen name="configure_font_space">60dp</dimen>
+
+    <!-- Custom Dialog -->
+    <dimen name="dialog_button_width">240dp</dimen>
+    <dimen name="padding_main_top">24dp</dimen>
+    <dimen name="padding_main_bottom">24dp</dimen>
+</resources>

@@ -1,0 +1,8 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="cat.bcn.vincles.lib">
+
+    <application
+        android:label="@string/vincles_app_name">
+    </application>
+
+</manifest>

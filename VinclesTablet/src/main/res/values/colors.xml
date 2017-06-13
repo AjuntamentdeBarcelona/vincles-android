@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#CF0A2C</color>
+    <color name="white">#FFFFFF</color>
+    <color name="superlightgray">#e3ddd5</color>
+    <color name="lightgray">#b3b7b7</color>
+    <color name="gray">#626e6f</color>
+    <color name="grayshadow">#535b5b</color>
+    <color name="gray1">#3D4343</color>
+    <color name="gray2">#CF0A2C</color>
+    <color name="red">#CF0A2C</color>
+    <color name="red1">#9c2215</color>
+    <color name="black">#000000</color>
+    <color name="black1">#242422</color>
+    <color name="black2">#010101</color>
+    <color name="edittext_border">#ffE5DFD6</color>
+    <color name="switch_border">#ffCBC7BF</color>
+    <color name="fondo_claro">#f7f2ec</color>
+    <color name="fondo_oscuro">#3d4343</color>
+    <color name="fondo_panel_claro">#e5dfd6</color>
+    <color name="fondo_panel_oscuro">#535b5b</color>
+    <color name="window_background">#ffF7F2EC</color>
+    <color name="alert_background">#bb000000</color>
+    <color name="transparent">#00ffffff</color>
+
+</resources>

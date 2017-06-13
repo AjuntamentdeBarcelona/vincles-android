@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <fragment
+        android:id="@+id/menuOperation"
+        android:name="cat.bcn.vincles.tablet.fragment.MenuOperationFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        tools:layout="@layout/menu_operation_fragment" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_margin="20dp">
+
+        <LinearLayout
+            android:id="@+id/config_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:baselineAligned="false"
+            android:clickable="false"
+            android:gravity="center"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/enter_password"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_config_title"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/config_confirm_layer"
+            android:orientation="vertical"
+            android:layout_below="@+id/config_title"
+            android:gravity="center_vertical|center_horizontal">
+
+            <EditText
+                android:layout_width="@dimen/configure_name_edittext_width"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/padding_large"
+                android:background="@drawable/edittext_withstroke"
+                android:gravity="center"
+                android:ems="4"
+                android:password="true"
+                android:inputType="number|textPassword"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_config_title"
+                android:id="@+id/texPassword" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/config_confirm_layer"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/configure_button_confirm_heigh"
+            android:layout_alignParentBottom="true">
+
+            <Button
+                android:id="@+id/btnConfirm"
+                android:layout_width="@dimen/configure_button_confirm_width"
+                android:layout_height="match_parent"
+                android:background="@drawable/my_btn_rojo"
+                android:text="@string/confirm"
+                android:onClick="confirm"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="@dimen/text_size_main"
+                android:textAllCaps="false"
+                android:layout_marginBottom="@dimen/padding_small"
+                />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

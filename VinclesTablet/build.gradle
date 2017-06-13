@@ -1,0 +1,113 @@
+buildscript {
+    repositories {
+        maven { url 'https://maven.fabric.io/public' }
+    }
+
+    dependencies {
+        classpath 'io.fabric.tools:gradle:1.+'
+    }
+}
+apply plugin: 'com.android.application'
+apply plugin: 'io.fabric'
+
+repositories {
+    maven { url 'https://maven.fabric.io/public' }
+}
+
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion '25.0.0'
+    defaultConfig {
+        applicationId 'cat.bcn.vincles.tablet'
+        minSdkVersion 16
+        targetSdkVersion 21
+        versionCode 20170601
+        versionName "2.0.6"
+    }
+    signingConfigs {
+        release
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+        }
+        debug {
+            applicationIdSuffix ".debug"
+        }
+    }
+    productFlavors {
+        preeurecat {
+//            versionName = android.defaultConfig.versionName + "-PreEurecat"
+        }
+        preazure {
+//            versionName = android.defaultConfig.versionName + "-PreAzure"
+        }
+        proazure {
+//            versionName = android.defaultConfig.versionName + "-ProAzure"
+        }
+    }
+
+    sourceSets.main {
+        jniLibs.srcDir './libs'             // location of WebRTC *.so files
+        jni.srcDirs = [] //disable automatic ndk-build call
+    }
+}
+
+repositories {
+    mavenCentral()
+    flatDir {
+        dirs './libs'                       // location of *.aar files
+    }
+}
+
+def Properties props = new Properties()
+def propFile = file('../signing.properties')
+if (propFile.canRead()){
+    props.load(new FileInputStream(propFile))
+
+    if (props!=null && props.containsKey('STORE_FILE') && props.containsKey('STORE_PASSWORD') &&
+            props.containsKey('KEY_ALIAS') && props.containsKey('KEY_PASSWORD')) {
+
+        android.signingConfigs.release.storeFile = file(props['STORE_FILE'])
+        android.signingConfigs.release.storePassword = props['STORE_PASSWORD']
+        android.signingConfigs.release.keyAlias = props['KEY_ALIAS']
+        android.signingConfigs.release.keyPassword = props['KEY_PASSWORD']
+    } else {
+        android.buildTypes.release.signingConfig = null
+    }
+}else {
+    android.buildTypes.release.signingConfig = null
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile project(':VinclesLib')
+    compile(name:'webrtcat4', ext:'aar')
+    compile(name:'versioncontrol', ext:'aar')
+    testCompile 'junit:junit:4.12'
+    testCompile 'org.mockito:mockito-core:1.10.19'
+    androidTestCompile "com.android.support:support-annotations:$supportVersionTablet"
+    androidTestCompile 'com.android.support.test:runner:0.4.1'
+    androidTestCompile 'com.android.support.test:rules:0.4.1'
+    // Optional -- Hamcrest library
+    androidTestCompile 'org.hamcrest:hamcrest-library:1.3'
+    // Optional -- UI testing with Espresso
+    androidTestCompile 'com.android.support.test.espresso:espresso-core:2.2.1'
+    // Optional -- UI testing with UI Automator
+//    androidTestCompile 'com.android.support.test.uiautomator:uiautomator-v18:2.1.1'
+    compile "com.google.android.gms:play-services-base:$playServicesVersion"
+    compile "com.android.support:appcompat-v7:$supportVersionTablet"
+    compile "com.android.support:design:$supportVersionTablet"
+    compile "com.android.support:support-v4:$supportVersionTablet"
+
+    compile 'com.github.bumptech.glide:glide:3.8.0'
+    compile 'com.github.bumptech.glide:okhttp3-integration:1.4.0@aar'
+    compile('com.crashlytics.sdk.android:crashlytics:2.6.5@aar') {
+        transitive = true;
+    }
+}
+
+apply plugin: 'com.google.gms.google-services'

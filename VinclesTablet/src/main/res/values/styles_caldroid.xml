@@ -1,0 +1,58 @@
+<resources>
+    <!-- Vincles theme. -->
+    <style name="CaldroidVincles" parent="CaldroidDefault">
+        <item name="styleCaldroidViewLayout">@style/CaldroidDefaultVinclesCalendarViewLayout</item>
+        <item name="styleCaldroidMonthName">@style/CaldroidDefaultVinclesMonthName</item>
+        <item name="styleCaldroidNormalCell">@style/CaldroidDefaultVinclesNormalCell</item>
+        <item name="styleCaldroidSquareCell">@style/CaldroidDefaultVinclesSquareCell</item>
+        <item name="styleCaldroidGridView">@style/CaldroidDefaultVinclesGridView</item>
+        <item name="styleCaldroidLeftArrow">@style/CaldroidVinclesLeftButton</item>
+        <item name="styleCaldroidRightArrow">@style/CaldroidVinclesRightButton</item>
+        <item name="styleCaldroidWeekdayView">@style/CaldroidVinclesDefaultWeekday</item>
+    </style>
+
+    <style name="CaldroidDefaultVinclesCalendarViewLayout">
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="CaldroidDefaultVinclesMonthName" parent="CaldroidDefaultMonthName">
+        <item name="android:textSize">@dimen/text_size_large</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="CaldroidDefaultVinclesGridView" parent="CaldroidDefaultGridView">
+        <item name="android:gravity">center</item>
+        <item name="android:background">@color/transparent</item>
+    </style>
+
+    <style name="CaldroidDefaultVinclesCell" parent="CaldroidDefaultCell">
+        <item name="android:background">@drawable/caldroid_cell_bg</item>
+        <item name="android:textSize">@dimen/text_size_main</item>
+    </style>
+
+    <style name="CaldroidDefaultVinclesNormalCell" parent="CaldroidDefaultVinclesCell">
+        <item name="android:height">75dp</item>
+        <!--<item name="android:padding">5dp</item>-->
+    </style>
+
+    <style name="CaldroidDefaultVinclesSquareCell" parent="CaldroidDefaultVinclesCell">
+    </style>
+
+    <style name="CaldroidVinclesDefaultWeekday" parent="CaldroidDefaultWeekday">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/text_size_main</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="CaldroidVinclesLeftButton" parent="CaldroidDefaultArrowButton">
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:background">@drawable/left_arrow</item>
+        <item name="android:backgroundTint">@color/white</item>
+    </style>
+
+    <style name="CaldroidVinclesRightButton" parent="CaldroidDefaultArrowButton">
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:background">@drawable/right_arrow</item>
+        <item name="android:backgroundTint">@color/white</item>
+    </style>
+</resources>

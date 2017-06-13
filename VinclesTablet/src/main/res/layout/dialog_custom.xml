@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@drawable/dialog_background"
+    android:padding="@dimen/padding_xlarge"
+    android:layout_height="match_parent">
+    <cat.bcn.vincles.lib.widget.AkkuratTextView
+        android:id="@+id/txt_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_margin="@dimen/padding_large"
+        android:text="xxx?"
+        android:textSize="@dimen/text_size_main"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+       />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/btn_no"
+            android:layout_width="@dimen/dialog_button_width"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:clickable="true"
+            style="?my_button_black"
+            >
+            <cat.bcn.vincles.lib.widget.TintableImageView
+                android:layout_width="@dimen/configure_button_confirm_imagesize"
+                android:layout_height="@dimen/task_network_button_heigh"
+                android:tint="@color/white"
+                android:padding="@dimen/padding_medium"
+                android:src="@drawable/ic_no_x_30dp"
+                />
+            <cat.bcn.vincles.lib.widget.AkkuratTextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/padding_medium"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="@dimen/text_size_main"
+                android:textAllCaps="false"
+                android:text="@string/no"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/btn_yes"
+            android:layout_width="@dimen/dialog_button_width"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:clickable="true"
+            android:layout_marginLeft="@dimen/padding_xlarge"
+            style="?my_button_red"
+            >
+            <cat.bcn.vincles.lib.widget.TintableImageView
+                android:layout_width="@dimen/configure_button_confirm_imagesize"
+                android:layout_height="@dimen/task_network_button_heigh"
+                android:tint="@color/white"
+                android:padding="@dimen/padding_medium"
+                android:src="@drawable/ic_yes_v"
+                />
+            <cat.bcn.vincles.lib.widget.AkkuratTextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/padding_xlarge"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="@dimen/text_size_main"
+                android:textAllCaps="false"
+                android:text="@string/yes"
+                />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

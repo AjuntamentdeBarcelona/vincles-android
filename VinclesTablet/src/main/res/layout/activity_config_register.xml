@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:layout_margin="20dp"
+    >
+
+    <ImageView
+        android:id="@+id/vincleS_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/vincles_logo"
+        android:layout_centerHorizontal="true"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@+id/vincleS_logo"
+        android:layout_above="@+id/config_confirm_layer"
+        android:gravity="center"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="7"
+            android:gravity="center"
+            android:layout_marginBottom="@dimen/padding_medium"
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingRight="@dimen/padding_medium"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/username"
+                android:gravity="center"
+                />
+
+            <EditText
+                android:id="@+id/edtUsername"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:ems="4"
+                android:inputType="text"
+                android:padding="@dimen/padding_large"
+                android:background="@drawable/edittext_withstroke"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="7"
+            android:gravity="center"
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:paddingRight="@dimen/padding_medium"
+                android:layout_weight="1"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/password"
+                android:gravity="center"
+                />
+
+            <EditText
+                android:id="@+id/edtPassword"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:ems="4"
+                android:inputType="textPassword"
+                android:padding="@dimen/padding_large"
+                android:background="@drawable/edittext_withstroke"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/config_confirm_layer"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/configure_button_confirm_heigh"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/btnConfirm"
+            android:layout_width="@dimen/configure_button_confirm_width"
+            android:layout_height="match_parent"
+            android:background="@drawable/my_btn_rojo"
+            android:text="@string/confirm"
+            android:onClick="confirm"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="@dimen/text_size_main"
+            android:textAllCaps="false"
+            android:layout_marginBottom="@dimen/padding_small"
+            />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,106 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    >
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_margin="@dimen/padding_large"
+        android:background="@drawable/item_background_clara_def"
+        android:gravity="center"
+        >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/item_message_photo"
+            app:civ_border_width="3dp"
+            app:civ_border_color="@color/fondo_oscuro"
+            android:layout_margin="@dimen/padding_medium"
+            android:layout_width="@dimen/task_network_roundlist_item_size"
+            android:layout_height="@dimen/task_network_roundlist_item_size" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/item_message_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                android:textColor="@color/red"
+                android:text="@string/task_message_notread"
+                android:textStyle="bold"
+                android:textSize="@dimen/text_size_main"
+                />
+
+            <TextView
+                android:id="@+id/item_message_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                android:text=""
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_main"
+                />
+
+            <TextView
+                android:id="@+id/item_message_fullname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_main"
+                android:textColor="@color/white"
+                android:text=""
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/padding_large"
+            android:layout_marginRight="@dimen/padding_large">
+
+            <TextView
+                android:id="@+id/item_message_day"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text=""
+                style="@style/TextDefault"
+                android:textColor="@color/white"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|right"
+                android:orientation="horizontal">
+                <cat.bcn.vincles.lib.widget.TintableImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:tint="@color/red"
+                    android:src="@drawable/ic_reloj_24dp"/>
+                <TextView
+                    android:layout_marginLeft="@dimen/padding_small"
+                    android:id="@+id/item_message_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:textColor="@color/white"
+                    android:text=""
+                    style="@style/TextDefault" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

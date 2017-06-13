@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <!-- ANIMATION CIRCLES -->
+    <View
+        android:id="@+id/colorCircleAnimation"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="@drawable/button_round"
+        android:layout_centerInParent="true"
+        />
+
+    <View
+        android:id="@+id/backgroundCircleAnimation"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="@drawable/button_round_backcolor"
+        android:layout_centerInParent="true"
+        />
+
+    <TextView
+        android:id="@+id/texName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_above="@+id/imgPhoto"
+        android:textSize="@dimen/text_size_large"
+        android:text="{Incoming call}"
+        />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/imgPhoto"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_margin="@dimen/padding_large"
+        android:src="@drawable/user"
+        app:civ_border_width="15px"
+        app:civ_border_color="?android:textColorSecondary"
+        android:layout_centerInParent="true"
+        />
+
+    <LinearLayout
+        android:id="@+id/buttonLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/task_network_button_heigh"
+        android:orientation="horizontal"
+        android:layout_margin="@dimen/padding_large"
+        android:gravity="center_horizontal"
+        android:layout_alignParentBottom="true">
+
+        <LinearLayout
+            android:id="@+id/btnHangUp"
+            android:layout_width="@dimen/task_network_button_width"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center"
+            style="?my_button_black">
+
+            <cat.bcn.vincles.lib.widget.TintableImageView
+                android:layout_width="@dimen/configure_button_confirm_imagesize"
+                android:layout_height="@dimen/task_network_button_heigh"
+                android:tint="@color/white"
+                android:src="@drawable/icon_telefon" />
+
+            <cat.bcn.vincles.lib.widget.AkkuratTextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/padding_medium"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="@dimen/text_size_main"
+                android:textAllCaps="false"
+                android:text="@string/task_notification_videoconference_cancel" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/btnPickUp"
+            android:layout_width="@dimen/task_network_button_width"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/padding_xlarge"
+            style="?my_button_red">
+
+            <cat.bcn.vincles.lib.widget.TintableImageView
+                android:layout_width="@dimen/configure_button_confirm_imagesize"
+                android:layout_height="@dimen/task_network_button_heigh"
+                android:tint="@color/white"
+                android:src="@drawable/icon_telefon" />
+            <cat.bcn.vincles.lib.widget.AkkuratTextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/padding_medium"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="@dimen/text_size_main"
+                android:textAllCaps="false"
+                android:text="@string/task_notification_videoconference_pickup"
+                />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

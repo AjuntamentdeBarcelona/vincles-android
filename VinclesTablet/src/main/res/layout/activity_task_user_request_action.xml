@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent">
+
+    <fragment
+        android:id="@+id/menuOperation"
+        android:name="cat.bcn.vincles.tablet.fragment.MenuOperationFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        tools:layout="@layout/menu_operation_fragment" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <!--<ImageView-->
+            <!--android:id="@+id/imgPhoto"-->
+            <!--android:src="@drawable/user"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_gravity="center_horizontal"-->
+            <!--android:layout_weight="1" />-->
+
+        <LinearLayout
+            android:id="@+id/imgLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_above="@+id/buttonLayout"
+            android:gravity="center"
+            >
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/imgPhoto"
+                android:layout_width="@dimen/task_user_request_action_user_size"
+                android:layout_height="@dimen/task_user_request_action_user_size"
+                android:layout_margin="@dimen/padding_large"
+                android:src="@drawable/user"
+                app:civ_border_width="8dp"
+                app:civ_border_color="?android:textColorSecondary"
+                />
+
+            <TextView
+                android:id="@+id/texName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imgLayout"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textSize="@dimen/text_size_main"
+                android:text="{username}" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/buttonLayout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/task_network_button_heigh"
+            android:orientation="horizontal"
+            android:layout_margin="@dimen/padding_large"
+            android:gravity="center_horizontal"
+            android:layout_alignParentBottom="true">
+
+            <LinearLayout
+                android:id="@+id/btnTaskCancel"
+                android:layout_width="@dimen/task_network_button_width"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:onClick="goNetwork"
+                style="?my_button_red"
+                >
+                <cat.bcn.vincles.lib.widget.TintableImageView
+                    android:layout_width="@dimen/configure_button_confirm_imagesize"
+                    android:layout_height="@dimen/task_network_button_heigh"
+                    android:tint="@color/white"
+                    android:src="@drawable/ic_reply_black_24dp"
+                    android:layout_marginLeft="@dimen/padding_small"
+                    />
+                <cat.bcn.vincles.lib.widget.AkkuratTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="@dimen/padding_small"
+                    android:paddingRight="@dimen/padding_small"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/text_size_main"
+                    android:textAllCaps="false"
+                    android:text="@string/task_network_detail_request_button_back"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/btnConfirm"
+                android:layout_width="@dimen/task_network_button_width"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:onClick="goRemove"
+                android:layout_marginLeft="@dimen/padding_xlarge"
+                style="?my_button_black"
+                >
+                <!--android:layout_width="@dimen/configure_button_confirm_imagesize"-->
+                <cat.bcn.vincles.lib.widget.TintableImageView
+                    android:layout_width="@dimen/configure_button_confirm_imagesize"
+                    android:layout_height="@dimen/task_network_button_heigh"
+                    android:tint="@color/white"
+                    android:src="@drawable/ic_user_block_60dp"
+                    android:layout_marginLeft="@dimen/padding_small"
+                    />
+                <cat.bcn.vincles.lib.widget.AkkuratTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="@dimen/padding_small"
+                    android:paddingRight="@dimen/padding_small"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/text_size_main"
+                    android:textAllCaps="false"
+                    android:text="@string/task_network_detail_request_button_remove"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

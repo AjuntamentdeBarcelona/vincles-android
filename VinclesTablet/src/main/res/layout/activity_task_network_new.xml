@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    >
+
+    <fragment
+        android:id="@+id/menuOperation"
+        android:name="cat.bcn.vincles.tablet.fragment.MenuOperationFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        tools:layout="@layout/menu_operation_fragment"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        >
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/btnNetworkDetailBack"
+            >
+
+            <cat.bcn.vincles.lib.widget.AkkuratTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/texUserName"
+                android:gravity="center"
+                android:textSize="@dimen/text_size_main"
+                android:textStyle="bold"
+                android:text="@string/task_network_new_title"
+                android:layout_weight="1"
+                />
+
+            <cat.bcn.vincles.lib.widget.AkkuratTextView
+                android:id="@+id/texNetworkCode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="CODE"
+                android:textStyle="bold"
+                android:textSize="@dimen/text_size_code"
+                />
+
+            <cat.bcn.vincles.lib.widget.AkkuratTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/task_network_new_subtitle"
+                android:textSize="@dimen/text_size_main"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                />
+
+            <!--<Button-->
+            <!--android:id="@+id/btnNetworkDetailBack"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="@string/network_back"-->
+            <!--android:onClick="goBack"-->
+            <!--android:layout_gravity="center_horizontal"-->
+            <!--style="?my_button_red"-->
+            <!--/>-->
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/btnNetworkDetailBack"
+            android:layout_width="@dimen/task_network_button_width"
+            android:layout_height="@dimen/task_network_button_heigh"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/padding_large"
+            android:onClick="goBack"
+            style="?my_button_red"
+            android:layout_weight="1"
+            >
+
+            <!--android:layout_width="@dimen/configure_button_confirm_imagesize"-->
+            <cat.bcn.vincles.lib.widget.TintableImageView
+                android:layout_width="@dimen/configure_button_confirm_imagesize"
+                android:layout_height="@dimen/task_network_button_heigh"
+                android:tint="@color/white"
+                android:src="@drawable/ic_reply_black_24dp"
+                />
+            <cat.bcn.vincles.lib.widget.AkkuratTextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/padding_medium"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="@dimen/text_size_main"
+                android:textAllCaps="false"
+                android:text="@string/network_back"
+                />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

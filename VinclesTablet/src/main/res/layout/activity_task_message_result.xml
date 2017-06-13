@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:padding="@dimen/padding_large"
+    >
+
+        <TextView
+            android:id="@+id/texResultMsg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/task_message_sendResultMsg"
+            android:textStyle="bold"
+            android:textSize="@dimen/text_size_main"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_weight="1" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/imgPhoto"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_margin="@dimen/padding_large"
+            android:src="@drawable/user"
+            app:civ_border_width="15px"
+            app:civ_border_color="?android:textColorSecondary" />
+
+        <TextView
+            android:id="@+id/texUserName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="{username}"
+            android:textStyle="bold"
+            android:textSize="30dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_weight="1" />
+
+
+        <LinearLayout
+            android:id="@+id/btnSendLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="{action}"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:onClick="goBack"
+            android:padding="@dimen/padding_medium"
+            style="?my_button_red"
+            >
+                <cat.bcn.vincles.lib.widget.TintableImageView
+                    android:layout_width="@dimen/configure_button_confirm_imagesize"
+                    android:layout_height="@dimen/task_network_button_heigh"
+                    android:tint="@color/white"
+                    android:src="@drawable/ic_reply_black_24dp"
+                    />
+                <cat.bcn.vincles.lib.widget.AkkuratTextView
+                    android:id="@+id/btnSendText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="@dimen/padding_medium"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/text_size_main"
+                    android:textAllCaps="false"
+                    android:text="@string/message_back"
+                    />
+        </LinearLayout>
+
+
+</LinearLayout>

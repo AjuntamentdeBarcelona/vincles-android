@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_vertical|fill_vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/main_app_bar"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/padding_medium"
+        android:paddingBottom="@dimen/padding_large"
+        android:paddingLeft="@dimen/padding_large"
+        android:paddingRight="@dimen/padding_large"
+        android:layout_marginBottom="@dimen/padding_main_top"
+        >
+
+        <cat.bcn.vincles.lib.widget.AkkuratTextView
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical|left"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/txtName"
+            android:text="Hola"
+            android:textSize="@dimen/text_size_main"
+           />
+
+        <ImageView
+            android:id="@+id/texMainlogo"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="right"
+            android:src="@drawable/vincles_logo"
+            android:adjustViewBounds="true"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_weight="1"
+        android:baselineAligned="false"
+        android:paddingLeft="@dimen/padding_large"
+        android:paddingRight="@dimen/padding_large">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="3.2"
+            android:layout_marginRight="@dimen/padding_medium">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:gravity="center_vertical|center_horizontal"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                style="?bg_panel"
+                android:layout_marginBottom="@dimen/padding_small">
+
+                <FrameLayout
+                    android:id="@+id/fragment_notification"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    />
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:id="@+id/btnGroups"
+                style="@style/button_main_gris"
+                android:onClick="goToView"
+                android:layout_marginTop="@dimen/padding_small"
+                android:gravity="center_vertical|center_horizontal"
+                >
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/icon_grupvincles"
+                    android:adjustViewBounds= "true"
+                    android:maxWidth="@dimen/main_icon_max_height"
+                    />
+                <cat.bcn.vincles.lib.widget.AkkuratTextView
+                    style="@style/button_main_text"
+                    android:layout_marginLeft="@dimen/padding_medium"
+                    android:text="@string/task_button_groups"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="2"
+        android:layout_marginLeft="@dimen/padding_medium">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_weight="1"
+            android:layout_marginRight="@dimen/padding_small">
+            <LinearLayout
+                android:id="@+id/btnCall"
+                style="@style/button_main"
+                android:onClick="goToView"
+                android:layout_marginBottom="@dimen/padding_small"
+                android:weightSum="6"
+                >
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    android:src="@drawable/icon_telefon"
+                    android:adjustViewBounds="true"
+                    android:maxWidth="@dimen/main_icon_max_height"
+                    />
+                <TextView
+                    style="@style/button_main_text"
+                    android:layout_height="wrap_content"
+                    android:text="@string/task_button_calls"
+                    android:layout_marginTop="@dimen/padding_medium" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/btnImage"
+                style="@style/button_main"
+                android:onClick="goToView"
+                android:layout_marginTop="@dimen/padding_small"
+                android:layout_marginBottom="@dimen/padding_small"
+                android:gravity="center_vertical|center_horizontal"
+                android:weightSum="6"
+                >
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    android:src="@drawable/icon_foto"
+                    android:adjustViewBounds= "true"
+                    android:maxWidth="@dimen/main_icon_max_height"
+                    />
+                <cat.bcn.vincles.lib.widget.AkkuratTextView
+                    style="@style/button_main_text"
+                    android:text="@string/task_button_gallery"
+                    android:layout_marginTop="@dimen/padding_medium"
+                    android:gravity="center_horizontal"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_weight="1"
+            android:layout_marginLeft="@dimen/padding_small">
+
+                <LinearLayout
+                    android:id="@+id/btnMessage"
+                    style="@style/button_main"
+                    android:onClick="goToView"
+                    android:layout_marginBottom="@dimen/padding_small"
+                    android:weightSum="6"
+                    >
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="2"
+                        android:src="@drawable/icon_mensaje"
+                        android:adjustViewBounds= "true"
+                        android:maxWidth="@dimen/main_icon_max_height"
+                        />
+                    <cat.bcn.vincles.lib.widget.AkkuratTextView
+                        style="@style/button_main_text"
+                        android:text="@string/task_button_messages"
+                        android:layout_marginTop="@dimen/padding_medium" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/btnCalendar"
+                    style="@style/button_main"
+                    android:onClick="goToView"
+                    android:layout_marginTop="@dimen/padding_small"
+                    android:layout_marginBottom="@dimen/padding_small"
+                    android:weightSum="6"
+                    >
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="2"
+                        android:src="@drawable/icon_calendario"
+                        android:adjustViewBounds= "true"
+                        android:maxWidth="@dimen/main_icon_max_height"
+                        />
+                    <cat.bcn.vincles.lib.widget.AkkuratTextView
+                        style="@style/button_main_text"
+                        android:text="@string/task_button_calendar"
+                        android:layout_marginTop="@dimen/padding_medium" />
+                </LinearLayout>
+
+        </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/btnNetwork"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.3"
+            android:orientation="horizontal"
+            style="?my_button_red"
+            android:onClick="goToView"
+            android:layout_marginTop="@dimen/padding_small"
+            android:gravity="center_vertical|center_horizontal"
+            >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/icon_xarxa"
+                android:adjustViewBounds= "true"
+                android:maxWidth="@dimen/main_icon_max_height"
+                />
+            <cat.bcn.vincles.lib.widget.AkkuratTextView
+                style="@style/button_main_text"
+                android:layout_marginLeft="@dimen/padding_medium"
+                android:text="@string/task_button_family"
+                />
+        </LinearLayout>
+
+
+    </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/main_app_footer"
+        android:paddingTop="@dimen/padding_medium"
+        android:paddingBottom="@dimen/padding_medium"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/padding_main_bottom"
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="left"
+            android:paddingLeft="@dimen/padding_large"
+            android:src="@drawable/bloomberg"
+            android:adjustViewBounds="true"
+             />
+
+        <cat.bcn.vincles.lib.widget.AkkuratTextView
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:id="@+id/txtVersion"
+            android:textSize="@dimen/text_size_main"
+            />
+
+        <!--android:onClick="logout"-->
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="right"
+            android:src="@drawable/ajuntament"
+            android:adjustViewBounds="true"
+            />
+    </LinearLayout>
+
+</LinearLayout>

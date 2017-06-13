@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="button1" format="reference" />
+    <attr name="bg_panel" format="reference" />
+    <attr name="bg_panel_color" format="color" />
+    <attr name="video_view" format="reference" />
+    <attr name="my_button_red" format="reference" />
+    <attr name="my_button_black" format="reference" />
+    <attr name="my_button_grey" format="reference" />
+    <attr name="vinclesTextColor" format="color"></attr>
+    <attr name="micColor" format="color"></attr>
+    <attr name="micBackground" format="color"></attr>
+    <attr name="tint_reloj" format="reference"></attr>
+    <attr name="bar_title" format="reference"></attr>
+    <!--<attr name="dialog_title" format="reference"></attr>-->
+    <!--<attr name="video_view" format="color"></attr>-->
+</resources>

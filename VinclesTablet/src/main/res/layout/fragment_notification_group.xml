@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/padding_large"
+    android:orientation="vertical"
+    android:background="@drawable/item_background_list">
+
+    <cat.bcn.vincles.lib.widget.AkkuratTextView
+        android:id="@+id/texMessageType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_size_main"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:text="@string/main_notification_group_invitation" />
+
+    <LinearLayout
+        android:id="@+id/imgLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_above="@+id/buttonLayout"
+        android:gravity="center">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/imgPhoto"
+            android:layout_width="@dimen/task_notification_user_image_height"
+            android:layout_height="@dimen/task_notification_user_image_height"
+            android:layout_margin="@dimen/padding_large"
+            android:src="@drawable/user"
+            app:civ_border_width="8dp"
+            app:civ_border_color="?android:textColorSecondary" />
+
+        <TextView
+            android:id="@+id/texName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imgLayout"
+            android:textStyle="bold"
+            android:gravity="left"
+            android:textSize="@dimen/text_size_main"
+            android:textColor="@color/black"
+            android:text="{username}" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/buttonLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/task_network_button_heigh"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:weightSum="2"
+        android:layout_alignParentBottom="true">
+
+        <LinearLayout
+            android:id="@+id/btnNotificationDiscard"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_weight="1"
+            style="?my_button_black">
+
+            <cat.bcn.vincles.lib.widget.TintableImageView
+                android:layout_width="@dimen/configure_button_confirm_imagesize"
+                android:layout_height="@dimen/task_network_button_heigh"
+                android:tint="@color/white"
+                android:padding="@dimen/padding_medium"
+                android:src="@drawable/ic_no_x_30dp" />
+            <cat.bcn.vincles.lib.widget.AkkuratTextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/padding_medium"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="@dimen/text_size_main"
+                android:textAllCaps="false"
+                android:text="@string/main_notification_group_reject" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/btnNotificationView"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_marginLeft="@dimen/padding_xlarge"
+            style="?my_button_red">
+
+            <cat.bcn.vincles.lib.widget.TintableImageView
+                android:layout_width="@dimen/configure_button_confirm_imagesize"
+                android:layout_height="@dimen/task_network_button_heigh"
+                android:tint="@color/white"
+                android:padding="@dimen/padding_medium"
+                android:src="@drawable/icon_mensaje" />
+            <cat.bcn.vincles.lib.widget.AkkuratTextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/padding_medium"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="@dimen/text_size_main"
+                android:textAllCaps="false"
+                android:text="@string/main_notification_group_accept" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

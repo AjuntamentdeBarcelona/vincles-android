@@ -1,0 +1,58 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="414dp"
+        android:layout_height="64dp"
+        android:background="#F47121"
+        android:gravity="center"
+        android:id="@+id/uname_dlg_title_bar">
+
+
+
+        <TextView
+            android:layout_width="320dp"
+            android:layout_height="64dp"
+
+            android:text="WebRTC Demo"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:id="@+id/textView" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/uname_dlg_prompt_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/uname_dlg_title_bar"
+        android:text="Please enter your username."
+        android:layout_marginLeft="4dp"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"/>
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_below="@+id/uname_dlg_prompt_text"
+        android:inputType="text"
+        android:layout_width="406dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:paddingLeft="10dp"
+        android:hint="Username" />
+
+    <TextView
+        android:id="@+id/url_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/username"
+        android:layout_marginLeft="4dp"
+        android:textSize="12dp"/>
+</RelativeLayout>

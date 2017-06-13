@@ -1,0 +1,74 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion '25.0.0'
+    defaultConfig {
+        minSdkVersion 16
+        targetSdkVersion 21
+        versionCode 20170522
+        versionName "2.0.4"
+    }
+    signingConfigs {
+        release
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+        }
+    }
+    productFlavors {
+    }
+}
+
+def Properties props = new Properties()
+def propFile = file('../signing.properties')
+if (propFile.canRead()){
+    props.load(new FileInputStream(propFile))
+
+    if (props!=null && props.containsKey('STORE_FILE') && props.containsKey('STORE_PASSWORD') &&
+            props.containsKey('KEY_ALIAS') && props.containsKey('KEY_PASSWORD')) {
+
+        android.signingConfigs.release.storeFile = file(props['STORE_FILE'])
+        android.signingConfigs.release.storePassword = props['STORE_PASSWORD']
+        android.signingConfigs.release.keyAlias = props['KEY_ALIAS']
+        android.signingConfigs.release.keyPassword = props['KEY_PASSWORD']
+    } else {
+        android.buildTypes.release.signingConfig = null
+    }
+}else {
+    android.buildTypes.release.signingConfig = null
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    testCompile 'junit:junit:4.12'
+    testCompile 'org.mockito:mockito-core:1.10.19'
+    androidTestCompile 'com.android.support:support-annotations:23.1.1'
+    androidTestCompile 'com.android.support.test:runner:0.4.1'
+    androidTestCompile 'com.android.support.test:rules:0.4.1'
+    // Optional -- Hamcrest library
+    androidTestCompile 'org.hamcrest:hamcrest-library:1.3'
+    // Optional -- UI testing with Espresso
+    androidTestCompile 'com.android.support.test.espresso:espresso-core:2.2.1'
+    // Optional -- UI testing with UI Automator
+//    androidTestCompile 'com.android.support.test.uiautomator:uiautomator-v18:2.1.1'
+
+    compile 'com.github.satyan:sugar:1.5'
+    compile 'commons-io:commons-io:+'
+    compile 'com.mobsandgeeks:android-saripaar:2.0.3'
+    compile 'com.roomorama:caldroid:3.0.1'
+    compile 'de.hdodenhof:circleimageview:2.0.0'
+    compile 'com.squareup.retrofit2:retrofit:2.0.2'
+    compile 'com.squareup.retrofit2:converter-gson:2.0.0'
+    compile 'com.squareup.retrofit2:converter-scalars:2.0.0'
+    compile "com.google.firebase:firebase-core:$playServicesVersion"
+    compile "com.google.firebase:firebase-messaging:$playServicesVersion"
+
+
+    // Retrofit 1 & OkHttp 1 for versioncontrol.aar
+    compile 'com.squareup.retrofit:retrofit:1.9.0'
+    compile 'com.squareup.okhttp:okhttp:2.7.2'
+}

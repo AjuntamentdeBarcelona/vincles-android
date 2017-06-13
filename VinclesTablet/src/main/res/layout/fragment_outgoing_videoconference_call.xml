@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+   >
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        >
+
+        <LinearLayout
+            android:id="@+id/mic_dots"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/buttonLayout"
+            android:orientation="horizontal"
+            android:gravity="center"
+            >
+
+            <LinearLayout
+                android:layout_width="@dimen/calling_image_size"
+                android:layout_height="@dimen/calling_image_size"
+                android:background="@drawable/button_circle_red"
+                android:gravity="center"
+                android:layout_marginRight="@dimen/padding_medium"
+                >
+                <ImageView
+                    android:layout_width="@dimen/calling_image_inside_size"
+                    android:layout_height="@dimen/calling_image_inside_size"
+                    android:src="@drawable/icon_telefon"
+                    />
+            </LinearLayout>
+
+            <View
+                android:layout_width="@dimen/switch_radius"
+                android:layout_height="@dimen/switch_radius"
+                android:background="@drawable/button_circle_grey"
+                android:layout_margin="@dimen/padding_small"
+                />
+            <View
+                android:layout_width="@dimen/switch_radius"
+                android:layout_height="@dimen/switch_radius"
+                android:background="@drawable/button_circle_grey"
+                android:layout_margin="@dimen/padding_small"
+                />
+            <View
+                android:layout_width="@dimen/switch_radius"
+                android:layout_height="@dimen/switch_radius"
+                android:background="@drawable/button_circle_grey"
+                android:layout_margin="@dimen/padding_small"
+                />
+            <View
+                android:layout_width="@dimen/switch_radius"
+                android:layout_height="@dimen/switch_radius"
+                android:background="@drawable/button_circle_grey"
+                android:layout_margin="@dimen/padding_small"
+                />
+            <View
+                android:layout_width="@dimen/switch_radius"
+                android:layout_height="@dimen/switch_radius"
+                android:background="@drawable/button_circle_grey"
+                android:layout_margin="@dimen/padding_small"
+                />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/imgPhoto"
+                android:layout_width="@dimen/calling_image_size"
+                android:layout_height="@dimen/calling_image_size"
+                android:src="@drawable/user"
+                android:layout_marginLeft="@dimen/padding_medium"
+                app:civ_border_width="4dp"
+                app:civ_border_color="?android:textColorSecondary"
+                />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</LinearLayout>
