@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorWhite"
+    tools:activity="cat.bcn.vincles.mobile.UI.StartGuide.StartGuideActivity">
+
+    <cat.bcn.vincles.mobile.Utils.VinclesViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </cat.bcn.vincles.mobile.Utils.VinclesViewPager>
+
+
+
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tablayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_gravity="bottom|center_horizontal"
+        app:tabBackground="@drawable/initial_guide_tab_selector"
+        app:tabGravity="center"
+        app:tabIndicatorHeight="0dp"
+        app:layout_constraintBottom_toBottomOf="@id/close_button"
+        app:layout_constraintTop_toTopOf="@id/close_button"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        >
+
+    </android.support.design.widget.TabLayout>
+
+    <Button
+        android:id="@+id/close_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_all_corners_round_red"
+        android:enabled="true"
+        android:text="@string/close"
+        android:textAllCaps="false"
+        android:textColor="@color/colorWhite"
+        android:padding="8dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:textSize="16sp" />
+
+
+
+</android.support.constraint.ConstraintLayout>

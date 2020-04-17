@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:minWidth="@dimen/dialog_min_width"
+    android:background="@drawable/shape_all_corners_round_gray_clear"
+    android:padding="@dimen/dialogs_padding"
+    android:visibility="visible">
+
+    <TextView
+        android:id="@+id/dialogTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dialogs_close_button_size"
+        android:gravity="center_vertical"
+        android:fontFamily="@font/akkurat_bold"
+        android:textColor="@color/colorBlack"
+        android:text="@string/error"
+        android:textSize="@dimen/dialogs_text_size"
+        app:layout_constraintTop_toTopOf="@+id/close_dialog"
+        app:layout_constraintBottom_toBottomOf="@+id/close_dialog"
+        app:layout_constraintRight_toLeftOf="@+id/close_dialog"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+
+
+    <ImageView
+        android:id="@+id/close_dialog"
+        android:layout_width="@dimen/dialogs_close_button_size"
+        android:layout_height="@dimen/dialogs_close_button_size"
+        android:src="@drawable/selector_close_dialog_background"
+        android:layout_alignParentRight="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/dialogText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dialogs_margin_below_close"
+        android:gravity="top|left"
+        android:fontFamily="@font/akkurat"
+        android:text="La teva solicitud de contacte s'ha enviat"
+        android:textSize="@dimen/dialogs_text_size"
+        android:layout_below="@+id/close_dialog"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/close_dialog"
+        app:layout_constraintBottom_toTopOf="@+id/ok"/>
+
+    <Button
+        android:id="@+id/cancel"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dialog_bottom_buttons_height"
+        android:background="@drawable/selector_buttons_background"
+        android:fontFamily="@font/akkurat"
+        android:text="@string/cancel"
+        android:textAllCaps="false"
+        android:textColor="@color/selector_text_red_white"
+        android:textSize="@dimen/dialogs_text_size"
+        android:layout_marginTop="@dimen/dialogs_margin_bottom_buttons"
+        android:layout_below="@+id/dialogText"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dialogText"
+        app:layout_constraintBottom_toBottomOf="@+id/ok" />
+
+    <Button
+        android:id="@+id/ok"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dialog_bottom_buttons_height"
+        android:layout_below="@+id/cancel"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/selector_buttons_background"
+        android:fontFamily="@font/akkurat"
+        android:text="@string/accept"
+        android:textAllCaps="false"
+        android:textColor="@color/selector_text_red_white"
+        android:textSize="@dimen/dialogs_text_size"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cancel" />
+
+
+</RelativeLayout>

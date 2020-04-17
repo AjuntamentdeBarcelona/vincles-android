@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/itemLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/avatar"
+        android:layout_width="@dimen/chat_element_avatar_size"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:scaleType="centerCrop"
+        android:src="@drawable/user"
+        android:visibility="invisible"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/contact_name"
+        android:layout_marginBottom="@dimen/chat_element_message_margin_top_bottom"
+        android:layout_marginTop="@dimen/chat_element_message_margin_top_bottom"
+        android:layout_marginLeft="@dimen/chat_element_message_margin_start"
+        app:riv_oval="true" />
+
+    <TextView
+        android:id="@+id/contact_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:ellipsize="end"
+        android:lines="1"
+        android:maxLines="1"
+        android:textColor="@color/colorBlack"
+        android:fontFamily="@font/akkurat_bold"
+        android:textSize="@dimen/chat_element_message_text_size"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/avatar"
+        android:layout_marginLeft="@dimen/chat_element_message_margin_left"
+        tools:text="Nom Usuari" />
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:ellipsize="end"
+        android:lines="1"
+        android:maxLines="1"
+        android:textColor="@color/chat_time"
+        android:fontFamily="@font/akkurat"
+        android:textSize="@dimen/chat_element_message_time_text_size"
+        android:layout_toRightOf="@+id/contact_name"
+        android:layout_alignBaseline="@+id/contact_name"
+        android:layout_marginLeft="@dimen/chat_element_message_margin_left"
+        tools:text="12:34" />
+
+    <LinearLayout
+        android:id="@+id/bubble"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="@dimen/chat_element_audio_min_width"
+        android:background="@drawable/bubble_lightgrey"
+        android:layout_below="@+id/contact_name"
+        android:layout_toRightOf="@+id/avatar"
+        android:layout_marginLeft="@dimen/chat_element_message_margin_no_arrow"
+        android:layout_marginBottom="@dimen/chat_element_message_margin_top_bottom"
+        android:layout_marginRight="@dimen/chat_element_message_margin_end">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardview"
+            android:layout_width="@dimen/chat_element_image_size"
+            android:layout_height="@dimen/chat_element_image_size"
+            app:cardBackgroundColor="@color/colorBlack"
+            app:cardElevation="0dp"
+            app:cardCornerRadius="@dimen/chat_element_image_corner"
+            >
+
+            <cat.bcn.vincles.mobile.Utils.VinclesViewPager
+                android:id="@+id/pager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+            </cat.bcn.vincles.mobile.Utils.VinclesViewPager>
+
+            <android.support.design.widget.TabLayout
+                android:id="@+id/tablayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center_horizontal"
+                app:tabBackground="@drawable/chat_element_image_tab_selector"
+                app:tabGravity="center"
+                app:tabIndicatorHeight="0dp"/>
+
+        </android.support.v7.widget.CardView>
+
+        <TextView
+            android:id="@+id/message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center_vertical"
+            android:textColor="@color/colorBlack"
+            android:fontFamily="@font/akkurat"
+            android:textSize="@dimen/chat_element_message_text_size"
+            tools:text="" />
+
+    </LinearLayout>
+
+
+
+
+
+
+</RelativeLayout>
+
+
+

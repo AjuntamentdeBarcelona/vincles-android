@@ -1,0 +1,24 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <cat.bcn.vincles.mobile.Utils.VinclesViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+    </cat.bcn.vincles.mobile.Utils.VinclesViewPager>
+
+    <cat.bcn.vincles.mobile.UI.Compound.BackCompoundView
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/gallery_back_button_size"
+        android:src="@drawable/tornar"
+        android:layout_marginLeft="@dimen/gallery_padding_sides"
+        android:layout_marginTop="@dimen/gallery_padding_top_bottom"/>
+
+
+</RelativeLayout>

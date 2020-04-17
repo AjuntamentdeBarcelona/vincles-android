@@ -1,0 +1,190 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/frameLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingRight="@dimen/gallery_padding_sides"
+        android:paddingLeft="@dimen/gallery_padding_sides"
+        android:paddingTop="@dimen/gallery_padding_top_bottom"
+        android:paddingBottom="@dimen/gallery_padding_top_bottom"
+        tools:activity="cat.bcn.vincles.mobile.UI.Contacts.ContactsFragment">
+
+        <cat.bcn.vincles.mobile.UI.Compound.BackCompoundView
+            android:id="@+id/back"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/gallery_back_button_size"
+            android:src="@drawable/tornar"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal" >
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/avatar_left"
+                android:layout_width="@dimen/calls_avatar_size"
+                android:layout_height="@dimen/calls_avatar_size"
+                android:layout_gravity="center"
+                android:scaleType="centerCrop"
+                android:src="@drawable/user"
+                android:layout_marginLeft="@dimen/calls_bullet_margin"
+                android:layout_marginRight="@dimen/calls_bullet_margin"
+                app:layout_constraintBottom_toBottomOf="@+id/back"
+                app:layout_constraintHorizontal_chainStyle="packed"
+                app:layout_constraintLeft_toRightOf="@+id/back"
+                app:layout_constraintRight_toLeftOf="@+id/chat_title"
+                app:layout_constraintTop_toTopOf="@+id/back"
+                app:riv_oval="true" />
+
+            <View
+                android:id="@+id/bullet_0"
+                android:layout_width="@dimen/calls_bullet_size"
+                android:layout_height="@dimen/calls_bullet_size"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/selector_call_animation_bullet"
+                android:layout_marginLeft="@dimen/calls_bullet_margin"
+                android:layout_marginRight="@dimen/calls_bullet_margin"
+                />
+            <View
+                android:id="@+id/bullet_1"
+                android:layout_width="@dimen/calls_bullet_size"
+                android:layout_height="@dimen/calls_bullet_size"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/selector_call_animation_bullet"
+                android:layout_marginLeft="@dimen/calls_bullet_margin"
+                android:layout_marginRight="@dimen/calls_bullet_margin"
+                />
+            <View
+                android:id="@+id/bullet_2"
+                android:layout_width="@dimen/calls_bullet_size"
+                android:layout_height="@dimen/calls_bullet_size"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/selector_call_animation_bullet"
+                android:layout_marginLeft="@dimen/calls_bullet_margin"
+                android:layout_marginRight="@dimen/calls_bullet_margin"
+                />
+            <View
+                android:id="@+id/bullet_3"
+                android:visibility="gone"
+                android:layout_width="@dimen/calls_bullet_size"
+                android:layout_height="@dimen/calls_bullet_size"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/selector_call_animation_bullet"
+                android:layout_marginLeft="@dimen/calls_bullet_margin"
+                android:layout_marginRight="@dimen/calls_bullet_margin"
+                />
+            <View
+                android:id="@+id/bullet_4"
+                android:visibility="gone"
+                android:layout_width="@dimen/calls_bullet_size"
+                android:layout_height="@dimen/calls_bullet_size"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/selector_call_animation_bullet"
+                android:layout_marginLeft="@dimen/calls_bullet_margin"
+                android:layout_marginRight="@dimen/calls_bullet_margin"
+                />
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/avatar_right"
+                android:layout_width="@dimen/calls_avatar_size"
+                android:layout_height="@dimen/calls_avatar_size"
+                android:layout_gravity="center"
+                android:scaleType="centerCrop"
+                android:src="@drawable/user"
+                android:layout_marginLeft="@dimen/calls_bullet_margin"
+                android:layout_marginRight="@dimen/calls_bullet_margin"
+                app:layout_constraintBottom_toBottomOf="@+id/back"
+                app:layout_constraintHorizontal_chainStyle="packed"
+                app:layout_constraintLeft_toRightOf="@+id/back"
+                app:layout_constraintRight_toLeftOf="@+id/chat_title"
+                app:layout_constraintTop_toTopOf="@+id/back"
+                app:riv_oval="true" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/calls_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/calls_title_margin_top"
+            android:ellipsize="end"
+            android:fontFamily="@font/akkurat_bold"
+            android:maxLines="2"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/gallery_title_text_size" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+
+        <FrameLayout
+            android:id="@+id/bottom_bar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/gallery_bottom_buttons_height"  />
+
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:id="@+id/ongoing_call_layout"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorBlack">
+
+
+        <org.appspot.apprtc.PercentFrameLayout
+            android:id="@+id/remote_video_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <org.webrtc.SurfaceViewRenderer
+                android:id="@+id/remote_video_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </org.appspot.apprtc.PercentFrameLayout>
+
+        <org.appspot.apprtc.PercentFrameLayout
+            android:id="@+id/local_video_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <org.webrtc.SurfaceViewRenderer
+                android:id="@+id/local_video_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </org.appspot.apprtc.PercentFrameLayout>
+
+        <ImageView
+            android:id="@+id/ongoing_call_hung_up_button"
+            android:layout_width="@dimen/calls_hang_up_button_size"
+            android:layout_height="@dimen/calls_hang_up_button_size"
+            android:layout_marginLeft="24dp"
+            android:layout_marginBottom="24dp"
+            android:padding="@dimen/gallery_bottom_buttons_padding"
+            android:background="@drawable/number_meetings_background"
+            android:src="@drawable/call_cancel_hover_icon"
+            android:textColor="@color/colorPrimary"
+            android:layout_gravity="left|bottom"/>
+
+
+    </FrameLayout>
+
+
+</FrameLayout>
+

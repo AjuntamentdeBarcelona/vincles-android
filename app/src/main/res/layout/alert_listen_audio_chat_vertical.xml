@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:minWidth="@dimen/dialog_min_width"
+    android:background="@drawable/shape_all_corners_round_gray_clear"
+    android:padding="@dimen/dialogs_padding"
+    android:visibility="visible">
+
+    <TextView
+        android:id="@+id/dialogTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dialogs_close_button_size"
+        android:gravity="center_vertical"
+        android:fontFamily="@font/akkurat_bold"
+        android:textColor="@color/colorBlack"
+        android:text="@string/error"
+        android:textSize="@dimen/dialogs_text_size"
+        app:layout_constraintTop_toTopOf="@+id/close_dialog"
+        app:layout_constraintBottom_toBottomOf="@+id/close_dialog"
+        app:layout_constraintRight_toLeftOf="@+id/close_dialog"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <ImageView
+        android:id="@+id/close_dialog"
+        android:layout_width="@dimen/dialogs_close_button_size"
+        android:layout_height="@dimen/dialogs_close_button_size"
+        android:src="@drawable/selector_close_dialog_background"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RelativeLayout
+        android:id="@+id/listenLayout"
+        android:orientation="horizontal"
+        android:minWidth="@dimen/chat_element_audio_min_width"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/close_dialog"
+        app:layout_constraintBottom_toTopOf="@+id/ok"
+        android:layout_below="@+id/close_dialog">
+
+        <FrameLayout
+            android:id="@+id/play_fl"
+            android:layout_marginTop="@dimen/chat_element_message_margin_top_bottom"
+            android:layout_marginBottom="@dimen/chat_element_message_margin_top_bottom"
+            android:layout_width="@dimen/chat_element_audio_play_size"
+            android:layout_height="@dimen/chat_element_audio_play_size">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/play_iv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/selector_play_pause_button"
+                android:tint="@color/colorPrimary"
+                />
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/download"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/download"
+                android:visibility="gone"
+                app:tint="@color/colorWhite"/>
+
+            <ProgressBar
+                android:id="@+id/progressbar"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/proggress_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/akkurat_bold"
+            android:textSize="@dimen/chat_element_message_proggress_text_size"
+            android:textColor="@color/colorPrimary"
+            android:text="00:00"
+            android:layout_marginRight="@dimen/chat_element_message_margin_top_bottom"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"/>
+
+        <SeekBar
+            android:id="@+id/seekbar"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/play_fl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+
+
+
+    </RelativeLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/listenLayout"
+        android:layout_marginTop="@dimen/dialogs_margin_bottom_buttons"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dialog_bottom_buttons_height"
+            android:background="@drawable/selector_buttons_background"
+            android:text="@string/chat_repeat_audio"
+            android:textSize="@dimen/dialogs_text_button_size"
+            android:textColor="@color/selector_text_red_white"
+            android:visibility="visible"
+            android:layout_weight="1"
+            android:layout_marginBottom="@dimen/dialogs_margin_bottom_buttons_inner_half"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/accept"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+        <Button
+            android:id="@+id/accept"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dialog_bottom_buttons_height"
+            android:background="@drawable/selector_buttons_background"
+            android:text="@string/chat_button_send"
+            android:textSize="@dimen/dialogs_text_button_size"
+            android:textColor="@color/selector_text_red_white"
+            android:visibility="visible"
+            android:layout_weight="1"
+            android:layout_marginTop="@dimen/dialogs_margin_bottom_buttons_inner_half"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/cancel" />
+
+    </LinearLayout>
+
+
+
+
+
+</RelativeLayout>

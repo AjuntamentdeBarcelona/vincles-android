@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="meeting_duration_entries">
+        <item>@string/calendar_meeting_duration_30</item>
+        <item>@string/calendar_meeting_duration_60</item>
+        <item>@string/calendar_meeting_duration_90</item>
+        <item>@string/calendar_meeting_duration_120</item>
+    </string-array>
+    <integer-array name="meeting_duration_values">
+        <item>30</item>
+        <item>60</item>
+        <item>90</item>
+        <item>120</item>
+    </integer-array>
+
+
+</resources>

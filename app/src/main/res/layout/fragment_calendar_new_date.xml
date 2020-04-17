@@ -1,0 +1,145 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingRight="@dimen/gallery_padding_sides"
+    android:paddingLeft="@dimen/gallery_padding_sides"
+    android:paddingTop="@dimen/gallery_padding_top_bottom"
+    android:paddingBottom="@dimen/gallery_padding_top_bottom"
+    android:orientation="vertical"
+    tools:activity="cat.bcn.vincles.mobile.UI.Contacts.ContactsFragment">
+
+    <cat.bcn.vincles.mobile.UI.Compound.BackCompoundView
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/gallery_back_button_size"
+        android:src="@drawable/tornar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="16dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/description"
+                android:background="@drawable/shape_square_gray_background"
+                android:padding="8dp"
+                android:minHeight="72dp"
+                android:gravity="top"
+                android:textSize="@dimen/calendar_text_size"
+                android:hint="@string/calendar_new_date_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+
+            <include layout="@layout/fragment_calendar_new_date_time"/>
+
+
+            <TextView
+                android:id="@+id/guests_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/akkurat_bold"
+                android:layout_marginTop="16dp"
+                android:text="@string/calendar_detail_guests_title"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/calendar_text_size"
+                app:layout_constraintTop_toBottomOf="@+id/back"
+                app:layout_constraintLeft_toLeftOf="parent"/>
+
+            <LinearLayout
+                android:id="@+id/invite_button_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp" >
+
+                <ImageView
+                    android:id="@+id/invite_button"
+                    android:layout_width="@dimen/gallery_back_button_size"
+                    android:layout_height="@dimen/gallery_back_button_size"
+                    android:fontFamily="@font/akkurat_bold"
+                    android:text="@string/calendar_date_start_time"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/selector_invite_others"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/calendar_text_size"/>
+
+                <TextView
+                    android:id="@+id/invite_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/akkurat"
+                    android:paddingLeft="8dp"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="left"
+                    android:text="@string/calendar_invite_others"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/calendar_text_size" />
+
+
+            </LinearLayout>
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/gallery_recycler_margin_top"
+                android:layout_marginBottom="@dimen/gallery_padding_top_bottom"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintBottom_toTopOf="@+id/bottom_bar"
+                app:layout_constraintTop_toBottomOf="@+id/day_tv"
+                />
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/create_meeting"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/gallery_bottom_buttons_height"
+        android:background="@drawable/selector_buttons_background"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginRight="@dimen/content_detail_bottom_buttons_margin_half" >
+
+        <ImageView
+            android:id="@+id/create_meeting_iv"
+            android:layout_width="@dimen/general_bottom_bar_icon_size"
+            android:layout_height="@dimen/general_bottom_bar_icon_size"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/selector_create_date" />
+
+        <TextView
+            android:id="@+id/create_meeting_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/content_detail_date_inner_margins"
+            android:text="@string/calendar_create_date"
+            android:textColor="@color/selector_text_red_white"
+            android:textSize="@dimen/content_detail_help_text_size" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

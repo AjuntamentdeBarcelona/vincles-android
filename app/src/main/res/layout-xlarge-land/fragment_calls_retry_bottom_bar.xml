@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/send_message_button"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/gallery_bottom_buttons_height"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_marginRight="@dimen/content_detail_bottom_buttons_margin_half"
+        android:background="@drawable/selector_buttons_background" >
+
+        <ImageView
+            android:id="@+id/send_message_iv"
+            android:layout_width="@dimen/general_bottom_bar_icon_size"
+            android:layout_height="@dimen/general_bottom_bar_icon_size"
+            android:src="@drawable/selector_send_message" />
+
+        <TextView
+            android:id="@+id/send_message_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/content_detail_date_inner_margins"
+            android:text="@string/calls_send_message_call_button"
+            android:textColor="@color/selector_text_red_white"
+            android:textSize="@dimen/content_detail_help_text_size" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/retry_button"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/gallery_bottom_buttons_height"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_marginLeft="@dimen/content_detail_bottom_buttons_margin_half"
+        android:background="@drawable/selector_buttons_background" >
+
+        <ImageView
+            android:id="@+id/retry_iv"
+            android:layout_width="@dimen/general_bottom_bar_icon_size"
+            android:layout_height="@dimen/general_bottom_bar_icon_size"
+            android:src="@drawable/selector_retry_call" />
+
+        <TextView
+            android:id="@+id/retry_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/content_detail_date_inner_margins"
+            android:text="@string/calls_retry_call_button"
+            android:textColor="@color/selector_text_red_white"
+            android:textSize="@dimen/content_detail_help_text_size" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

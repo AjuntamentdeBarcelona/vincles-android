@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/accept_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/calendar_item_buttons_height"
+        android:orientation="horizontal"
+        android:layout_marginRight="@dimen/content_detail_bottom_buttons_margin_half"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:background="@drawable/selector_green_buttons_background" >
+
+        <ImageView
+            android:id="@+id/share_iv"
+            android:layout_width="@dimen/calendar_item_buttons_icon_size"
+            android:layout_height="@dimen/calendar_item_buttons_icon_size"
+            android:src="@drawable/selector_accept_date_background" />
+
+        <TextView
+            android:id="@+id/share_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/calendar_item_buttons_inner_margins"
+            android:text="@string/calendar_accept_date"
+            android:textColor="@color/selector_text_green_white"
+            android:textSize="@dimen/calendar_item_buttons_text_size" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/reject_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/calendar_item_buttons_height"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_marginLeft="@dimen/content_detail_bottom_buttons_margin_half"
+        android:background="@drawable/selector_buttons_background" >
+
+        <ImageView
+            android:layout_width="@dimen/calendar_item_buttons_icon_size"
+            android:layout_height="@dimen/calendar_item_buttons_icon_size"
+            android:src="@drawable/selector_no_eliminar_background" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/calendar_item_buttons_inner_margins"
+            android:text="@string/calendar_reject_date"
+            android:textColor="@color/selector_text_red_white"
+            android:textSize="@dimen/calendar_item_buttons_text_size" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

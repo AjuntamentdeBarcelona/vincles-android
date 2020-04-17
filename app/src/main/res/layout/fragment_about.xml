@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingRight="@dimen/gallery_padding_sides"
+    android:paddingLeft="@dimen/gallery_padding_sides"
+    android:paddingTop="@dimen/gallery_padding_top_bottom"
+    android:paddingBottom="@dimen/gallery_padding_top_bottom"
+    android:orientation="vertical">
+
+    <cat.bcn.vincles.mobile.UI.Compound.BackCompoundView
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/gallery_back_button_size"
+        android:src="@drawable/tornar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/gallery_back_button_size"
+        android:fontFamily="@font/akkurat_bold"
+        android:text="@string/about_vincles"
+        android:textColor="@color/colorBlack"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp"
+        android:gravity="center"
+        android:textSize="@dimen/contact_title_text_size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/back"
+        app:layout_constraintTop_toTopOf="@+id/back" />
+
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/shape_all_corners_round_gray_clear"
+        android:orientation="vertical"
+        android:padding="15dip"
+        android:scrollbarStyle="outsideOverlay"
+        app:layout_constraintBottom_toTopOf="@+id/bottombar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/back">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/about_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:fontFamily="@font/akkurat_light"
+                android:text="@string/about_text"/>
+
+            <TextView
+                android:id="@+id/app_version_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:fontFamily="@font/akkurat_light"
+                android:text="@string/about_app_version" />
+
+        </LinearLayout>
+
+
+
+
+    </ScrollView>
+
+    <FrameLayout
+        android:id="@+id/bottombar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <ImageView
+            android:layout_width="140dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center_vertical|right"
+            android:src="@drawable/bloomberg_splash_colaborate"/>
+        <ImageView
+
+            android:layout_width="140dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center_vertical|left"
+            android:src="@drawable/ajuntament_left"/>
+
+    </FrameLayout>
+
+</android.support.constraint.ConstraintLayout>

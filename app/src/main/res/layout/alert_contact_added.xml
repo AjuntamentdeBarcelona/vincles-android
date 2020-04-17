@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_all_corners_round_gray_clear"
+    android:minWidth="@dimen/dialog_min_width"
+    android:padding="@dimen/dialogs_padding"
+    android:visibility="visible">
+
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/userAvatar"
+        android:layout_width="@dimen/contacts_icon_size"
+        android:layout_height="@dimen/contacts_icon_size"
+        android:layout_gravity="center"
+        android:layout_centerHorizontal="true"
+        android:scaleType="centerCrop"
+        app:riv_oval="true" />
+
+
+    <TextView
+        android:id="@+id/dialogText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dialogs_margin_below_close"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/akkurat"
+        android:textSize="@dimen/dialogs_text_size"
+        android:layout_below="@+id/userAvatar"/>
+
+    <Button
+        android:id="@+id/accept"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dialog_bottom_buttons_height"
+        android:layout_marginTop="@dimen/dialogs_margin_bottom_buttons"
+        android:layout_below="@+id/dialogText"
+        android:layout_marginLeft="@dimen/dialogs_margin_bottom_buttons_inner_half"
+        android:layout_marginRight="@dimen/dialogs_margin_bottom_buttons_inner_half"
+        android:layout_weight="1"
+        android:background="@drawable/selector_buttons_background"
+        android:text="@string/accept"
+        android:textAllCaps="false"
+        android:textSize="@dimen/dialogs_text_size"
+        android:textColor="@color/selector_text_red_white" />
+
+
+</RelativeLayout>

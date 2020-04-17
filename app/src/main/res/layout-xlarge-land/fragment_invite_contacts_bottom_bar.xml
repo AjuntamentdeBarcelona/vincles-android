@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/no_invite"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/gallery_bottom_buttons_height"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_marginRight="@dimen/content_detail_bottom_buttons_margin_half"
+        android:background="@drawable/selector_buttons_background" >
+
+        <ImageView
+            android:id="@+id/no_invite_iv"
+            android:layout_width="@dimen/general_bottom_bar_icon_size"
+            android:layout_height="@dimen/general_bottom_bar_icon_size"
+            android:src="@drawable/selector_no_eliminar_background" />
+
+        <TextView
+            android:id="@+id/no_invite_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/content_detail_date_inner_margins"
+            android:text="@string/calendar_invite_contacts_positive"
+            android:textColor="@color/selector_text_red_white"
+            android:textSize="@dimen/content_detail_help_text_size" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/invite"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/gallery_bottom_buttons_height"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_marginLeft="@dimen/content_detail_bottom_buttons_margin_half"
+        android:background="@drawable/selector_buttons_background" >
+
+        <ImageView
+            android:id="@+id/invite_iv"
+            android:layout_width="@dimen/general_bottom_bar_icon_size"
+            android:layout_height="@dimen/general_bottom_bar_icon_size"
+            android:src="@drawable/selector_invite_date" />
+
+        <TextView
+            android:id="@+id/invite_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/content_detail_date_inner_margins"
+            android:text="@string/calendar_invite_contacts_negative"
+            android:textColor="@color/selector_text_red_white"
+            android:textSize="@dimen/content_detail_help_text_size" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

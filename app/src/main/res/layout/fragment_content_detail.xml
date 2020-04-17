@@ -1,0 +1,137 @@
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingRight="@dimen/gallery_padding_sides"
+    android:paddingLeft="@dimen/gallery_padding_sides"
+    android:paddingTop="@dimen/gallery_padding_top_bottom"
+    android:paddingBottom="@dimen/gallery_padding_top_bottom"
+    tools:activity="cat.bcn.vincles.mobile.UI.ContentDetail.ContentDetailFragment">
+
+
+    <LinearLayout
+        android:id="@+id/userInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toEndOf="@id/back"
+        app:layout_constraintTop_toTopOf="@+id/back"
+        app:layout_constraintBottom_toBottomOf="@+id/back"
+        >
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/avatar"
+            android:layout_width="@dimen/gallery_back_button_size"
+            android:layout_height="@dimen/gallery_back_button_size"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/content_detail_margin_big"
+            android:scaleType="centerCrop"
+            app:layout_constraintStart_toEndOf="@id/back"
+            app:layout_constraintTop_toTopOf="@+id/back"
+            app:layout_constraintBottom_toBottomOf="@+id/back"
+            app:riv_oval="true" />
+        <TextView
+            android:id="@+id/chat_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="64dp"
+            android:ellipsize="end"
+            android:gravity="left"
+            android:paddingLeft="@dimen/content_detail_title_padding_left"
+            android:fontFamily="@font/akkurat_bold"
+            android:maxLines="2"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/gallery_title_text_size"
+             />
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/clockIcon"
+        android:layout_width="@dimen/content_detail_clock_icon_size"
+        android:layout_height="@dimen/content_detail_clock_icon_size"
+        android:layout_marginTop="@dimen/gallery_recycler_margin_top"
+        android:background="@drawable/clock"
+        android:layout_marginRight="@dimen/content_detail_date_inner_margins"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/date"
+        app:layout_constraintTop_toBottomOf="@+id/back" />
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:text="15 de desembre 2017"
+        android:textColor="@color/colorBlack"
+        android:gravity="center"
+        android:layout_marginRight="@dimen/content_detail_date_inner_margins"
+        app:layout_constraintRight_toLeftOf="@+id/date_divider"
+        app:layout_constraintLeft_toRightOf="@+id/clockIcon"
+        app:layout_constraintBottom_toBottomOf="@+id/clockIcon"
+        app:layout_constraintTop_toTopOf="@+id/clockIcon" />
+
+    <View
+        android:id="@+id/date_divider"
+        android:background="@color/colorBlack"
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        android:layout_marginRight="@dimen/content_detail_date_inner_margins"
+        app:layout_constraintRight_toLeftOf="@+id/hour"
+        app:layout_constraintLeft_toRightOf="@+id/date"
+        app:layout_constraintBottom_toBottomOf="@+id/clockIcon"
+        app:layout_constraintTop_toTopOf="@+id/clockIcon"/>
+
+    <TextView
+        android:id="@+id/hour"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:text="13:30"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/date_divider"
+        app:layout_constraintBottom_toBottomOf="@+id/clockIcon"
+        app:layout_constraintTop_toTopOf="@+id/clockIcon" />
+
+
+
+    <cat.bcn.vincles.mobile.Utils.VinclesViewPager
+        android:id="@+id/pager"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/gallery_recycler_margin_top"
+        android:layout_marginBottom="@dimen/gallery_padding_top_bottom"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_bar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/clockIcon">
+    </cat.bcn.vincles.mobile.Utils.VinclesViewPager>
+
+    <cat.bcn.vincles.mobile.UI.Compound.BackCompoundView
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/gallery_back_button_size"
+        android:src="@drawable/tornar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <FrameLayout
+        android:id="@+id/bottom_bar"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/gallery_bottom_buttons_height"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" >
+
+        <include layout="@layout/fragment_content_detail_bottom_bar"/>
+
+    </FrameLayout>
+
+
+
+</android.support.constraint.ConstraintLayout>

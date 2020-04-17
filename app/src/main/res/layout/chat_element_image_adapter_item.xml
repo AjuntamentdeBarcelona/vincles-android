@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/imageview"
+        android:scaleType="centerCrop"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ImageView
+        android:id="@+id/video_hint"
+        android:layout_width="@dimen/chat_element_image_video_hint_size"
+        android:layout_height="@dimen/chat_element_image_video_hint_size"
+        android:layout_gravity="center"
+        android:src="@drawable/video_hint"/>
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/download"
+        android:layout_width="@dimen/chat_element_image_video_hint_size"
+        android:layout_height="@dimen/chat_element_image_video_hint_size"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:src="@drawable/download" />
+
+    <ProgressBar
+        android:id="@+id/progressbar"
+        android:layout_width="@dimen/chat_element_image_video_hint_size"
+        android:layout_height="@dimen/chat_element_image_video_hint_size"
+        android:layout_gravity="center"
+        android:visibility="gone"/>
+
+</FrameLayout>

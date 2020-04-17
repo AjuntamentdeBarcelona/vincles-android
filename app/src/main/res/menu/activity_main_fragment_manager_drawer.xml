@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group
+        android:id="@+id/grp0"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/home"
+            android:icon="@drawable/home_menu"
+            android:title="@string/home" />
+    </group>
+    <group
+        android:id="@+id/grp1"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/contacts"
+            android:icon="@drawable/contacts_menu"
+            android:title="@string/contacts" />
+    </group>
+    <group
+        android:id="@+id/grp2"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/alerts"
+            android:icon="@drawable/notification_menu"
+            android:title="@string/alerts" />
+    </group>
+    <group android:id="@+id/grp3" android:checkableBehavior="single">
+        <item
+            android:id="@+id/calendar"
+            android:icon="@drawable/calendar_menu"
+            android:title="@string/calendar" />
+    </group>
+    <group android:id="@+id/grp4" android:checkableBehavior="single">
+        <item
+            android:id="@+id/media"
+            android:icon="@drawable/camera_menu"
+            android:title="@string/media" />
+    </group>
+    <group android:id="@+id/grp5" android:checkableBehavior="single">
+        <item
+            android:id="@+id/configuration"
+            android:icon="@drawable/configuration_menu"
+            android:title="@string/configuration" />
+    </group>
+    <group
+        android:id="@+id/grp6"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/about_vincles"
+            android:icon="@drawable/vincles_menu"
+            android:title="@string/about_vincles" />
+    </group>
+    <group android:id="@+id/grp7" android:checkableBehavior="single">
+        <item
+            android:id="@+id/logout"
+            android:icon="@drawable/logout_menu"
+            android:title="@string/logout" />
+    </group>
+</menu>

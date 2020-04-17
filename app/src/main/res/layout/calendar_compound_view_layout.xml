@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/calendar_month_month_bar_height">
+
+        <ImageView
+            android:id="@+id/previous_month"
+            android:layout_width="@dimen/calendar_month_month_bar_button_width"
+            android:layout_height="@dimen/calendar_month_month_bar_height"
+            android:background="@drawable/selector_previous_month"/>
+
+        <TextView
+            android:id="@+id/month_tv"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/calendar_month_month_bar_height"
+            android:gravity="center"
+            android:textSize="@dimen/calendar_month_text_size"
+            android:textColor="@color/colorWhite"
+            android:textAllCaps="true"
+            android:background="@color/darkGrayGeneric"
+            android:layout_weight="1"/>
+
+        <ImageView
+            android:id="@+id/next_month"
+            android:layout_width="@dimen/calendar_month_month_bar_button_width"
+            android:layout_height="@dimen/calendar_month_month_bar_height"
+            android:background="@drawable/selector_next_month"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/calendar_month_days_bar_height"
+        android:background="@drawable/shape_square_gray_background">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:fontFamily="@font/akkurat_bold"
+            android:text="@string/calendar_month_monday"
+            android:textSize="@dimen/calendar_month_day_text_size"
+            android:textColor="@color/colorPrimary"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:fontFamily="@font/akkurat_bold"
+            android:text="@string/calendar_month_tuesday"
+            android:textSize="@dimen/calendar_month_day_text_size"
+            android:textColor="@color/colorPrimary"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:fontFamily="@font/akkurat_bold"
+            android:text="@string/calendar_month_wednesday"
+            android:textSize="@dimen/calendar_month_day_text_size"
+            android:textColor="@color/colorPrimary"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:fontFamily="@font/akkurat_bold"
+            android:text="@string/calendar_month_thursday"
+            android:textSize="@dimen/calendar_month_day_text_size"
+            android:textColor="@color/colorPrimary"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:fontFamily="@font/akkurat_bold"
+            android:text="@string/calendar_month_friday"
+            android:textSize="@dimen/calendar_month_day_text_size"
+            android:textColor="@color/colorPrimary"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:fontFamily="@font/akkurat_bold"
+            android:text="@string/calendar_month_saturday"
+            android:textSize="@dimen/calendar_month_day_text_size"
+            android:textColor="@color/colorPrimary"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:fontFamily="@font/akkurat_bold"
+            android:text="@string/calendar_month_sunday"
+            android:textSize="@dimen/calendar_month_day_text_size"
+            android:textColor="@color/colorPrimary"/>
+
+
+    </LinearLayout>
+
+    <GridView
+        android:id="@+id/calendar_grid"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:numColumns="7"/>
+
+</LinearLayout>

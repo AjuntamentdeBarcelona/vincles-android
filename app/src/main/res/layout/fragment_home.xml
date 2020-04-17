@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/main_screen_padding_sides"
+    tools:activity="cat.bcn.vincles.mobile.UI.Home.HomeFragment"
+    tools:layout_editor_absoluteY="89dp">
+
+
+
+    <!--================================-->
+    <!--             WELCOME            -->
+    <!--================================-->
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/textView"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/main_row_height"
+        android:background="@drawable/welcome_text_background"
+        android:gravity="center_vertical"
+        android:layout_marginRight="@dimen/main_separation_groups"
+        android:paddingLeft="@dimen/main_text_avatar_padding_left"
+        android:paddingRight="8dp"
+        android:text="Benvinguda a Vincles, Marta!"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/main_welcome_text_size"
+        android:maxLines="2"
+        app:autoSizeTextType="uniform"
+        app:autoSizeMinTextSize="6sp"
+        app:autoSizeMaxTextSize="@dimen/main_welcome_text_size"
+        app:autoSizeStepGranularity="2sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/bell_background"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/userAvatar"
+        android:layout_width="@dimen/main_row_height"
+        android:layout_height="@dimen/main_row_height"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/user"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:civ_border_color="@color/colorWhite"
+        app:civ_border_width="2dp" />
+
+
+    <!--================================-->
+    <!--              BELL              -->
+    <!--================================-->
+    <View
+        android:id="@+id/bell_background"
+        android:layout_width="@dimen/main_bells_width"
+        android:layout_height="@dimen/main_row_height"
+        android:background="@drawable/check_alerts_background"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+
+
+    <ImageView
+        android:id="@+id/bell"
+        android:layout_width="@dimen/main_bottom_rows_icon_size"
+        android:layout_height="@dimen/main_bottom_rows_icon_size"
+        android:src="@drawable/ic_notifications"
+        app:layout_constraintHorizontal_bias="0.33"
+        app:layout_constraintTop_toTopOf="@+id/bell_background"
+        app:layout_constraintBottom_toBottomOf="@+id/bell_background"
+        app:layout_constraintRight_toRightOf="@+id/bell_background"
+        app:layout_constraintLeft_toLeftOf="@+id/bell_background"/>
+
+    <TextView
+        android:id="@+id/numberAlerts"
+        android:layout_width="@dimen/main_bells_textview_size"
+        android:layout_height="@dimen/main_bells_textview_size"
+        android:background="@drawable/number_alerts_background"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="4"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/main_bells_text_size"
+        android:layout_marginLeft="@dimen/main_bells_number_margin_left"
+        app:layout_constraintTop_toTopOf="@+id/bell_background"
+        app:layout_constraintBottom_toBottomOf="@+id/bell_background"
+        app:layout_constraintLeft_toLeftOf="@+id/bell"/>
+
+
+    <View
+        android:id="@+id/separation_horizontal_big"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/main_separation_groups"
+        app:layout_constraintTop_toBottomOf="@+id/bell_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+    <!--================================-->
+    <!--            CONTACTS            -->
+    <!--================================-->
+    <include layout="@layout/fragment_home_contacts"/>
+
+    <TextView
+        android:id="@+id/no_contacts_error"
+        android:visibility="gone"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/no_contacts"
+        android:gravity="center"
+        android:background="@drawable/no_contacts_background"
+        android:textColor="@color/colorBlack"
+        android:padding="@dimen/main_screen_padding_sides"
+        android:textSize="@dimen/main_bottom_rows_text_size"
+        app:layout_constraintTop_toBottomOf="@+id/separation_horizontal_big"
+        app:layout_constraintBottom_toTopOf="@+id/separation_contacts_see_contacts"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <View
+        android:id="@+id/separation_contacts_see_contacts"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/main_separation_groups"
+        app:layout_constraintBottom_toTopOf="@+id/see_contacts_parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+    <!--================================-->
+    <!--          SEE CONTACTS          -->
+    <!--================================-->
+    <LinearLayout
+        android:id="@+id/see_contacts_parent"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/main_bottom_row_height"
+        android:layout_marginBottom="@dimen/main_separation_groups"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/album">
+
+        <include layout="@layout/fragment_home_see_contacts_double"/>
+
+    </LinearLayout>
+
+
+
+
+    <!--================================-->
+    <!--              ALBUM             -->
+    <!--================================-->
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/album"
+        android:scaleType="centerCrop"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/main_bottom_row_height"
+        android:src="@drawable/album_dark_small"
+        android:layout_marginBottom="@dimen/main_separation_groups"
+        app:layout_constraintBottom_toTopOf="@+id/calendar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:riv_corner_radius="@dimen/main_screen_corner_radius" />
+
+
+
+    <TextView
+        android:id="@+id/album_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/main_bottom_rows_text_margin_left"
+        android:text="@string/see_all_album"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/main_bottom_rows_text_size"
+        app:layout_constraintBottom_toBottomOf="@+id/album"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toRightOf="@+id/album_icon"
+        app:layout_constraintRight_toLeftOf="@+id/album"
+        app:layout_constraintTop_toTopOf="@+id/album" />
+
+
+    <ImageView
+        android:id="@+id/album_icon"
+        android:layout_width="@dimen/main_calendar_icon_size"
+        android:layout_height="@dimen/main_calendar_icon_size"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/main_bottom_rows_icon_margin"
+        android:layout_marginLeft="@dimen/main_bottom_rows_left_margin"
+        android:layout_marginRight="@dimen/main_bottom_rows_icon_margin"
+        android:layout_marginTop="@dimen/main_bottom_rows_icon_margin"
+        android:src="@drawable/camara"
+        app:layout_constraintBottom_toBottomOf="@+id/album"
+        app:layout_constraintLeft_toLeftOf="@+id/album"
+        app:layout_constraintTop_toTopOf="@+id/album" />
+
+
+    <!--================================-->
+    <!--            CALENDAR            -->
+    <!--================================-->
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/calendar"
+        android:layout_width="match_parent"
+        android:scaleType="centerCrop"
+        android:layout_height="@dimen/main_bottom_row_height"
+        android:src="@drawable/calendar_dark_small"
+        app:riv_corner_radius="@dimen/main_screen_corner_radius"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/calendar_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/main_bottom_rows_text_margin_left"
+        android:text="@string/see_all_meetings"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/main_bottom_rows_text_size"
+        app:layout_constraintBottom_toBottomOf="@+id/calendar"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toRightOf="@+id/calendar_icon"
+        app:layout_constraintRight_toLeftOf="@+id/calendar_number"
+        app:layout_constraintTop_toTopOf="@+id/calendar" />
+
+    <TextView
+        android:id="@+id/calendar_number"
+        android:layout_width="@dimen/main_bottom_rows_icon_size"
+        android:layout_height="@dimen/main_bottom_rows_icon_size"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/main_bottom_rows_icon_margin"
+        android:background="@drawable/number_meetings_background"
+        android:fontFamily="@font/akkurat_bold"
+        android:gravity="center"
+        android:text=""
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/main_bottom_rows_text_size"
+        app:layout_constraintBottom_toBottomOf="@+id/calendar"
+        app:layout_constraintRight_toRightOf="@+id/calendar"
+        app:layout_constraintTop_toTopOf="@+id/calendar"
+        tools:layout_editor_absoluteX="329dp" />
+
+    <ImageView
+        android:id="@+id/calendar_icon"
+        android:layout_width="@dimen/main_calendar_icon_size"
+        android:layout_height="@dimen/main_calendar_icon_size"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/main_bottom_rows_icon_margin"
+        android:layout_marginLeft="@dimen/main_bottom_rows_left_margin"
+        android:layout_marginRight="@dimen/main_bottom_rows_icon_margin"
+        android:layout_marginTop="@dimen/main_bottom_rows_icon_margin"
+        android:src="@drawable/calendar_ic"
+        app:layout_constraintBottom_toBottomOf="@+id/calendar"
+        app:layout_constraintLeft_toLeftOf="@+id/calendar"
+        app:layout_constraintTop_toTopOf="@+id/calendar" />
+
+</android.support.constraint.ConstraintLayout>
+
+

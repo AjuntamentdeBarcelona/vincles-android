@@ -1,0 +1,700 @@
+<resources>
+    <string name="app_name">Vincles BCN</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="title_activity_main_fragment_manager">MainFragmentManagerActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="reminder_alert_title">Recordatori</string>
+    <string name="battery_alert_text">La bateria està al %s</string>
+    <string name="network_alert_text">No tens connectivitat amb la xarxa</string>
+
+    <string name="processing">Processant</string>
+    <string name="file_too_big">L\'arxiu és massa gran</string>
+
+    <string name="error_audio_format">Aquest àudio no es pot reproduir</string>
+    <string name="error_audio_busy">Una altra aplicació està utilitzant el micròfon. No és possible enregistrar el missatge d\'àudio en aquest moment.</string>
+    <string name="error_audio_busy_for_video">Una altra aplicació està utilitzant el micròfon. No és possible gravar un vídeo en aquest moment.</string>
+
+    <!-- LOGIN -->
+    <string name="text_explanatory_login">Introdueix les teves credencials per accedir a Vincles BCN:</string>
+    <string name="email">Usuari o correu electrònic</string>
+    <string name="mail">Correu electrònic</string>
+    <string name="password">Contrasenya</string>
+    <string name="enter">Entrar</string>
+    <string name="register_new_user">Registrar un nou usuari</string>
+    <string name="passwordrecovery">Recuperar contrasenya</string>
+    <string name="recover_pass_accept">Entesos</string>
+    <string name="recover_pass_success">Hem enviat un correu amb instruccions del procés per recuperar la seva contrasenya, si us plau revisa el teu correu electrònic per completar el procés.</string>
+    <string name="register_succed">Hem enviat un correu amb les instruccions del procés per finalitzar el registre, si us plau reviseu el vostre correu per finalitzar el procés.</string>
+    <string name="login_sending_data">Enviant dades</string>
+    <string name="login_loading_user_info">Recuperant informació d\'usuari</string>
+    <string name="saving_file">Guardant arxiu</string>
+    <string name="saving_credentials">Guardar dades d\'accés</string>
+
+    <!-- HOME -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="check_alerts">Consulta els avisos</string>
+    <string name="welcome_male">Benvingut a Vincles, %s!</string>
+    <string name="welcome_female">Benvinguda a Vincles, %s!</string>
+    <string name="see_all_album">Fotos i vídeos</string>
+    <string name="see_all_contacts">Veure tots els contactes</string>
+    <string name="see_all_meetings">Calendari</string>
+    <string name="see_all_alerts">Consulta els avisos</string>
+
+    <string name="view_all_archives">Veure tots els arxius</string>
+    <string name="view_all_my_files">Veure només els meus arxius</string>
+    <string name="view_received_files">Veure només els arxius rebuts</string>
+
+    <string name="camera">Càmera</string>
+
+    <string name="no_contacts">Encara no tens contactes</string>
+    <string name="no_contacts_group">Encara no tens grups</string>
+    <string name="relationship_partner">Soci/a</string>
+    <string name="relationship_child">Fill/a</string>
+    <string name="relationship_grandchild">Nét/a</string>
+    <string name="relationship_other">Altres</string>
+    <string name="relationship_friend">Amic/ga</string>
+    <string name="relationship_volunteer">Voluntari/a</string>
+    <string name="relationship_caregiver">Cuidador/a</string>
+
+    <string name="home">Inici</string>
+    <string name="contacts">Contactes</string>
+    <string name="media">Fotos i vídeos</string>
+    <string name="calendar">Calendari</string>
+    <string name="alerts">Notificacions</string>
+    <string name="configuration">Configuració</string>
+    <string name="about_vincles">Sobre Vincles BCN</string>
+    <string name="logout">Sortir</string>
+
+    <string name="menu_help">Ajuda</string>
+    <string name="menu">@string/empty_string</string>
+    <string name="menu_string">Menú</string>
+
+    <string name="catalan">Català</string>
+    <string name="spanish">Castellà</string>
+    <string name="english">Anglès</string>
+    <string name="registration_language">* Idioma de l\'app Vincles BCN</string>
+    <string name="photography">* Fotografia:</string>
+    <string name="pick_a_photo">Tria una foto:</string>
+    <string name="take_photo">* La teva foto</string>
+    <string name="first_name">* Nom</string>
+    <string name="last_name">* Cognoms</string>
+    <string name="birthdate">* Data de naixement</string>
+    <string name="email_register">* Correu electrònic</string>
+    <string name="password_register">* Contrasenya</string>
+    <string name="passwordrepeat_register">* Repeteix la contrasenya</string>
+    <string name="phone">* Telèfon</string>
+    <string name="gender">* Gènere</string>
+    <string name="female">Dona</string>
+    <string name="male">Home</string>
+    <string name="registration_home">* Vius a Barcelona?</string>
+    <string name="no">No</string>
+    <string name="yes">Sí</string>
+    <string name="register">Registrar-me</string>
+    <string name="chose_picture">Tria una foto</string>
+    <string name="personal_data">Dades personals</string>
+    <string name="pick_date">Seleccionar data</string>
+    <string name="hint_date">* DD/MM/YYYY</string>
+
+    <string name="change_profile_photo">Canviar foto de perfil</string>
+    <string name="gallery">Galeria</string>
+    <string name="all_files">Tots els arxius</string>
+    <string name="my_files">Els meus arxius</string>
+    <string name="received_files">Els arxius rebuts</string>
+    <string name="delete">Eliminar</string>
+    <string name="share">Compartir</string>
+    <string name="before">Anterior</string>
+    <string name="next">Següent</string>
+    <string name="back">Tornar</string>s
+    <string name="save_image_in_gallery">Vol guardar la imatge a la galeria de l\'aplicació?</string>
+    <string name="save_image_in_gallery_error">Hi ha hagut un error al guardar l\'arxiu. Vol tornar a intentar?</string>
+    <string name="error_opening_image">Error a l\'obrir la imatge</string>
+    <string name="deleting_file">Esborrant l\'arxiu</string>
+    <string name="deleting_files">Esborrant els arxius</string>
+    <string name="deleting_files_not_ok_retry">No s\'han pogut esborrar els arxius. Vol tornar a provar?</string>
+    <string name="deleting_files_partially_ok">No s\'han pogut esborrar alguns arxius. Vol tornar a provar?</string>
+
+
+    <string name="gallery_button_share">Compartir</string>
+    <string name="gallery_button_share_selection">Compartir la selecció</string>
+    <string name="gallery_button_foto">Nova foto</string>
+    <string name="gallery_button_video">Nou vídeo</string>
+    <string name="gallery_share_title">Selecciona els arxius</string>
+    <string name="gallery_no_share">Tornar i no compartir</string>
+    <string name="contacts_share_title">Selecciona els contactes</string>
+    <string name="gallery_max_items">Pots compartir 10 elements com a màxim</string>
+    <string name="gallery_max_contacts">Pots compartir amb 5 contactes com a màxim</string>
+    <string name="gallery_filter_share">Compartir</string>
+    <string name="gallery_filter_delete">Eliminar</string>
+    <string name="gallery_select_all">Seleccionar tot</string>
+    <string name="gallery_deselect_all">Deseleccionar tot</string>
+    <string name="gallery_no_content">Encara no tens contingut</string>
+
+    <string name="terms_and_conditions">TERMES I CONDICIONS</string>
+    <string name="accept">Acceptar</string>
+    <string name="cancel">Cancel·lar</string>
+    <string name="error">Error</string>
+    <string name="alert">Alerta</string>
+    <string name="retry">Reintentar</string>
+    <string name="information">Informació</string>
+    <string name="signout_info">Segur que vol tancar la sessió?</string>
+    <string name="remove_item_info">Segur que vol eliminar l\'arxiu?</string>
+    <string name="remove_items_info">Segur que vol eliminar els arxius?</string>
+    <string name="error_removing_content">Hi ha hagut un error en intentar eliminar el contingut</string>
+    <string name="close">Tancar</string>
+    <string name="close_session">Tancar sessió</string>
+    <string name="close_session_token_message">Ha caducat la sessió.</string>
+
+
+    <string name="of">de</string>
+    <string-array name="months">
+        <item>Gener</item>
+        <item>Febrer</item>
+        <item>Març</item>
+        <item>Abril</item>
+        <item>Maig</item>
+        <item>Juny</item>
+        <item>Juliol</item>
+        <item>Agost</item>
+        <item>Setembre</item>
+        <item>Octubre</item>
+        <item>Novembre</item>
+        <item>Desembre</item>
+    </string-array>
+
+    <!-- CONTACTS -->
+    <string name="filter_contacts">Filtrar</string>
+    <string name="add_contacts">Afegir contacte</string>
+    <string name="remove_contacts">Eliminar contacte</string>
+    <string name="add_contacts_cancel">No afegir i tornar a contactes</string>
+    <string name="add_contacts_see_code_text">Vull veure el meu codi de vinculació per a què un altre contacte m\'afegeixi</string>
+    <string name="add_contacts_see_code_button">Veure el meu codi</string>
+    <string name="add_contacts_add_code_text">Tinc el codi de vinculació d\'un altre usuari i el vull afegir</string>
+    <string name="add_contacts_add_code_button">Afegir contacte</string>
+    <string name="add_contacts_add_code_hint">Escriu el codi</string>
+    <string name="add_contacts_add_code_error">El codi no pot estar buit</string>
+    <string name="add_contact_ok_message">S\'ha vinculat correctament el contacte</string>
+    <string-array name="add_contact_relationships">
+        <item>Parella</item>
+        <item>Fill/a</item>
+        <item>Net/a</item>
+        <item>Amic/ga</item>
+        <item>Voluntari/a</item>
+        <item>Cuidador/a</item>
+        <item>German/a</item>
+        <item>Nebot/da</item>
+        <item>Altres</item>
+    </string-array>
+    <string name="contacts_filter_all">Veure tots els contactes</string>
+    <string name="contacts_filter_family_friends">Veure família i amics</string>
+    <string name="contacts_filter_groups">Veure grups Vincles</string>
+    <string name="contacts_filter_dynam">Veure els dinamitzadors</string>
+    <string name="contacts_filter_all_title">Tots els contactes</string>
+    <string name="contacts_filter_family_friends_title">Família i amics</string>
+    <string name="contacts_filter_groups_title">Grups Vincles</string>
+    <string name="contacts_filter_dynam_title">Dinamitzadors</string>
+    <string name="delete_contact_title">Eliminar contacte</string>
+    <string name="delete_contact_explanation">Estàs a punt d\'eliminar a %1$s de la teva xarxa de contactes. N\'estàs segur?</string>
+    <string name="delete_contact_success">%1$s s\'ha eliminat correctament</string>
+    <string name="delete_contact_error">No s\'ha pogut eliminar</string>
+    <string name="delete_contact_no">No. Tornar i no eliminar</string>
+    <string name="delete_contact_yes">Sí. Eliminar contacte</string>
+    <string name="delete_contact_cancel">No vull eliminar cap contacte</string>
+    <string name="media_shared_ok">El contingut s\'ha compartit correctament</string>
+    <string name="media_shared_ko">No s\'ha pogut compartir el contingut</string>
+
+    <!-- CHATS -->
+    <string name="chat_button_text">Text</string>
+    <string name="chat_button_camera">Foto</string>
+    <string name="chat_button_video">Vídeo</string>
+    <string name="chat_button_audio">Àudio</string>
+    <string name="chat_button_file">Triar de l\'àlbum</string>
+    <string name="chat_button_exit_text">Sortir de text</string>
+    <string name="chat_button_send">Enviar</string>
+    <string name="chat_message_hint">Escriu aquí el text</string>
+    <string name="chat_button_call">Trucar</string>
+    <string name="chat_button_dinamizer">Dinamitzador</string>
+    <string name="chat_alert_today">Avui</string>
+    <string name="chat_alert_not_read">Missatges no llegits</string>
+    <string name="chat_send_message_error">Hi ha hagut un error a l\'enviar el missatge. Vol tornar a intentar?</string>
+    <string name="chat_username_you">Tu</string>
+    <string name="chat_audio_recording">Gravant</string>
+    <string name="chat_alert_missed_call">%1$s t\'ha trucat el %2$s a les %3$s</string>
+    <string name="chat_send_audio">Enviar àudio?</string>
+    <string name="chat_repeat_audio">Repetir</string>
+    <string name="chat_stop_audio">Parar</string>
+
+    <!-- GROUP DETAIL -->
+    <string name="group_detail_send_invite">Enviar invitació</string>
+    <string name="group_detail_resend_invite">Reconvidar usuari</string>
+    <string name="group_detail_send_invite_ok_title">Sol·licitud de contacte</string>
+    <string name="group_detail_send_invite_ok_message">La teva sol·licitud de contacte s\'ha enviat correctament</string>
+    <string name="group_detail_invite_notification">%1$s t’ha convidat a formar part dels seus contactes. El seu codi de vinculació és %2$s</string>
+
+    <!-- CONFIGURATION -->
+    <string name="config_firstname">Nom</string>
+    <string name="config_lastname">Cognoms</string>
+    <string name="config_username">Nom d\'usuari</string>
+    <string name="config_email">Correu electrònic</string>
+    <string name="config_phone">Telèfon</string>
+    <string name="config_bcn">Vius a Barcelona?</string>
+
+    <string name="configuration_photo">Fotografia</string>
+    <string name="configuration_my_photo">La meva foto</string>
+    <string name="configuration_personal_data">Dades personals</string>
+    <string name="configuration_language">Idioma de l\'app Vincles BCN</string>
+    <string name="configuration_text_size">Mida de la lletra</string>
+    <string name="configuration_copy_gallery">Copiar imatges i vídeos a la galeria del dispositiu</string>
+    <string name="configuration_text_small">Petita</string>
+    <string name="configuration_text_medium">Mitjana</string>
+    <string name="configuration_text_big">Gran</string>
+    <string name="configuration_lives_barcelona">Resident a Barcelona</string>
+    <string name="configuration_save">Desar</string>
+    <string name="configuration_username">* Nom d\'usuari</string>
+    <string name="configuration_autodownload">Descàrrega automàtica d\'arxius</string>
+    <string name="configuration_sync_calendar">Sincronitzar cites amb el calendari mòbil</string>
+    <string name="configuration_new_password">Nova contrasenya</string>
+    <string name="configuration_new_password_verify">Repeteix la contrasenya</string>
+    <string name="configuration_old_password">Contrasenya actual</string>
+    <string name="configuration_error_password_format_wrong">Format de contrasenya incorrecte. La contrasenya ha de tenir, entre 8 i 16 caràcters, i un format alfanumèric i pot incloure els següents caràcters: _!&amp;%$-@</string>
+    <string name="configuration_error_different_passwords">Les contrasenyes no coincideixen</string>
+    <string name="configuration_error_missing_old_password">Si us plau, escriu la teva contrasenya actual al camp pertinent</string>
+
+    <!-- CHAT -->
+    <string name="about_text">Vincles és un servei de suport i acompanyament en la conservació, enfortiment i creació de vincles relacionals de les persones grans usuàries del servei.\n\nD\'una banda, el servei Vincles consisteix en donar suport en la dinamització de la xarxa personal de la persona gran; tot incorporant familiars, amics, veïns i persones del seu entorn de confiança a la seva xarxa. D\'altra banda, el servei Vincles pretén incorporar la persona gran en grups creats amb altres usuaris del servei, tot fomentant la interacció i promovent la participació en activitats tant online com presencials.\n\nAjuntament de Barcelona\n\nEn cas de consultes, queixes, suggeriments o incidències, si us plau, utilitzeu el formulari disponible a la següent web: <a href="http://www.bcn.cat/cgi-bin/queixesIRIS?id=391">http://www.bcn.cat/cgi-bin/queixesIRIS?id=391</a>.\n</string>
+    <string name="about_app_version">Versió de l\'aplicació: v%1$s</string>
+
+    <!-- CALENDAR -->
+    <string name="calendar_see_today">Veure avui</string>
+    <string name="calendar_see_tomorrow">Veure demà</string>
+    <string name="calendar_see_month">Veure mes sencer</string>
+    <string name="calendar_create_new_date">Crear nova cita</string>
+    <string name="calendar_cancel_date">Cancel·lar</string>
+    <string name="calendar_not_going_date">No assistiré</string>
+    <string name="calendar_edit_date_save">Guardar la cita</string>
+    <string name="calendar_edit_date">Editar</string>
+    <string name="calendar_reject_date">Rebutjar</string>
+    <string name="calendar_accept_date">Acceptar</string>
+    <string name="calendar_today_date">Avui, %1$s</string>
+    <string name="calendar_tomorrow_date">Demà, %1$s</string>
+    <string name="calendar_date_created_by">Cita creada per: %1$s</string>
+    <string name="calendar_date_guests">Participants: %1$s</string>
+    <string name="calendar_date_start_time">Inici de la cita</string>
+    <string name="calendar_date_length">Durada de la cita</string>
+    <string name="calendar_date_length_alert">Durada:</string>
+    <string name="calendar_new_date_description">Escriu aquí el títol de la cita</string>
+    <string name="calendar_create_date">Crear la cita</string>
+    <string name="calendar_stop_inviting">Deixar de convidar</string>
+    <string name="calendar_invite_others">Convidar a altres contactes a la cita</string>
+    <string name="calendar_date_description">Escriu aquí el títol de la cita</string>
+    <string name="calendar_hour">hora</string>
+    <string name="calendar_minutes">minuts</string>
+    <string name="calendar_detail_title">Detalls de la cita</string>
+    <string name="calendar_detail_date_title">Data i hora:</string>
+    <string name="calendar_detail_host_title">Creador:</string>
+    <string name="calendar_detail_guests_title">Convidats</string>
+    <string name="calendar_meeting_duration_30">30 minuts</string>
+    <string name="calendar_meeting_duration_60">1 hora</string>
+    <string name="calendar_meeting_duration_90">1 hora 30 minuts</string>
+    <string name="calendar_meeting_duration_120">2 hores</string>
+    <string name="calendar_hour_is_past">L\'hora ja ha passat</string>
+    <string name="calendar_month_monday">DIL</string>
+    <string name="calendar_month_tuesday">DIM</string>
+    <string name="calendar_month_wednesday">DX</string>
+    <string name="calendar_month_thursday">DIJ</string>
+    <string name="calendar_month_friday">DIV</string>
+    <string name="calendar_month_saturday">DIS</string>
+    <string name="calendar_month_sunday">DIU</string>
+    <string name="calendar_invite_contacts_title">Selecciona els contactes</string>
+    <string name="calendar_invite_contacts_positive">Tornar i no convidar</string>
+    <string name="calendar_invite_contacts_negative">Convidar-los a la cita</string>
+    <string name="calendar_no_dates_this_day">No tens cites aquest dia</string>
+    <string name="calendar_rejected_state">Rebutjat</string>
+    <string name="calendar_accepted_state">Acceptat</string>
+    <string name="calendar_invited_state">Convidat</string>
+    <string name="calendar_cancel_confirmation">Segur que vol cancel·lar la cita?</string>
+    <string name="calendar_reject_confirmation">Segur que vol rebutjar la cita?</string>
+    <string name="calendar_meeting_title_missing">El camp "Títol" ha de ser obligatori</string>
+
+    <!-- CALLS -->
+    <string name="calls_cancel_call_button">Cancel·lar la trucada</string>
+    <string name="calls_answer_call_button">Despenjar</string>
+    <string name="calls_hang_call_button">Penjar</string>
+    <string name="calls_send_message_call_button">Enviar missatge</string>
+    <string name="calls_retry_call_button">Reintentar</string>
+    <string name="calls_calling_title">Trucant a %1$s</string>
+    <string name="calls_being_called_title">Trucada de %1$s</string>
+    <string name="calls_no_answer_title">%1$s no està disponible</string>
+    <string name="calls_sure_exit_alert">Segur que vols sortir de la trucada?</string>
+    <string name="calls_sure_exit_alert_positive">Penjar i sortir</string>
+    <string name="calls_sure_exit_alert_negative">No sortir</string>
+    <string name="calls_error_before_call">No es pot establir la trucada, si us plau, torni a intentar-ho</string>
+    <string name="calls_error_during_call">S\'ha tallat la trucada, si us plau, torni-ho a provar més tard</string>
+
+    <!-- NOTIFICATIONS -->
+    <string name="notifications_title">Avisos</string>
+    <string name="notifications_empty_text">No hi ha avisos</string>
+    <string name="notifications_new_contact">%1$s és el teu nou contacte</string>
+    <string name="notifications_no_longer_contact">%1$s ja no és el teu contacte</string>
+    <string name="notifications_see_chat">Anar al xat</string>
+    <string name="notifications_see_contacts">Veure contactes</string>
+    <string name="notifications_messages_user">%1$d missatges nous de %2$s</string>
+    <string name="notifications_message_user">%1$d missatge nou de %2$s</string>
+    <string name="notifications_message_photo">Nova foto</string>
+    <string name="notifications_message_video">Nou vídeo</string>
+    <string name="notifications_message_audio">Nou àudio</string>
+    <string name="notifications_message_message">Nou missatge</string>
+    <string name="notifications_new_group">T\'han convidat al grup %1$s</string>
+    <string name="notifications_deleted_group">T\'han eliminat del grup %1$s</string>
+    <string name="notifications_see_groups">Veure grups</string>
+    <string name="notifications_new_messages_group">Nous missatges al xat de grup %2$s</string>
+    <string name="notifications_new_message_group">%1$d nou missatge al xat de grup %2$s</string>
+    <string name="notifications_new_messages_dinam">Nous missatges de %1$s</string>
+    <string name="notifications_new_date">%1$s t\'ha convidat a una cita el dia %2$s a les %3$s</string>
+    <string name="notifications_date_accepted">%1$s ha acceptat la invitació del dia %2$s a les %3$s</string>
+    <string name="notifications_date_rejected">%1$s ha rebutjat la invitació del dia %2$s a les %3$s</string>
+    <string name="notifications_date_updated">%1$s ha actualitzat una cita</string>
+    <string name="notifications_date_updated_system">%1$s ha actualitzat la cita del dia %2$s a les %3$s</string>
+    <string name="notifications_date_revoked">%1$s ha cancel·lat la invitació del dia %2$s a les %3$s</string>
+    <string name="notifications_see_date">Veure cita</string>
+    <string name="notifications_see_calendar">Anar al calendari</string>
+    <string name="notifications_missed_call">Trucada perduda de %1$s</string>
+    <string name="notifications_channel_message_name">Missatges</string>
+    <string name="notifications_channel_message_description">Notificacions de missatges individuals i de grup</string>
+    <string name="notifications_channel_other_name">Altres notificacions</string>
+    <string name="notifications_channel_other_description">Notificacions que no són de missatges</string>
+    <string name="notifications_channel_notifications_name">Processant avisos</string>
+    <string name="notifications_channel_notifications_description">Notificacions per avisar de quan s\'estan processant nous avisos</string>
+    <string name="notifications_processing_notifications">Processant avisos</string>
+    <string name="notifications_new_photo">Nova foto</string>
+    <string name="notifications_new_video">Nou vídeo</string>
+    <string name="notifications_new_audio">Nou àudio</string>
+    <string name="notifications_new_message">Nou missatge</string>
+
+    <!--acces ajuda-->
+    <string name="access_help_menu_navegation_title">Menú de navegació</string>
+    <string name="access_help_menu_navegation_text">Al fer clic en aquesta icona situada a l\'esquerra de la barra superior podrem navegar a qualsevol secció.</string>
+    <string name="access_help_back_main_page_title">Tornar a la pàgina principal</string>
+    <string name="access_help_back_main_page_text">Clicar el logotip Vincles situat al centre de la barra superior ens portarà a la pantalla inicial.</string>
+    <string name="access_help_back_previous_title">Tornar a la pantalla anterior</string>
+    <string name="access_help_back_previous_text">Prémer el botó Tornar ens portara a la pantalla anterior visitada.</string>
+    <string name="access_help_do_action_title">Realitzar una acció</string>
+    <string name="access_help_do_action_text">Per realitzar qualsevol acció en una pantalla, revisar els botons que apareixen en el marge inferior o bé en el marge superior dret.</string>
+    <string name="access_help_responsive_title">Aplicació adaptativa</string>
+    <string name="access_help_responsive_text">Aquesta aplicació ha estat disenyada per ser visualitzada en format vertical i horitzontal. En girar el dispositiu, el contingut s\'adaptarà.</string>
+    <string name="access_help_profile_config_title">Configuració del perfil</string>
+    <string name="access_help_profile_config_text">Per canviar la seva configuració, des del menú de navegació, accedeix a la secció "Configuració".</string>
+    <string name="access_help_home_access_title">Accessos directes des de la Home</string>
+    <string name="access_help_home_access_text">Des de la pàgina Home, pot accedir a la pantalla de contractes, cites i l\'album de fotos i vídeos.</string>
+
+    <!-- CONTEXT HELP -->
+    <string name="context_help_home_notifications">Polsant aquí podràs veure tots els avisos pendents de revisar. Cites pendents, missatges i/o trucades perdudes.</string>
+    <string name="context_help_home_calendar">En polsar aquí, podràs accedir al teu calendari i crear noves cites.</string>
+    <string name="context_help_home_see_contacts">Es tindrà accés a tots els contactes des d\'aquí.</string>
+    <string name="context_help_home_contacts">Es mostren els contacts que s\'utilitzen amb freqüència per facilitar-hi l\'accés.</string>
+    <string name="context_help_home_album">En polsar aquí, podràs accedir a tot el contingut multimèdia creat per tu o compartit pels teus contactes.</string>
+
+    <string name="context_help_calendar_today">Per poder veure les cites d\'avui.</string>
+    <string name="context_help_calendar_tomorrow">Per poder veure les cites de demà.</string>
+    <string name="context_help_calendar_month">Es pot veure el mes sencer i navegar pel calendari, consultar altres cites en altres dies i crear-ne de noves.</string>
+    <string name="context_help_calendar_create">Des d\'aquí, es poden afegir esdeveniments al calendari i convidar a qualsevol dels nostres contactes.</string>
+
+    <string name="context_help_contacts_filter">Es poden filtrar els contactes per grups, dinamitzadors o familiars i amics.</string>
+    <string name="context_help_contacts_add">Des d\'aquí, es pot accedir a les opcions per afegir un nou contacte.</string>
+    <string name="context_help_contacts_delete">En polsar aquí, es podrà seleccionar els contactes que es volen eliminar.</string>
+    <string name="context_help_contacts_delete_button">En polsar aquí, tornaràs sense eliminar cap contacte.</string>
+
+    <string name="context_help_gallery_filter">Es pot filtrar el contingut en fitxers propis o rebuts.</string>
+    <string name="context_help_gallery_share">Ens permet seleccionar el contingut que es vol esborrar o compartir, i amb quin dels nostres contactes es vol compartir.</string>
+    <string name="context_help_gallery_new_photo">Es poden fer fotos que s\'afegiran a l\'instant a la galeria.</string>
+    <string name="context_help_gallery_new_video">Es pot crear videos que s\'afegiran a l\'instant a la galeria.</string>
+    <string name="context_help_gallery_back">Polsant aquí tornaràs sense compartir o esborrar cap element.</string>
+    <string name="context_help_gallery_delete">Ens permet eliminar els elements seleccionats.</string>
+    <string name="context_help_gallery_share_contacts">En polsar aquí, es podrà seleccionar els contactes amb els quals compartir les fotos i videos.</string>
+
+    <string name="context_help_chat_text">Per a desplegar el teclat i enviar missatges de text al moment.</string>
+    <string name="context_help_chat_photo">Es poden fer fotos per enviar-les al moment.</string>
+    <string name="context_help_chat_video">Es poden crear un video per a enviar-lo al moment.</string>
+    <string name="context_help_chat_audio">Es poden enviar missatges d\'audio als nostres contactes.</string>
+    <string name="context_help_chat_gallery">Es poden compartir arxius de la galeria del dispositiu.</string>
+    <string name="context_help_chat_call">S\'iniciarà videotrucada amb el contacte del xat.</string>
+    <string name="context_help_chat_profile">En polsar aquí podrà accedir al xat privat amb el dinamitzador.</string>
+    <string name="context_help_chat_record">Aquí veuràs els controls per grabar el missatge d\'audio.</string>
+    <string name="context_help_chat_send_text">Aquí veuràs els controls per escriure un missatge de text.</string>
+
+    <!-- VALIDATION VIEW -->
+    <string name="validate_title">Clau de validació</string>
+    <string name="validate_code">@string/validate_title</string>
+    <string name="validate_button">Validar</string>
+    <string name="validate_resend_email">Reenviar correu</string>
+    <string name="validate_error">El codi ha de ser 4 xifres o bé 1 lletra i 4 xifres</string>
+    <string name="validate_resend_email_ok">Correu reenviat</string>
+    <string name="validate_resend_email_error">No s\'ha pogut reenviar el correu</string>
+    <string name="validate_explanation">Si us plau, introdueix en el següent camp el codi que has rebut per email per a validar el teu usuari.</string>
+
+    <!-- SERVER ERROR CODES -->
+    <string name="error_default">Hi ha hagut un error</string>
+    <string name="error_connection">Error de connexió</string>
+    <string name="error_server">No és possible connectar amb el servidor, si us plau, intenta-ho més tard</string>
+    <string name="error_login">Usuari o contrasenya incorrectes</string>
+    <string name="error_1001">L’usuari no pot accedir a aquest contingut</string>
+    <string name="error_1002">L’usuari no pot accedir a les dades d’aquest altre usuari</string>
+    <string name="error_1003">No s’ha pogut generar el passsword.</string>
+    <string name="error_1004">El format del password és incorrecte.</string>
+    <string name="error_1005">El password s’ha fet servir amb anterioritat i no es pot tornar a fer servir.</string>
+    <string name="error_1006">Password incorrecte</string>
+    <string name="error_1101">Usuari no trobat</string>
+    <string name="error_1102">L’usuari no és un usuari vincles</string>
+    <string name="error_1103">L’usuari no pot ser un usuari vincles</string>
+    <string name="error_1106">Un usuari no pot ser vincles i vinculat a la vegada</string>
+    <string name="error_1107">L’usuari ha de ser vinculat</string>
+    <string name="error_1108">L’usuari no pot ser un usuari vinculat</string>
+    <string name="error_1109">L’usuari no és manager</string>
+    <string name="error_1110">Aquest email ja està associat a un usuari</string>
+    <string name="error_1111">El dni/nie es troba en ús</string>
+    <string name="error_1112">El nom d’usuari es troba en ús</string>
+    <string name="error_1113">El telèfon és obligatori</string>
+    <string name="error_1114">Els usuaris han de ser majors de 14 anys</string>
+    <string name="error_1301">El codi de registre és invàlid</string>
+    <string name="error_1302">El codi de registre ha caducat</string>
+    <string name="error_1310">Cercle no trobat</string>
+    <string name="error_1320">L’usuari no és part del cercle</string>
+    <string name="error_1321">L’usuari ja està en aquest cercle</string>
+    <string name="error_1322">Un usuari no es pot afegir al seu propi cercle</string>
+
+    <string name="error_1401">Contingut no trobat</string>
+    <string name="error_1402">Només el propietari d’un contingut el pot eliminar</string>
+    <string name="error_1501">El contingut no es troba a la biblioteca</string>
+    <string name="error_1601">L’usuari no pot enviar aquest missatge</string>
+    <string name="error_1602">Els missatges només es poden enviar entre usuaris vincles i usuaris vinculats del mateix cercle</string>
+    <string name="error_1603">Els missatges han de tenir text o tenir un o més adjunts</string>
+    <string name="error_1604">Missatge no trobat</string>
+    <string name="error_1605">L’usuari no pot accedir a aquest missatge</string>
+    <string name="error_1606">Només el receptor del missatge el pot marcar com a llegit</string>
+    <string name="error_1607">Només el receptor del missatge el pot esborrar</string>
+    <string name="error_1701">Només un usuari logat pot afegir una instal·lació</string>
+    <string name="error_1702">Ja tens una instal·lació</string>
+    <string name="error_1703">No tens cap instal·lació</string>
+    <string name="error_1704">No tens cap instal·lació</string>
+    <string name="error_1801">La notificació no existeix</string>
+    <string name="error_1802">L’usuari no pot accedir a aquesta notificació</string>
+    <string name="error_1901">Calendari no trobat</string>
+    <string name="error_1902">Esdeveniment no trobat</string>
+    <string name="error_1903">L’esdeveniment no pertany al calendari</string>
+    <string name="error_1904">L’usuari no pot accedir aquest calendari</string>
+    <string name="error_1905">Només els esdeveniments pendents poden ser recordats</string>
+    <string name="error_1906">Només el propietari d’un calendari pot acceptar o rebutjar un esdeveniment</string>
+    <string name="error_1907">L’usuari no pot accedir a aquest esdeveniment</string>
+    <string name="error_1908">L’usuari no pot modificar a aquest esdeveniment</string>
+    <string name="error_1909">L’usuari no pot eliminar a aquest esdeveniment</string>
+    <string name="error_1910">L’usuari no pot afegir esdeveniments a aquest calendari</string>
+    <string name="error_1911">L’usuari que ha creat un esdeveniment és l’únic que el pot recordar</string>
+    <string name="error_2001">No s’ha trobat el grup</string>
+    <string name="error_2002">El usuari no és dinamitzador</string>
+    <string name="error_2003">L’usuari no pot enviar la invitació</string>
+    <string name="error_2004">Invitació no trobada</string>
+    <string name="error_2005">La invitació no és per aquest grup</string>
+    <string name="error_2006">La invitació no és per aquest usuari</string>
+    <string name="error_2007">L’usuari ja forma part del grup</string>
+    <string name="error_2008">L’usuari no pot accedir a la informació d’aquest grup</string>
+    <string name="error_2009">L’usuari no està autoritzat a afegir usuaris en aquest grup</string>
+    <string name="error_2101">No s’ha trobat el xat</string>
+    <string name="error_2102">L’usuari no pot accedir a aquest xat</string>
+    <string name="error_2103">Missatge de xat no trobat</string>
+    <string name="error_2104">El missatge no forma part d’aquest xat</string>
+    <string name="error_2105">El missatge de xat no té cap contingut</string>
+    <string name="error_2106">Els missatges han de tenir text o un adjunt</string>
+    <string name="error_2201">L’usuari no pot realitzar aquesta trucada</string>
+    <string name="error_2601">Mail no enviat</string>
+    <string name="error_2602">Format de mail invàlid</string>
+    <string name="error_2701">Codi de registre d’usuari incorrecte</string>
+    <string name="error_2801">Només es poden migrar els usuaris vincles</string>
+    <string name="error_2802">L’usuari ja està migrat</string>
+    <string name="error_2803">Codi de migració d’usuari incorrecte</string>
+    <string name="error_2804">Memòria plena. Si us plau, esborri contingut del seu dispositiu.</string>
+    <string name="error_code_generator">No s\'ha pogut generar el codi. Torni-ho a intentar més tard.</string>
+    <string name="error_code_generator_send">El codi de vinculació introduït no és correcte.</string>
+    <string name="error_afegir_contacte_no_network">No s\'ha pogut afegir el contacte. Torni-ho a intentar més tard.</string>
+
+    <!-- ERRORS VALIDATION USER REGISTER -->
+    <string name="not_valid_date">El camp és obligatori</string>
+    <string name="not_valid_email">E-mail no vàlid</string>
+    <string name="not_valid_name">El camp és obligatori</string>
+    <string name="not_valid_last_name">El camp és obligatori</string>
+    <string name="last_name_can_not_contains_number">El cognom no pot contenir números</string>
+    <string name="password_not_secure">El camp és obligatori</string>
+    <string name="error_passwords_repeat">Les contrasenyes no coincideixen, o tenen menys de 8 caràcters o més de 16</string>
+    <string name="password_and_repeat_password_not_matches">La clau de pas no coincideix</string>
+    <string name="not_valid_phone">El número de telèfon no és vàlid</string>
+    <string name="required_photo">Foto obligatòria</string>
+
+    <string name="termsandconditions">
+    <![CDATA[
+    <html>
+    <head>
+    <style>
+        ul
+        {
+            padding: 0;
+            list-style-type: none;
+        }
+        ol {
+            counter-reset: item;
+        }
+
+        ol > li {
+            counter-increment: item;
+        }
+
+        ol ol > li {
+            display: block;
+        }
+
+        ol ol > li:before {
+            content: counters(item, ".") ". ";
+            margin-left: -20px;
+        }
+    </style>
+    </head>
+    <body>
+    <h2>Condicions Generals d\'ús dels participants de la xarxa personal de les persones usuàries del servei Vincles BCN</h2>
+    <small>Versió 15, data 28.11.2016</small>
+    <p>VINCLES BCN és un nou servei de l\'Ajuntament de Barcelona adreçat a persones de 65 anys o més. VINCLES BCN vol reforçar les relacions socials de les persones grans que se senten soles i millorar el seu benestar, utilitzant la tecnologia com a eina. Podeu trobar més informació a <a href="http://www.barcelona.cat/vinclesbcn">www.barcelona.cat/vinclesbcn</a>.</p>
+    <p>Aquestes Condicions Generals d\'ús (d\'ara endavant, les “Condicions Generals”) regeixen l\'accés i l\'ús del servei que s\'ofereix amb l\'aplicació mòbil VINCLES BCN (d\'ara endavant, “VINCLES BCN”), titularitat de l\'Ajuntament de Barcelona.</p>
+    <p>L\'ús de VINCLES BCN atribueix a qui en faci ús la condició de participant, segons correspongui, i implica l\'acceptació de tots els termes inclosos en aquestes Condicions Generals. En cas de no estar d\'acord amb aquestes Condicions Generals, el participant ha de deixar d\'utilitzar VINCLES BCN immediatament.</p>
+    <p>En acceptar aquestes Condicions Generals, el participant manifesta:</p>
+    <ul>
+    <li>a. Que ha llegit, entén i compren el que s\'exposa aquí;</li>
+    <li>b. que té mes de 14 anys; i</li>
+    <li>c. que assumeix totes les obligacions que es disposen aquí.</li>
+    </ul>
+
+    <h3><b>1. <u>Definicions:</u></b></h3>
+    <ul>
+        <li><b>1.1 VINCLES BCN:</b> fa referència al servei de suport social que l\'Ajuntament de Barcelona ofereix a les persones grans per a la conservació, l\'enfortiment i la creació de vincles relacionals. Actualment, aquest servei és un pilot en fase de proves.</li>
+        <li><b>1.2 Ajuntament:</b> l\'Ajuntament de Barcelona, titular de VINCLES BCN.</li>
+        <li><b>1.3 Participant:</b> persona física que utilitza VINCLES BCN i que té relació directa amb la persona usuària del servei Vincles BCN.</li>
+    </ul>
+
+    <h3><b>2. <u>Contacte:</u></b></h3>
+    <ul>
+        <li><b>2.1</b> Si vol contactar amb el <b>servei d\'atenció de VINCLES BCN</b>, pot:</li>
+        <li>
+            <ul>
+            <li>a. Trucar al número de telèfon d\'informació i tramitació 010</li>
+            <li>b. enviar un missatge a través del servei d\'atenció en línia del web <a href="http://www.barcelona.cat/">www.barcelona.cat</a>; o</li>
+            <li>c. consultar informació general sobre el projecte VINCLES BCN a la pàgina web <a href="http://www.barcelona.cat/vinclesbcn">www.barcelona.cat/vinclesbcn</a>.</li>
+            </ul>
+        </li>
+    </ul>
+
+    <h3><b>3. <u>Modificacions:</u></b></h3>
+    <ul>
+        <li><b>3.1</b> Tenint en compte l\'esforç per mantenir en constant evolució el projecte VINCLES BCN, l\'Ajuntament de Barcelona es reserva la facultat de modificar-lo o actualitzar-lo en qualsevol moment, així com de modificar o actualitzar aquestes Condicions Generals. Quan la modificació o actualització impliqui una modificació substancial de les condicions del servei, se n\'informarà al participant, com a mínim enviant un missatge per mitjans electrònics.</li>
+        <li><b>3.2</b> L\'última versió d\'aquestes Condicions Generals es pot consultar a la pàgina web següent: <a href="http://ajuntament.barcelona.cat/vinclesbcn/">http://ajuntament.barcelona.cat/vinclesbcn/</a>.</li>
+    </ul>
+
+    <h3><b>4. <u>Accés a VINCLES BCN:</u></b></h3>
+    <ul>
+        <li><b>4.1</b> Per poder utilitzar VINCLES BCN, és necessari haver rebut una invitació de la persona usuària, disposar de connexió a Internet, descarregar l\'aplicació mòbil titularitat de l\'Ajuntament de Barcelona i instal·lar-la en un dispositiu mòbil que reuneixi els requisits tècnics mínimament necessaris per fer-ho. Per accedir a VINCLES BCN, el participant s\'hi ha d\'haver registrat, proporcionant, com a mínim, les dades assenyalades com a obligatòries que se li sol·licitin.</li>
+        <li><b>4.2</b> El participant registrat serà responsable en tot moment de la custòdia del seu password, assumint en conseqüència qualsevol dany i perjudici que es pogués derivar del seu ús indegut, així com de la cessió, revelació o pèrdua del mateix. A aquests efectes, l’accés a àrees restringides i/o l’ús dels serveis i continguts realitzats sota el password d’un participant registrat es reputaran realitzats per aquest participant registrat, qui respondrà en tot cas d’aquest accés i ús.</li>
+        <li><b>4.3</b> L\'aplicació mòbil esmentada només està disponible per als dispositius que tinguin el sistema operatiu Android o iOS. Al web del servei VINCLES BCN es podrà consultar més detall de les versions dels dispositius compatibles amb l\'aplicació mòbil.</li>
+        <li><b>4.4</b> L\'Ajuntament de Barcelona es reserva el dret a restringir o cancel·lar, en qualsevol moment i sense avís previ, l\'accés de qualsevol participant a VINCLES BCN. De la mateixa manera, l\'Ajuntament podrà cancel·lar o donar per finalitzat en qualsevol moment el projecte VINCLES BCN. En aquests supòsits, l\'Ajuntament no estarà obligat a indemnitzar ni a compensar de cap manera el participant.</li>
+        <li><b>4.5</b> Es recorda al participant que l\'ús d\'Internet des d\'un dispositiu electrònic pot suposar-li un cost addicional.</li>
+        <li><b>4.6</b> Els requisits tècnics mínims es poden consultar a la pàgina web següent: <a href="http://ajuntament.barcelona.cat/vinclesbcn/ca/">http://ajuntament.barcelona.cat/vinclesbcn/ca/</a>.</li>
+    </ul>
+
+    <h3><b>5. <u>Analítica d\'ús:</u></b></h3>
+    <p>Amb la finalitat de fer seguiment de l\'ús del servei VINCLES BCN, els participants saben i accepten que l\'Ajuntament podrà dur a terme anàlisis estadístiques de l\'ús de l\'activitat amb relació a les comunicacions que s\'estableixin a través de VINCLES BCN.</p>
+
+    <h3><b>6. <u>Informació facilitada pel participant:</u></b></h3>
+    <p>Les dades i la informació personal indicades pel participant han de ser exactes, actuals i veraces. El participant serà responsable a cada moment de les dades i la informació que proporcioni a través de VINCLES BCN.</p>
+
+    <h3><b>7. <u>Normes d\'ús de VINCLES BCN:</u></b></h3>
+    <ul>
+        <li><b>7.1</b> El participant s\'obliga a utilitzar VINCLES BCN conforme al que s\'estableix a la Llei, la moral, l\'ordre públic i en aquestes Condicions Generals.</li>
+        <li><b>7.2</b> A tall enunciatiu, però en cap cas limitatiu o excloent, el participant es compromet a:</li>
+        <li>
+            <p>
+            <ul>
+            <li>a. No introduir o difondre contingut o propaganda de caràcter racista, xenòfob, pornogràfic, relatius a l\'apologia del terrorisme o que atemptin contra els drets humans;</li>
+            <li>b. no introduir o difondre virus o software nocius susceptibles de provocar danys als sistemes informàtics de l\'Ajuntament, a d\'altres participants o a qualsevol altre tercer;</li>
+            <li>c. No difondre, transmetre o posar a disposició de tercers:
+                <p>
+                <ul>
+                <li><small>* Cap tipus d\'informació, element o contingut que atempti contra els drets fonamentals i les llibertats públiques reconegudes constitucionalment i en els tractats internacionals;</small></li>
+                <li><small>* informació, elements o continguts que constitueixin publicitat il·lícita o deslleial;</small></li>
+                <li><small>* publicitat no sol·licitada o no autoritzada, material publicitari, “correu brossa”, “cartes en cadena” o “estructures piramidals”;</small></li>
+                <li><small>* informació o continguts falsos, ambigus o inexactes, que indueixin a error als receptors de la informació;</small></li>
+                <li><small>* informació, elements o continguts que suposin una violació dels drets de propietat intel·lectual o industrial;</small></li>
+                <li><small>* informació, elements o continguts que suposin una violació del secret de les comunicacions o de la legislació sobre la protecció de dades personals.</small></li>
+                </ul>
+                </p>
+            </li>
+            <li>d. no suplantar altres participants.</li>
+            </ul>
+            </p>
+        </li>
+    </ul>
+
+    <h3><b>8. <u>Propietat intel·lectual i industrial:</u></b></h3>
+    <ul>
+        <li><b>8.1</b> VINCLES BCN i tots els elements que el componen (entesos aquests, a tall merament enunciatiu, com els textos, fotografies, gràfics, imatges, icones, tecnologia, software, enllaços i d\'altres continguts audiovisuals o sonors, així com el seu disseny gràfic i els codis font) són propietat intel·lectual de l\'Ajuntament de Barcelona o de tercers llicenciants d\'aquest.</li>
+        <li><b>8.2</b> L\'Ajuntament de Barcelona concedeix al participant una llicència no exclusiva d\'ús sobre VINCLES BCN. El participant podrà utilitzar l\'aplicació tant dins del territori espanyol com fora d\'aquest.</li>
+        <li><b>8.3</b> Amb relació als continguts introduïts o publicats pel participant a VINCLES BCN, conserva tots els drets sobre aquests i assumeix tota la responsabilitat en cas que els continguts vulnerin els drets de tercers. En aquest sentit, el participant es fa responsable dels continguts que carregui o introdueixi a VINCLES BCN.</li>
+        <li><b>8.4</b> La marca VINCLES BCN® és titularitat de l\'Ajuntament de Barcelona, sense que es pugui entendre que s\'ha cedit cap dret sobre la marca al participant.</li>
+    </ul>
+
+    <h3><b>9. <u>Responsabilitat:</u></b></h3>
+    <ul>
+        <li><b>9.1</b> VINCLES BCN no és un mitjà oficial de comunicació amb l\'Ajuntament.</li>
+        <li><b>9.2</b> El participant s\'obliga a mantenir completament indemne l\'Ajuntament en el cas de qualsevol possible reclamació, multa, pena o sanció que pugui estar obligat a suportar com a conseqüència del seu incompliment del que s\'estableix en aquestes Condicions Generals. L\'Ajuntament també es reserva el dret a sol·licitar la indemnització per danys i perjudicis que li pugui correspondre.</li>
+        <li><b>9.3</b> El participant no podrà fer cap tipus de reclamació a l\'Ajuntament de Barcelona en cas que la persona usuària decideixi donar-se de baixa de VINCLES BCN.</li>
+        <li><b>9.4</b> L\'Ajuntament de Barcelona no es responsabilitza dels danys i/o perjudicis produïts al dispositiu mòbil del participant durant l\'ús de VINCLES BCN, ni dels danys o perjudicis de qualsevol tipus produïts al participant com a conseqüència d\'errors o desconnexions de les xarxes de telecomunicacions que produeixin la suspensió, cancel·lació, interrupció o mal funcionament de VINCLES BCN.</li>
+        <li><b>9.5</b> L\'Ajuntament no garanteix ni efectua cap manifestació sobre la idoneïtat de VINCLES BCN amb relació a les expectatives o les finalitats perseguides pel participant.</li>
+        <li><b>9.6</b> Sense perjudici de les limitacions de responsabilitat establertes en aquestes Condicions Generals, i en la mesura en què la legislació aplicable ho permeti, la responsabilitat màxima de l\'Ajuntament per qualsevol perjudici derivat de l\'ús de VINCLES BCN estarà limitada als danys dolosos i directes que pugui sofrir el participant, sempre que hagin estat causats directament per l\'Ajuntament.</li>
+    </ul>
+
+    <h3><b>10. <u>Protecció de dades personals:</u></b></h3>
+    <ul>
+        <li><b>10.1</b> Les dades personals que el participant faciliti durant el seu registre a VINCLES BCN, i les que proporcioni en el transcurs de la seva participació, així com el tractament posterior, s\'inclouran en un fitxer titularitat de l\'Ajuntament de Barcelona per a les següents finalitats: (i) gestionar la seva participació a VINCLES BCN; (ii) monitoritzar i dur a terme anàlisis estadístiques de l\'activitat dels participants; i (iii) mantenir informat el participant, fins i tot per mitjans electrònics, dels serveis socials i les notícies de temàtica social relacionades amb l\'Ajuntament.</li>
+        <li><b>10.2</b> El fet d\'utilitzar VINCLES BCN implica l\'acceptació en bloc de totes les finalitats de tractament indicades al paràgraf anterior.</li>
+        <li><b>10.3</b> En cas que sigui necessari prestar suport social a la persona gran usuària principal del servei, l\'Ajuntament de Barcelona pot accedir a la informació que el participant publiqui i comparteixi a VINCLES BCN. Pel fet d\'utilitzar una aplicació mòbil que té per objecte prestar serveis socials de suport, el participant del projecte sap i accepta que l\'Ajuntament de Barcelona pot tenir accés a la informació que publiqui i comparteixi a VINCLES BCN. Les finalitats de l\'accés són prestar el suport social necessari a les persones grans en l\'ús de les tecnologies de la informació i optimitzar la prestació dels serveis socials adreçats a l\'usuari en el marc del projecte. Aquests accessos es realitzaran sempre garantint la confidencialitat de la informació.</li>
+        <li><b>10.4</b> El participant pot exercir els seus drets d\'accés, rectificació, cancel·lació i oposició, així com els que la normativa de protecció de dades vigent reconegui, enviant una sol·licitud escrita, indicant “Exercici de drets LOPD” al
+            <br /><br />Registre General de l\'Ajuntament de Barcelona, Pl. Sant Jaume, 1, 08002 Barcelona<br /><br />
+            Per obtenir-ne més informació, pot consultar la pàgina web de la Seu electrònica municipal: <a href="https://ajuntament.barcelona.cat/protecciodedades">https://ajuntament.barcelona.cat/protecciodedades</a>.</li>
+    </ul>
+
+    <h3><b>11. <u>Baixa del participant:</u></b></h3>
+    <ul>
+        <li><b>11.1</b> <u>Perfil del participant:</u> el participant pot donar-se de baixa de VINCLES BCN desinstal·lant l\'aplicació mòbil. En el moment en què el participant desinstal·li VINCLES BCN, perdrà l\'accés a les dades contingudes a l\'aplicació i tot el contingut s\'esborrarà automàticament, exceptuant les que l\'Ajuntament hagi de conservar per motius legals durant un termini de 5 anys. Un cop transcorregut aquest termini, es procedirà a la cancel·lació de les dades, i només quedaran a disposició de l\'Ajuntament les que siguin necessàries per a finalitats estadístiques.</li>
+        <li><b>11.2</b> En cas que el participant pertanyi a més d\'una xarxa personal dins de VINCLES BCN, podrà donar-se de baixa de qualsevol d\'aquestes mitjançant la funcionalitat per a aquest objectiu.</li>
+        <li><b>11.3</b> L\'aplicació VINCLES BCN no està dissenyada per ser utilitzada com a sistema de backup o d\'emmagatzematge de dades i continguts, de manera que el participant haurà d\'abstenir-se d\'utilitzar-la amb aquesta finalitat, d\'acord amb el que s\'estableix en el contracte d\'alta de l\'usuari.</li>
+    </ul>
+
+    <h3><b>12. <u>Nul·litat i ineficàcia de les clàusules:</u></b></h3>
+    <p>Si qualsevol clàusula inclosa en aquestes Condicions Generals fos declarada nul·la o ineficaç de manera total o parcial, aquesta nul·litat o ineficàcia només afectarà la clàusula o la part de la clàusula que resulti nul·la o ineficaç; la resta d\'aquestes Condicions Generals romandrà inalterada i la disposició en qüestió es considerarà no inclosa de manera total o parcial.</p>
+
+    <h3><b>13. <u>Legislació aplicable i jurisdicció competent:</u></b></h3>
+    <p>Aquestes Condicions Generals es regiran i interpretaran d\'acord amb les lleis espanyoles. Qualsevol controvèrsia que es pogués suscitar sobre VINCLES BCN o sobre aquestes Condicions Generals es sotmetrà als Jutjats i Tribunals de la ciutat de Barcelona, Espanya, tret que la llei estableixi obligatòriament una altra cosa.</p>
+
+    <p>El projecte VINCLES BCN, titularitat de l\'Ajuntament de Barcelona, ha estat una de les cinc idees guanyadores del premi Mayors Challenge, atorgat per Bloomberg Philanthropies (<a href="http://www.bloomberg.org">www.bloomberg.org</a>).</p>
+    </body>
+    </html>
+    ]]>
+    </string>ç
+
+    <!-- PERMISSIONS -->
+    <string name="required_permissions">Vincles BCN necessita que acceptis els permisos per poder funcionar correctament</string>
+    <string name="required_permissions_settings">Vincles BCN necessita que acceptis els permisos per poder funcionar correctament. Pots fer-ho a la Configuració del teu dispositiu.</string>
+    <string name="should_accept_permissions_camera_photo">Necessites activar el permis per fer servir la càmera a la secció de Configuració del teu dispositiu.</string>
+    <string name="should_accept_permissions_camera_video">Necessites activar el permís de càmera i de micròfon per fer servir la càmera a la secció de Configuració del teu dispositiu.</string>
+    <string name="should_accept_permissions_gallery">Necessites activar el permis per accedir a la galeria del dispositiu a la secció de Configuració del teu dispositiu.</string>
+    <string name="should_accept_permissions_microphone">Necessites activar el permis per fer servir el micròfon a la secció de Configuració del teu dispositiu.</string>
+    <string name="should_accept_permissions_phone_call">Necessites activar els permisos de càmera i micròfon per fer trucades a la secció de Configuració del teu dispositiu.</string>
+    <string name="should_accept_permissions_calendar">Necessites activar el permis per accedir al calendari a la secció de Configuració del teu dispositiu.</string>
+</resources>

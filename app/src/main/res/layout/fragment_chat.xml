@@ -1,0 +1,122 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingRight="@dimen/gallery_padding_sides"
+    android:paddingLeft="@dimen/gallery_padding_sides"
+    android:paddingTop="@dimen/gallery_padding_top_bottom"
+    android:paddingBottom="@dimen/gallery_padding_top_bottom"
+    tools:activity="cat.bcn.vincles.mobile.UI.Contacts.ContactsFragment">
+
+    <cat.bcn.vincles.mobile.UI.Compound.BackCompoundView
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/gallery_back_button_size"
+        android:src="@drawable/tornar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/avatar"
+        android:layout_width="@dimen/gallery_back_button_size"
+        android:layout_height="@dimen/gallery_back_button_size"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/content_detail_margin_big"
+        android:scaleType="centerCrop"
+        android:src="@drawable/user"
+        app:layout_constraintBottom_toBottomOf="@+id/back"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintLeft_toRightOf="@+id/back"
+        app:layout_constraintRight_toLeftOf="@+id/chat_title"
+        app:layout_constraintTop_toTopOf="@+id/back"
+        app:riv_oval="true" />
+
+    <TextView
+        android:id="@+id/chat_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:ellipsize="end"
+        android:fontFamily="@font/akkurat_bold"
+        android:maxLines="2"
+        app:layout_constraintWidth_default="wrap"
+        android:layout_marginLeft="@dimen/content_detail_date_inner_margins"
+        android:layout_marginRight="@dimen/content_detail_margin_big"
+        android:text="lorem ipsum lorem ipsum lorem ipsum"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/gallery_title_text_size"
+        app:layout_constraintLeft_toRightOf="@+id/avatar"
+        app:layout_constraintRight_toLeftOf="@+id/action"
+        app:layout_constraintBottom_toBottomOf="@+id/avatar"
+        app:layout_constraintTop_toTopOf="@+id/avatar" />
+
+
+    <cat.bcn.vincles.mobile.UI.Compound.ActionCompoundView
+        android:id="@+id/action"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/gallery_back_button_size"
+        android:src="@drawable/tornar"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardview"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/gallery_recycler_margin_top"
+        android:layout_marginBottom="@dimen/gallery_padding_top_bottom"
+        app:cardBackgroundColor="@color/chat_background"
+        app:cardElevation="0dp"
+        app:cardCornerRadius="@dimen/main_screen_corner_radius"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_bar"
+        app:layout_constraintTop_toBottomOf="@+id/avatar" >
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+
+    </android.support.v7.widget.CardView>
+
+    <TextView
+        android:id="@+id/no_contacts_error"
+        android:visibility="gone"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/no_contacts"
+        android:gravity="center"
+        android:background="@color/grayClear1"
+        android:textColor="@color/colorBlack"
+        android:padding="@dimen/main_screen_padding_sides"
+        android:textSize="@dimen/main_bottom_rows_text_size"
+        android:layout_marginTop="@dimen/gallery_recycler_margin_top"
+        android:layout_marginBottom="@dimen/gallery_padding_top_bottom"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_bar"
+        app:layout_constraintTop_toBottomOf="@+id/back"/>
+
+    <ProgressBar
+        android:id="@+id/progressbar"
+        android:layout_width="@dimen/adapter_progressbar_size"
+        android:layout_height="@dimen/adapter_progressbar_size"
+        android:visibility="gone"
+        app:layout_constraintLeft_toLeftOf="@+id/cardview"
+        app:layout_constraintRight_toRightOf="@+id/cardview"
+        app:layout_constraintBottom_toBottomOf="@+id/cardview"
+        app:layout_constraintTop_toTopOf="@+id/cardview"/>
+
+    <FrameLayout
+        android:id="@+id/bottom_bar"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/gallery_bottom_buttons_height"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

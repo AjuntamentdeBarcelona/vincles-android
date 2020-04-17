@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#d41536</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorPrimaryDisabled">#77d41536</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="oldSplashScreenBackground">#DC002E</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="color_transparent">#00ffffff</color>
+    <color name="colorBlack">#000000</color>
+    <color name="grayClear1">#e6e6e6</color>
+    <color name="grayClear2">#f2f2f2</color>
+    <color name="darkGrayGeneric">#666666</color>
+    <color name="darkGray">#333333</color>
+    <color name="grayMessageRecived">#CCCCCC</color>
+    <color name="grayMessageSent">#333333</color>
+    <color name="redNew">#eea1af</color>
+    <color name="redNotification">#f6d0d7</color>
+    <color name="edittext_border">#ffE5DFD6</color>
+    <color name="drawer_divider_color">#AAAAAA</color>
+
+    <color name="backButtonDisabled">#e58b97</color>
+    <color name="link">#e03a51</color>
+
+    <color name="chat_alert_background">#f5d0d7</color>
+    <color name="chat_bubble_pink">#eea2af</color>
+    <color name="chat_bubble_grey_light">#cccccc</color>
+    <color name="chat_bubble_grey_dark">#4d4d4d</color>
+    <color name="chat_time">#666666</color>
+    <color name="chat_background">@color/grayClear2</color>
+
+
+    <color name="green_button">#32b140</color>
+
+</resources>

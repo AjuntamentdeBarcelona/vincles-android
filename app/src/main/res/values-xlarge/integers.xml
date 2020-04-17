@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="calls_number_of_bullets">5</integer>
+    <integer name="help_text_size">23</integer>
+</resources>

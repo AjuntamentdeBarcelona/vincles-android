@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/removeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/gallery_bottom_buttons_height"
+    android:layout_marginLeft="@dimen/remove_contact_margin_button"
+    android:layout_marginRight="@dimen/remove_contact_margin_button"
+    android:background="@drawable/selector_buttons_background"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/filterImageView"
+        android:layout_width="@dimen/general_bottom_bar_icon_size"
+        android:layout_height="@dimen/general_bottom_bar_icon_size"
+        android:src="@drawable/selector_action_button" />
+
+    <TextView
+        android:id="@+id/filterTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/content_detail_date_inner_margins"
+        android:text="@string/delete_contact_cancel"
+        android:textColor="@color/selector_text_red_white"
+        android:textSize="@dimen/content_detail_help_text_size" />
+
+</LinearLayout>

@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingRight="@dimen/gallery_padding_sides"
+    android:paddingLeft="@dimen/gallery_padding_sides"
+    android:paddingTop="@dimen/gallery_padding_top_bottom"
+    android:paddingBottom="@dimen/gallery_padding_top_bottom"
+    android:orientation="vertical">
+
+    <cat.bcn.vincles.mobile.UI.Compound.BackCompoundView
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/gallery_back_button_size"
+        android:src="@drawable/tornar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/gallery_back_button_size"
+        android:fontFamily="@font/akkurat_bold"
+        android:text="@string/configuration"
+        android:textColor="@color/colorBlack"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp"
+        android:gravity="center"
+        android:textSize="@dimen/contact_title_text_size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/back"
+        app:layout_constraintTop_toTopOf="@+id/back" />
+
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/shape_all_corners_round_gray_clear"
+        android:orientation="vertical"
+        android:padding="15dip"
+        android:scrollbarStyle="outsideOverlay"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/back">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/photo_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/akkurat"
+                android:text="@string/configuration_photo"
+                android:textSize="20sp" />
+
+            <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/userAvatar"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:src="@drawable/user"
+                app:civ_border_color="@color/colorWhite"
+                app:civ_border_width="2dp" />
+
+            <TextView
+                android:id="@+id/my_photo_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:textSize="17sp"
+                android:fontFamily="@font/akkurat"
+                android:text="@string/configuration_my_photo" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp">
+
+                <TextView
+                    android:id="@+id/personal_data_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|left"
+                    android:fontFamily="@font/akkurat"
+                    android:text="@string/configuration_personal_data"
+                    android:textSize="20sp" />
+
+                <ImageButton
+                    android:id="@+id/personal_data_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|right"
+                    android:background="@drawable/transparent_background_shape"
+                    android:src="@drawable/ic_mode_edit" />
+
+            </FrameLayout>
+
+
+            <TextView
+                android:id="@+id/personal_data"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:fontFamily="@font/akkurat_light"
+                android:text="Nom \nCognom \netc" />
+
+            <TextView
+                android:id="@+id/language_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/akkurat"
+                android:text="@string/configuration_language"
+                android:textSize="20sp" />
+
+            <RadioGroup
+                android:id="@+id/language"
+                android:layout_width="match_parent"
+                android:layout_height="40dip"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/catalan"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/radiogroup_selector_left"
+                    android:button="@null"
+                    android:fontFamily="@font/akkurat_light"
+                    android:gravity="center"
+                    android:text="@string/catalan"
+                    android:textColor="@drawable/radiogroup_selector_text" />
+
+                <RadioButton
+                    android:id="@+id/spanish"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/radiogroup_selector_right"
+                    android:button="@null"
+                    android:fontFamily="@font/akkurat_light"
+                    android:gravity="center"
+                    android:text="@string/spanish"
+                    android:textColor="@drawable/radiogroup_selector_text" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/auto_download_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/akkurat"
+                android:text="@string/configuration_autodownload"
+                android:textSize="20sp" />
+
+            <RadioGroup
+                android:id="@+id/auto_download"
+                android:layout_width="match_parent"
+                android:layout_height="40dip"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/auto_download_yes"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/radiogroup_selector_left"
+                    android:button="@null"
+                    android:fontFamily="@font/akkurat_light"
+                    android:gravity="center"
+                    android:text="@string/yes"
+                    android:textColor="@drawable/radiogroup_selector_text" />
+
+                <RadioButton
+                    android:id="@+id/auto_download_no"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/radiogroup_selector_right"
+                    android:button="@null"
+                    android:fontFamily="@font/akkurat_light"
+                    android:gravity="center"
+                    android:text="@string/no"
+                    android:textColor="@drawable/radiogroup_selector_text" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/sync_calendar_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/akkurat"
+                android:text="@string/configuration_sync_calendar"
+                android:textSize="20sp" />
+
+            <RadioGroup
+                android:id="@+id/sync_calendar"
+                android:layout_width="match_parent"
+                android:layout_height="40dip"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/sync_calendar_yes"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/radiogroup_selector_left"
+                    android:button="@null"
+                    android:fontFamily="@font/akkurat_light"
+                    android:gravity="center"
+                    android:text="@string/yes"
+                    android:textColor="@drawable/radiogroup_selector_text" />
+
+                <RadioButton
+                    android:id="@+id/sync_calendar_no"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/radiogroup_selector_right"
+                    android:button="@null"
+                    android:fontFamily="@font/akkurat_light"
+                    android:gravity="center"
+                    android:text="@string/no"
+                    android:textColor="@drawable/radiogroup_selector_text" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/text_size_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/akkurat"
+                android:visibility="visible"
+                android:text="@string/configuration_text_size"
+                android:textSize="20sp" />
+
+            <RadioGroup
+                android:id="@+id/text_size"
+                android:layout_width="match_parent"
+                android:layout_height="40dip"
+                android:layout_marginTop="8dp"
+                android:visibility="visible"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/small"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/radiogroup_selector_left"
+                    android:button="@null"
+                    android:fontFamily="@font/akkurat_light"
+                    android:gravity="center"
+                    android:text="@string/configuration_text_small"
+                    android:textColor="@drawable/radiogroup_selector_text" />
+
+                <RadioButton
+                    android:id="@+id/medium"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/radiogroup_selector_center"
+                    android:button="@null"
+                    android:fontFamily="@font/akkurat_light"
+                    android:gravity="center"
+                    android:text="@string/configuration_text_medium"
+                    android:textColor="@drawable/radiogroup_selector_text" />
+
+                <RadioButton
+                    android:id="@+id/big"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/radiogroup_selector_right"
+                    android:button="@null"
+                    android:fontFamily="@font/akkurat_light"
+                    android:gravity="center"
+                    android:text="@string/configuration_text_big"
+                    android:textColor="@drawable/radiogroup_selector_text" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/copy_gallery_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/akkurat"
+                android:visibility="visible"
+                android:text="@string/configuration_copy_gallery"
+                android:textSize="20sp" />
+
+
+            <RadioGroup
+                android:id="@+id/copy_photos_gallery"
+                android:layout_width="match_parent"
+                android:layout_height="40dip"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/copy_photos_gallery_yes"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/radiogroup_selector_left"
+                    android:button="@null"
+                    android:fontFamily="@font/akkurat_light"
+                    android:gravity="center"
+                    android:text="@string/yes"
+                    android:textColor="@drawable/radiogroup_selector_text" />
+
+                <RadioButton
+                    android:id="@+id/copy_photos_gallery_no"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/radiogroup_selector_right"
+                    android:button="@null"
+                    android:fontFamily="@font/akkurat_light"
+                    android:gravity="center"
+                    android:text="@string/no"
+                    android:textColor="@drawable/radiogroup_selector_text" />
+            </RadioGroup>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

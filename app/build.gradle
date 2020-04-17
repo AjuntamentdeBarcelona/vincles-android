@@ -1,0 +1,147 @@
+apply plugin: 'com.android.application'
+apply plugin: 'io.fabric'
+apply plugin: 'realm-android'
+
+def getVersionCodeFromDate() {
+    return new Date().format('yyyyMMddHH').toInteger()
+}
+
+def getVersionNameFromProperties() {
+    def jenkinsProperties = new Properties()
+    jenkinsProperties.load(new FileInputStream(rootProject.file('jenkins.properties')))
+    return jenkinsProperties['APP_VERSION']
+}
+
+
+def keystorePropertiesFile = rootProject.file("keystore.properties")
+def keystoreProperties = new Properties()
+keystoreProperties.load(new FileInputStream(keystorePropertiesFile))
+
+android {
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId 'cat.bcn.vincles.mobile'
+        minSdkVersion 22
+        targetSdkVersion 28
+        versionCode getVersionCodeFromDate()
+        versionName getVersionNameFromProperties()
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+
+    }
+
+    signingConfigs {
+        release {
+            keyAlias keystoreProperties['keyAlias']
+            keyPassword keystoreProperties['keyPassword']
+            storeFile file(keystoreProperties['storeFile'])
+            storePassword keystoreProperties['storePassword']
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+        }
+    }
+    flavorDimensions "environment"
+    productFlavors {
+        inteurecat {
+        }
+        preazure {
+        }
+        proazure {
+        }
+        jenkins {
+            signingConfig signingConfigs.release
+        }
+    }
+}
+
+allprojects {
+    repositories {
+        maven { url "https://jitpack.io" }
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    implementation 'com.android.support:design:28.0.0'
+    implementation 'com.android.support:support-v4:28.0.0'
+    implementation 'com.android.support:support-compat:28.0.0'
+    implementation 'com.android.support:exifinterface:28.0.0'
+    implementation 'com.android.support:cardview-v7:28.0.0'
+    implementation 'com.android.support:multidex:1.0.3'
+    //Lifecycle
+    implementation "android.arch.lifecycle:extensions:1.1.1"
+    implementation "android.arch.lifecycle:runtime:1.1.1"
+    annotationProcessor "android.arch.lifecycle:compiler:1.1.1"
+
+    //Firebase
+    implementation 'com.google.firebase:firebase-core:16.0.9'
+    implementation 'com.google.firebase:firebase-messaging:17.6.0'
+    implementation('com.crashlytics.sdk.android:crashlytics:2.9.9@aar') {
+        transitive = true
+    }
+    implementation 'com.google.firebase:firebase-perf:16.2.5'
+
+    //PlayServices
+    implementation 'com.google.android.gms:play-services-analytics:16.0.8'
+    implementation 'com.google.android.gms:play-services-tagmanager:16.0.8'
+
+    //Test
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.1'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+    //Network
+    implementation 'com.squareup.picasso:picasso:2.5.2'
+    implementation 'com.squareup.retrofit2:retrofit:2.1.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.1.0'
+    implementation 'com.squareup.okhttp3:okhttp:3.9.1'
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.8.0'
+
+    //Images
+    implementation 'de.hdodenhof:circleimageview:2.2.0'
+    implementation 'com.jackandphantom.android:circularimageview:1.2.0'
+    implementation 'com.github.bumptech.glide:glide:4.6.1'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.6.1'
+    implementation 'com.daasuu:BubbleLayout:1.1.1'
+    implementation 'com.makeramen:roundedimageview:2.3.0'
+    implementation 'com.github.chrisbanes:PhotoView:2.1.3'
+    //Media
+    implementation 'com.google.android.exoplayer:exoplayer:r2.5.2'
+    implementation project(":silicompressor")
+
+    //Versions
+    implementation('com.github.AjuntamentdeBarcelona:osam-controldeversions-android:+') {
+        exclude group: "com.android.support"
+    }
+
+    //WebRTC
+    implementation "net.i2cat.seg:webrtcat4:4.2.0"
+    //compile project(":webrtcat4")
+
+    //Valoracions
+    implementation 'com.github.AjuntamentdeBarcelona:osam-valoracions-android:+'
+
+    //Utils
+    implementation 'net.yslibrary.keyboardvisibilityevent:keyboardvisibilityevent:2.1.0'
+    implementation 'com.github.mreram:ShowCaseView:1.0.5'
+
+    //Realm
+    implementation 'io.realm:android-adapters:3.1.0'
+
+}
+
+
+apply plugin: 'com.google.gms.google-services'
+
+

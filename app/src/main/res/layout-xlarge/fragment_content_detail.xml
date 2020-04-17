@@ -1,0 +1,158 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingRight="@dimen/gallery_padding_sides"
+    android:paddingLeft="@dimen/gallery_padding_sides"
+    android:paddingTop="@dimen/gallery_padding_top_bottom"
+    android:paddingBottom="@dimen/gallery_padding_top_bottom"
+    tools:activity="cat.bcn.vincles.mobile.UI.ContentDetail.ContentDetailFragment">
+
+    <cat.bcn.vincles.mobile.UI.Compound.BackCompoundView
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/gallery_back_button_size"
+        android:src="@drawable/tornar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/avatar"
+        android:layout_width="@dimen/gallery_back_button_size"
+        android:layout_height="@dimen/gallery_back_button_size"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/content_detail_margin_big"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="@+id/back"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintLeft_toRightOf="@+id/back"
+        app:layout_constraintRight_toLeftOf="@+id/chat_title"
+        app:layout_constraintTop_toTopOf="@+id/back"
+        app:riv_oval="true" />
+
+    <TextView
+        android:id="@+id/chat_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:ellipsize="end"
+        android:fontFamily="@font/akkurat_bold"
+        android:maxLines="2"
+        app:layout_constraintWidth_default="wrap"
+        android:layout_marginLeft="@dimen/content_detail_date_inner_margins"
+        android:layout_marginRight="@dimen/content_detail_margin_big"
+        android:text="lorem ipsum lorem ipsum lorem ipsum"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/gallery_title_text_size"
+        app:layout_constraintLeft_toRightOf="@+id/avatar"
+        app:layout_constraintRight_toLeftOf="@+id/clockIcon"
+        app:layout_constraintBottom_toBottomOf="@+id/avatar"
+        app:layout_constraintTop_toTopOf="@+id/avatar" />
+
+    <ImageView
+        android:id="@+id/clockIcon"
+        android:layout_width="@dimen/content_detail_clock_icon_size"
+        android:layout_height="@dimen/content_detail_clock_icon_size"
+        android:background="@drawable/clock"
+        android:layout_marginRight="@dimen/content_detail_date_inner_margins"
+        app:layout_constraintRight_toLeftOf="@+id/date"
+        app:layout_constraintTop_toTopOf="@+id/back"
+        app:layout_constraintBottom_toBottomOf="@+id/back" />
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="15 de desembre 2017"
+        android:textColor="@color/colorBlack"
+        app:layout_constraintBottom_toTopOf="@+id/hour"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/back"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <TextView
+        android:id="@+id/hour"
+        android:layout_width="0dp"
+        android:layout_height="19dp"
+        android:text="13:30"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="@+id/date"
+        app:layout_constraintTop_toBottomOf="@+id/date"
+        app:layout_constraintBottom_toBottomOf="@+id/back"/>
+
+
+    <Button
+        android:id="@+id/before"
+        android:layout_width="@dimen/content_detail_prev_next_size"
+        android:layout_height="@dimen/content_detail_prev_next_size"
+        android:background="@drawable/selector_before_background"
+        app:layout_constraintVertical_chainStyle="packed"
+        app:layout_constraintTop_toBottomOf="@+id/back"
+        app:layout_constraintBottom_toTopOf="@+id/beforeText"
+        app:layout_constraintLeft_toLeftOf="@+id/beforeText"
+        app:layout_constraintRight_toRightOf="@+id/beforeText"/>
+
+    <TextView
+        android:id="@+id/beforeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/before"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/content_detail_help_text_size"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/before"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_bar"/>
+
+    <Button
+        android:id="@+id/next"
+        android:layout_width="@dimen/content_detail_prev_next_size"
+        android:layout_height="@dimen/content_detail_prev_next_size"
+        android:background="@drawable/selector_next_background"
+        app:layout_constraintVertical_chainStyle="packed"
+        app:layout_constraintTop_toBottomOf="@+id/back"
+        app:layout_constraintBottom_toTopOf="@+id/next_text"
+        app:layout_constraintLeft_toLeftOf="@+id/next_text"
+        app:layout_constraintRight_toRightOf="@+id/next_text" />
+
+    <TextView
+        android:id="@+id/next_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/next"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/content_detail_help_text_size"
+        app:layout_constraintTop_toBottomOf="@+id/next"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_bar"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+    <cat.bcn.vincles.mobile.Utils.VinclesViewPager xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/pager"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/gallery_recycler_margin_top"
+        android:layout_marginBottom="@dimen/gallery_padding_top_bottom"
+        android:layout_marginLeft="@dimen/content_detail_image_side_margins"
+        android:layout_marginRight="@dimen/content_detail_image_side_margins"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_bar"
+        app:layout_constraintEnd_toStartOf="@+id/next_text"
+        app:layout_constraintStart_toEndOf="@+id/beforeText"
+        app:layout_constraintTop_toBottomOf="@+id/back">
+    </cat.bcn.vincles.mobile.Utils.VinclesViewPager>
+
+
+    <FrameLayout
+        android:id="@+id/bottom_bar"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/gallery_bottom_buttons_height"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" >
+
+        <include layout="@layout/fragment_content_detail_bottom_bar"/>
+
+    </FrameLayout>
+
+</android.support.constraint.ConstraintLayout>

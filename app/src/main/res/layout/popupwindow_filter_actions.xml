@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    >
+    <!--android:padding="@dimen/filter_popup_container_padding"-->
+
+
+    <com.daasuu.bl.BubbleLayout
+        android:id="@+id/bubblelayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:bl_arrowDirection="bottom"
+        app:bl_arrowHeight="@dimen/filter_popup_arrow_height"
+        app:bl_arrowWidth="@dimen/filter_popup_arrow_width"
+        app:bl_arrowPosition="@dimen/filter_popup_arrow_position"
+        app:bl_cornersRadius="@dimen/filter_popup_corner_radius"
+        app:bl_strokeWidth="1dp">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/filter_popup_padding">
+
+            <TableRow>
+                <TextView
+
+                    android:id="@+id/filter_share"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/filter_popup_row_height"
+                    android:lines="1"
+                    android:gravity="center_vertical"
+                    android:drawablePadding="@dimen/filter_popup_drawable_padding"
+                    android:text="@string/gallery_filter_share"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/filter_popup_text_size" />
+
+
+                <ImageView
+                    android:layout_marginStart="30dp"
+                    android:layout_width="@dimen/filter_popup_icon_size"
+                    android:layout_height="@dimen/filter_popup_icon_size"
+                    android:layout_marginLeft="@dimen/filter_popup_icon_margin_side"
+                    android:layout_marginRight="@dimen/filter_popup_icon_margin_side"
+                    android:layout_gravity="center_vertical"/>
+
+
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:id="@+id/filter_delete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/filter_popup_row_height"
+                    android:drawablePadding="@dimen/filter_popup_drawable_padding"
+                    android:lines="1"
+                    android:gravity="center_vertical"
+                    android:text="@string/gallery_filter_delete"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/filter_popup_text_size" />
+
+
+            </TableRow>
+
+
+
+        </TableLayout>
+
+
+
+
+    </com.daasuu.bl.BubbleLayout>
+
+</FrameLayout>

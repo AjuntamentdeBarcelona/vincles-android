@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:minWidth="@dimen/dialog_min_width"
+    android:background="@drawable/shape_all_corners_round_gray_clear"
+    android:padding="@dimen/dialogs_padding"
+    android:visibility="visible">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/userAvatar"
+        android:layout_width="@dimen/dialog_photo_avatar_size"
+        android:layout_height="@dimen/dialog_photo_avatar_size"
+        android:layout_gravity="center"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/user"
+        android:layout_centerHorizontal="true"
+        app:civ_border_color="@color/colorWhite"
+        app:civ_border_width="2dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/userAvatar"
+        android:layout_marginTop="@dimen/dialogs_margin_bottom_buttons"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/gallery"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dialog_bottom_buttons_height"
+            android:layout_marginRight="@dimen/dialogs_margin_bottom_buttons_inner_half"
+            android:layout_weight="1"
+            android:background="@drawable/selector_buttons_background"
+            android:text="@string/gallery"
+            android:textSize="@dimen/dialogs_text_button_size"
+            android:textAllCaps="false"
+            android:textColor="@color/selector_text_red_white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/takePicture"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/userAvatar" />
+
+
+        <Button
+            android:id="@+id/takePicture"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dialog_bottom_buttons_height"
+            android:layout_marginLeft="@dimen/dialogs_margin_bottom_buttons_inner_half"
+            android:layout_weight="1"
+            android:background="@drawable/selector_buttons_background"
+            android:text="@string/camera"
+            android:textSize="@dimen/dialogs_text_button_size"
+            android:textAllCaps="false"
+            android:textColor="@color/selector_text_red_white"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/cancel" />
+
+    </LinearLayout>
+
+
+
+
+
+    <ImageView
+        android:id="@+id/close_dialog"
+        android:layout_width="@dimen/dialogs_close_button_size"
+        android:layout_height="@dimen/dialogs_close_button_size"
+        android:src="@drawable/close_dialog"
+        android:layout_alignParentRight="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/userAvatar"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</RelativeLayout>

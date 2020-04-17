@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:minWidth="@dimen/dialog_min_width"
+    android:background="@drawable/shape_all_corners_round_gray_clear"
+    android:padding="@dimen/dialogs_padding"
+    android:visibility="visible">
+
+
+    <TextView
+        android:id="@+id/dialogText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dialogs_margin_below_close"
+        android:gravity="top|left"
+        android:fontFamily="@font/akkurat"
+        android:text="Esborrant arxius"
+        android:textSize="@dimen/dialogs_text_size"
+        android:layout_below="@+id/close_dialog"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/close_dialog"
+        app:layout_constraintBottom_toTopOf="@+id/ok"/>
+
+    <ProgressBar
+        android:id="@+id/progressbar"
+        android:layout_width="@dimen/non_dismissable_progressbar_size"
+        android:layout_height="@dimen/non_dismissable_progressbar_size"
+        android:layout_below="@id/dialogText"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>

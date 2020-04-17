@@ -1,0 +1,5 @@
+<resources>
+
+    <string name="menu">@string/menu_string</string>
+
+</resources>

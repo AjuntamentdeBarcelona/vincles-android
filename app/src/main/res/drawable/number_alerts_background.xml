@@ -1,0 +1,12 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval">
+
+    <solid android:color="@color/colorWhite" />
+
+    <size
+        android:height="@dimen/main_bells_textview_size"
+        android:width="@dimen/main_bells_textview_size" />
+
+    <stroke android:width="@dimen/main_bells_border_stroke_size" android:color="@color/colorPrimary" />
+
+</shape>

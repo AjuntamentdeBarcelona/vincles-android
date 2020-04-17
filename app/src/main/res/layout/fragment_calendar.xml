@@ -1,0 +1,214 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingRight="@dimen/gallery_padding_sides"
+    android:paddingLeft="@dimen/gallery_padding_sides"
+    android:paddingTop="@dimen/gallery_padding_top_bottom"
+    android:paddingBottom="@dimen/gallery_padding_top_bottom"
+    tools:activity="cat.bcn.vincles.mobile.UI.Contacts.ContactsFragment">
+
+    <cat.bcn.vincles.mobile.UI.Compound.BackCompoundView
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/gallery_back_button_size"
+        android:src="@drawable/tornar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/calendar_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:ellipsize="end"
+        android:fontFamily="@font/akkurat_bold"
+        android:maxLines="2"
+        app:layout_constraintWidth_default="wrap"
+        android:layout_marginLeft="@dimen/content_detail_date_inner_margins"
+        android:layout_marginRight="@dimen/content_detail_margin_big"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/gallery_title_text_size"
+        app:layout_constraintLeft_toRightOf="@+id/back"
+        app:layout_constraintRight_toLeftOf="@+id/action"
+        app:layout_constraintBottom_toBottomOf="@+id/back"
+        app:layout_constraintTop_toTopOf="@+id/back" />
+
+
+    <cat.bcn.vincles.mobile.UI.Compound.ActionCompoundView
+        android:id="@+id/action"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/gallery_back_button_size"
+        android:src="@drawable/tornar"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/day_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/akkurat"
+        android:layout_marginTop="8dp"
+        android:text="Avui, dimecres"
+        android:textSize="@dimen/calendar_text_size"
+        app:layout_constraintTop_toBottomOf="@+id/back"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <TextView
+        android:id="@+id/date_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/akkurat"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="8dp"
+        android:text="15 de desembre de 2017"
+        android:textSize="@dimen/calendar_text_size"
+        android:textColor="@color/colorPrimary"
+        app:layout_constraintTop_toBottomOf="@+id/back"
+        app:layout_constraintLeft_toRightOf="@+id/day_tv"
+        app:layout_constraintRight_toRightOf="parent"/>
+    
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/gallery_recycler_margin_top"
+        android:layout_marginBottom="@dimen/gallery_padding_top_bottom"
+        android:background="@color/chat_background"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_bar"
+        app:layout_constraintTop_toBottomOf="@+id/day_tv"
+        />
+
+    <TextView
+        android:id="@+id/no_meetings_tv"
+        android:visibility="gone"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:text="@string/calendar_no_dates_this_day"
+        android:textSize="@dimen/general_no_content_text_size"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_bar"
+        app:layout_constraintTop_toBottomOf="@+id/day_tv" />
+
+    <cat.bcn.vincles.mobile.UI.Compound.CalendarCompoundView
+        android:id="@+id/calendar_view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginLeft="@dimen/calendar_month_margin_left"
+        android:layout_marginRight="@dimen/calendar_month_margin_left"
+        android:layout_marginTop="@dimen/calendar_month_margin_top"
+        android:layout_marginBottom="@dimen/calendar_month_margin_top"
+        android:visibility="gone"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_bar"
+        app:layout_constraintTop_toBottomOf="@+id/back">
+
+
+    </cat.bcn.vincles.mobile.UI.Compound.CalendarCompoundView>
+
+    <TextView
+        android:id="@+id/no_events_error"
+        android:visibility="gone"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/no_contacts"
+        android:gravity="center"
+        android:background="@color/grayClear1"
+        android:textColor="@color/colorBlack"
+        android:padding="@dimen/main_screen_padding_sides"
+        android:textSize="@dimen/main_bottom_rows_text_size"
+        android:layout_marginTop="@dimen/gallery_recycler_margin_top"
+        android:layout_marginBottom="@dimen/gallery_padding_top_bottom"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_bar"
+        app:layout_constraintTop_toBottomOf="@+id/back"/>
+
+    <LinearLayout
+        android:id="@+id/bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <FrameLayout
+            android:id="@+id/see_today"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/gallery_bottom_buttons_height"
+            android:background="@drawable/selector_buttons_background"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_marginRight="@dimen/content_detail_bottom_buttons_margin_half" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:gravity="center"
+                android:text="@string/calendar_see_today"
+                android:textColor="@color/selector_text_red_white"
+                android:textSize="@dimen/content_detail_help_text_size" />
+
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/see_tomorrow"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/gallery_bottom_buttons_height"
+            android:background="@drawable/selector_buttons_background"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_marginRight="@dimen/content_detail_bottom_buttons_margin_half"
+            android:layout_marginLeft="@dimen/content_detail_bottom_buttons_margin_half" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:gravity="center"
+                android:text="@string/calendar_see_tomorrow"
+                android:textColor="@color/selector_text_red_white"
+                android:textSize="@dimen/content_detail_help_text_size" />
+
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/see_month"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/gallery_bottom_buttons_height"
+            android:background="@drawable/selector_buttons_background"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_marginLeft="@dimen/content_detail_bottom_buttons_margin_half" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:gravity="center"
+                android:text="@string/calendar_see_month"
+                android:textColor="@color/selector_text_red_white"
+                android:textSize="@dimen/content_detail_help_text_size" />
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

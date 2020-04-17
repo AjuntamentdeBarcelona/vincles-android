@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/text"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/gallery_bottom_buttons_height"
+        android:background="@drawable/selector_buttons_background"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:layout_marginRight="@dimen/content_detail_bottom_buttons_margin_half" >
+
+        <ImageView
+            android:id="@+id/textImageView"
+            android:layout_width="@dimen/general_bottom_bar_icon_size"
+            android:layout_height="@dimen/general_bottom_bar_icon_size"
+            android:src="@drawable/selector_text_button" />
+
+        <TextView
+            android:id="@+id/textTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/content_detail_date_inner_margins"
+            android:text="@string/chat_button_text"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@color/selector_text_red_white"
+            android:textSize="@dimen/content_detail_help_text_size" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/camera"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/gallery_bottom_buttons_height"
+        android:background="@drawable/selector_buttons_background"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:layout_marginRight="@dimen/content_detail_bottom_buttons_margin_half"
+        android:layout_marginLeft="@dimen/content_detail_bottom_buttons_margin_half" >
+
+        <ImageView
+            android:id="@+id/camera_iv"
+            android:layout_width="@dimen/general_bottom_bar_icon_size"
+            android:layout_height="@dimen/general_bottom_bar_icon_size"
+            android:layout_gravity="center"
+            android:src="@drawable/selector_camera_button" />
+
+        <TextView
+            android:id="@+id/camera_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/content_detail_date_inner_margins"
+            android:text="@string/chat_button_camera"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@color/selector_text_red_white"
+            android:textSize="@dimen/content_detail_help_text_size" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/video"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/gallery_bottom_buttons_height"
+        android:background="@drawable/selector_buttons_background"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:layout_marginRight="@dimen/content_detail_bottom_buttons_margin_half"
+        android:layout_marginLeft="@dimen/content_detail_bottom_buttons_margin_half" >
+
+        <ImageView
+            android:id="@+id/video_iv"
+            android:layout_width="@dimen/general_bottom_bar_icon_size"
+            android:layout_height="@dimen/general_bottom_bar_icon_size"
+            android:layout_gravity="center"
+            android:src="@drawable/selector_video_background" />
+
+        <TextView
+            android:id="@+id/video_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/content_detail_date_inner_margins"
+            android:text="@string/chat_button_video"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@color/selector_text_red_white"
+            android:textSize="@dimen/content_detail_help_text_size" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/audio"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/gallery_bottom_buttons_height"
+        android:background="@drawable/selector_buttons_background"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:layout_marginRight="@dimen/content_detail_bottom_buttons_margin_half"
+        android:layout_marginLeft="@dimen/content_detail_bottom_buttons_margin_half" >
+
+        <ImageView
+            android:id="@+id/audio_iv"
+            android:layout_width="@dimen/general_bottom_bar_icon_size"
+            android:layout_height="@dimen/general_bottom_bar_icon_size"
+            android:layout_gravity="center"
+            android:src="@drawable/selector_audio_button" />
+
+        <TextView
+            android:id="@+id/audio_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/content_detail_date_inner_margins"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="@string/chat_button_audio"
+            android:textColor="@color/selector_text_red_white"
+            android:textSize="@dimen/content_detail_help_text_size" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/file"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/gallery_bottom_buttons_height"
+        android:background="@drawable/selector_buttons_background"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:layout_marginLeft="@dimen/content_detail_bottom_buttons_margin_half" >
+
+        <ImageView
+            android:id="@+id/file_iv"
+            android:layout_width="@dimen/general_bottom_bar_icon_size"
+            android:layout_height="@dimen/general_bottom_bar_icon_size"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/gallery_bottom_buttons_padding"
+            android:src="@drawable/selector_file_button"/>
+
+        <TextView
+            android:id="@+id/file_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="@dimen/gallery_bottom_buttons_padding"
+            android:layout_marginLeft="@dimen/content_detail_date_inner_margins"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="@string/chat_button_file"
+            android:textColor="@color/selector_text_red_white"
+            android:textSize="@dimen/content_detail_help_text_size" />
+
+    </LinearLayout>
+</LinearLayout>

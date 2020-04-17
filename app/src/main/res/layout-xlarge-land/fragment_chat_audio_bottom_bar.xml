@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/gallery_bottom_buttons_height"
+        android:gravity="center"
+        android:layout_marginRight="@dimen/content_detail_bottom_buttons_margin_half" >
+
+        <ImageView
+            android:id="@+id/cancel_iv"
+            android:layout_width="@dimen/chat_write_bar_icon_size"
+            android:layout_height="@dimen/chat_write_bar_icon_size"
+            android:src="@drawable/selector_close_dialog_background" />
+
+        <TextView
+            android:id="@+id/cancel_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/content_detail_date_inner_margins"
+            android:text="@string/cancel"
+            android:textColor="@color/selector_text_red_white"
+            android:textSize="@dimen/content_detail_help_text_size" />
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/recording_rl"
+        android:layout_height="@dimen/chat_write_bar_icon_size"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/general_views_separation"
+        android:layout_marginRight="@dimen/general_views_separation"
+        >
+
+
+        <TextView
+            android:id="@+id/recording_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="top"
+            android:ellipsize="end"
+            android:lines="1"
+            android:maxLines="1"
+            android:textColor="@color/chat_time"
+            android:fontFamily="@font/akkurat"
+            android:textSize="@dimen/chat_element_message_time_text_size"
+            android:layout_above="@+id/progressbar"
+            android:layout_centerHorizontal="true"
+            android:text="@string/chat_audio_recording" />
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:ellipsize="end"
+            android:lines="1"
+            android:maxLines="1"
+            android:textColor="@color/chat_time"
+            android:fontFamily="@font/akkurat"
+            android:textSize="@dimen/chat_element_message_time_text_size"
+            android:layout_above="@+id/progressbar"
+            android:layout_alignParentRight="true"
+            android:text="00:00" />
+
+        <ProgressBar
+            android:id="@+id/progressbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_alignParentBottom="true" />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/send_audio"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/gallery_bottom_buttons_height"
+        android:gravity="center"
+        android:layout_marginLeft="@dimen/content_detail_bottom_buttons_margin_half" >
+
+        <ImageView
+            android:id="@+id/send_iv"
+            android:layout_width="@dimen/chat_write_bar_icon_size"
+            android:layout_height="@dimen/chat_write_bar_icon_size"
+            android:layout_gravity="center"
+            android:src="@drawable/selector_stop_button"/>
+
+        <TextView
+            android:id="@+id/send_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/content_detail_date_inner_margins"
+            android:text="@string/chat_stop_audio"
+            android:textColor="@color/selector_text_red_white"
+            android:textSize="@dimen/content_detail_help_text_size" />
+
+    </LinearLayout>
+</LinearLayout>

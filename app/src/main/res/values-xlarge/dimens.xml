@@ -1,0 +1,184 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+
+    <!--GENERAL-->
+    <dimen name="general_navigation_name_text_size">25sp</dimen>
+    <dimen name="general_bottom_bar_icon_size">36dp</dimen>
+    <dimen name="general_no_content_text_size">26sp</dimen>
+    <dimen name="toolbar_title_margin_right">0dp</dimen>
+    <dimen name="toolbar_help_text_size">19sp</dimen>
+
+    <!--MAIN SCREEN-->
+    <dimen name="main_screen_padding_sides">24dp</dimen>
+    <dimen name="main_screen_padding_up_down">@dimen/main_screen_padding_sides</dimen>
+    <dimen name="main_separation_groups">18dp</dimen>
+    <dimen name="main_separation_groups_half">9dp</dimen>
+    <dimen name="main_separation_contacts">8dp</dimen>
+    <dimen name="main_row_height">120dp</dimen>
+    <dimen name="main_screen_corner_radius">24dp</dimen>
+
+    <dimen name="main_contact_text_size">26sp</dimen>
+    <dimen name="main_contact_padding_text">12dp</dimen>
+    <dimen name="main_contact_padding_icon">22dp</dimen>
+    <dimen name="main_contact_padding_smaller">12dp</dimen>
+    <dimen name="main_all_contact_textview_margin_left">20dp</dimen>
+    <dimen name="main_all_contacts_row_height">150dp</dimen>
+    <dimen name="main_contact_progressbar_size">64dp</dimen>
+
+    <dimen name="main_welcome_text_size">32sp</dimen>
+    <dimen name="main_avatar_radius_margin">3dp</dimen>
+    <dimen name="main_text_avatar_padding_left">140dp</dimen> <!--main_avatar_radius_margin+main_row_height + 16-->
+
+    <dimen name="main_bells_width">140dp</dimen>
+    <dimen name="main_bells_number_margin_left">40dp</dimen>
+    <dimen name="main_bells_textview_size">32dp</dimen>
+    <dimen name="main_bells_text_size">15sp</dimen>
+    <dimen name="main_bells_border_stroke_size">2dp</dimen>
+
+    <dimen name="main_calendar_number_size">36dp</dimen>
+    <dimen name="main_calendar_number_text_size">17sp</dimen>
+    <dimen name="main_calendar_icon_size">@dimen/main_bottom_rows_icon_size</dimen>
+
+    <dimen name="main_bottom_rows_icon_size">56dp</dimen>
+    <dimen name="main_bottom_rows_icon_margin">32dp</dimen>
+    <dimen name="main_bottom_rows_left_margin">56dp</dimen>
+    <dimen name="main_bottom_rows_text_margin_left">36dp</dimen>
+    <dimen name="main_bottom_rows_text_size">26sp</dimen>
+    <dimen name="main_bottom_rows_number_size">20dp</dimen>
+    <dimen name="main_bottom_rows_rounded_radius">32</dimen>
+    <dimen name="main_bottom_row_height">100dp</dimen>
+
+    <dimen name="main_screen_see_contacts_separation">4dp</dimen>
+
+
+    <!--GALLERY-->
+    <dimen name="gallery_padding_sides">36dp</dimen>
+    <dimen name="gallery_padding_top_bottom">24dp</dimen>
+    <dimen name="gallery_recycler_margin_top">24dp</dimen>
+    <dimen name="gallery_back_button_size">72dp</dimen>
+    <dimen name="gallery_title_text_size">27sp</dimen>
+    <dimen name="gallery_bottom_buttons_height">88dp</dimen>
+    <dimen name="gallery_bottom_buttons_padding">28dp</dimen>
+    <dimen name="gallery_bottom_buttons_separation">16dp</dimen>
+    <dimen name="gallery_bottom_buttons_background_corners_radius">12dp</dimen>
+    <dimen name="gallery_bottom_buttons_background_stroke_width">3dp</dimen>
+    <dimen name="gallery_progressbar_size">96dp</dimen>
+
+    <dimen name="content_detail_clock_icon_size">48dp</dimen>
+    <dimen name="content_detail_date_inner_margins">16dp</dimen>
+    <dimen name="content_detail_help_text_size">26sp</dimen>
+    <dimen name="content_detail_margin_big">36dp</dimen>
+    <dimen name="content_detail_bottom_buttons_size">48dp</dimen>
+    <dimen name="content_detail_bottom_buttons_margin_half">8dp</dimen>
+    <dimen name="content_detail_prev_next_size">64dp</dimen>
+    <dimen name="content_detail_video_hint_size">96dp</dimen>
+    <dimen name="content_detail_image_side_margins">16dp</dimen>
+
+    <dimen name="adapter_image_spacing">8dp</dimen>
+    <dimen name="adapter_progressbar_size">72dp</dimen>
+
+    <dimen name="filter_popup_padding">20dp</dimen>
+    <dimen name="filter_popup_container_padding">24dp</dimen>
+    <dimen name="filter_popup_drawable_padding">16dp</dimen>
+    <dimen name="filter_popup_row_height">64dp</dimen>
+    <dimen name="filter_popup_text_size">22sp</dimen>
+    <dimen name="filter_popup_corner_radius">12dp</dimen>
+    <dimen name="filter_popup_arrow_width">20dp</dimen>
+    <dimen name="filter_popup_arrow_height">16dp</dimen>
+    <dimen name="filter_popup_arrow_position">56dp</dimen>
+
+    <!--DIALOGS-->
+    <dimen name="dialog_min_width">500dp</dimen>
+    <dimen name="dialog_corner_radius">24dp</dimen>
+    <dimen name="dialogs_padding">24dp</dimen>
+    <dimen name="dialogs_close_button_size">56dp</dimen>
+    <dimen name="dialogs_text_size">33sp</dimen>
+    <dimen name="dialogs_margin_below_close">16dp</dimen>
+    <dimen name="dialogs_margin_bottom_buttons">36dp</dimen>
+    <dimen name="dialogs_margin_bottom_buttons_inner_half">8dp</dimen>
+    <dimen name="dialog_bottom_buttons_height">80dp</dimen>
+
+
+    <!--DIALOGS-->
+    <dimen name="contacts_add_sections_margin">36dp</dimen>
+    <dimen name="contacts_add_between_blocks_margin">16dp</dimen>
+    <dimen name="contacts_add_in_blocks_margin_sides">36dp</dimen>
+    <dimen name="contacts_add_in_blocks_margin_up_down">24dp</dimen>
+    <dimen name="contacts_add_blocks_button_height">80dp</dimen>
+    <dimen name="contacts_add_blocks_edittext_height">72dp</dimen>
+    <dimen name="contacts_add_bottom_buttons_height">108dp</dimen>
+    <dimen name="contacts_add_text_size">24sp</dimen>
+    <dimen name="contacts_add_code_text_size">30sp</dimen>
+    <dimen name="contacts_icon_size">100dp</dimen>
+    <dimen name="add_contact_layout_no_code_width">600dp</dimen>
+    <dimen name="add_contact_layout_no_code_heignt">300dp</dimen>
+    <dimen name="add_contact_margin_no_code">120dp</dimen>
+    <dimen name="remove_contact_margin_button">50dp</dimen>
+
+    <!--CONTACTS-->
+    <dimen name="contact_title_text_size">27sp</dimen>
+
+    <!--CHAT-->
+    <dimen name="chat_element_alert_height">56dp</dimen>
+    <dimen name="chat_element_alert_margin">24dp</dimen>
+    <dimen name="chat_element_message_margin_top_bottom">16dp</dimen>
+    <dimen name="chat_element_avatar_size">72dp</dimen>
+    <dimen name="chat_element_message_text_size">23sp</dimen>
+    <dimen name="chat_element_message_time_text_size">20sp</dimen>
+    <dimen name="chat_element_message_proggress_text_size">17sp</dimen>
+    <dimen name="chat_element_message_margin_start">24dp</dimen>
+    <dimen name="chat_element_message_margin_end">64dp</dimen>
+    <dimen name="chat_element_message_padding">16dp</dimen>
+    <dimen name="chat_element_message_first_margin_left">-10dp</dimen>
+    <dimen name="chat_element_message_first_padding_left">16dp</dimen>
+    <dimen name="chat_element_message_margin_left">8dp</dimen>
+    <dimen name="chat_element_message_margin_no_arrow">6dp</dimen>
+    <dimen name="chat_write_bar_icon_size">64dp</dimen>
+    <dimen name="chat_write_bar_edittext_padding">16dp</dimen>
+    <dimen name="chat_element_audio_play_size">56dp</dimen>
+    <dimen name="chat_element_audio_min_width">250dp</dimen>
+    <dimen name="chat_element_image_size">250dp</dimen>
+    <dimen name="chat_element_image_corner">8dp</dimen>
+    <dimen name="chat_element_image_video_hint_size">78dp</dimen>
+
+    <!--CALENDAR-->
+    <dimen name="calendar_meeting_margin">24dp</dimen>
+    <dimen name="calendar_meeting_divider_inset">24dp</dimen>
+    <dimen name="calendar_text_size">21sp</dimen>
+    <!--CALENDAR-->
+    <dimen name="calendar_month_toolbar_extra_margin">16dp</dimen>
+    <dimen name="calendar_month_cell_min_height">70dp</dimen>
+    <dimen name="calendar_month_margin_left">0dp</dimen>
+    <dimen name="calendar_month_margin_top">24dp</dimen>
+    <dimen name="calendar_month_day_text_size">23sp</dimen>
+    <dimen name="calendar_month_bullet_size">12dp</dimen>
+    <dimen name="calendar_month_bullet_margin">6dp</dimen>
+    <dimen name="calendar_month_month_bar_height">72dp</dimen>
+    <dimen name="calendar_month_month_bar_button_width">108dp</dimen>
+    <dimen name="calendar_month_days_bar_height">56dp</dimen>
+    <dimen name="calendar_month_text_size">27sp</dimen>
+    <dimen name="calendar_item_buttons_height">88dp</dimen>
+    <dimen name="calendar_item_buttons_icon_size">36dp</dimen>
+    <dimen name="calendar_item_buttons_text_size">26sp</dimen>
+    <dimen name="calendar_item_buttons_inner_margins">16dp</dimen>
+
+    <!--CALLS-->
+    <dimen name="calls_avatar_size">152dp</dimen>
+    <dimen name="calls_avatar_size_big">232dp</dimen>
+    <dimen name="calls_bullet_size">24dp</dimen>
+    <dimen name="calls_bullet_margin">6dp</dimen>
+    <dimen name="calls_title_margin_top">24dp</dimen>
+    <dimen name="calls_hang_up_button_size">88dp</dimen>
+
+
+    <!--NOTIFICATIONS-->
+    <dimen name="notifications_clock_size">36dp</dimen>
+    <dimen name="notifications_clock_margin_left">16dp</dimen>
+    <dimen name="notifications_clock_margin_right">16dp</dimen>
+    <dimen name="notifications_delete_size">48dp</dimen>
+    <dimen name="notifications_action_height">88dp</dimen>
+    <dimen name="notifications_action_margin_top">16dp</dimen>
+    <dimen name="notifications_avatar_size">104dp</dimen>
+    <dimen name="notifications_item_text_size">24sp</dimen>
+
+</resources>

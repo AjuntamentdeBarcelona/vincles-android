@@ -1,0 +1,204 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingRight="@dimen/gallery_padding_sides"
+    android:paddingLeft="@dimen/gallery_padding_sides"
+    android:paddingTop="@dimen/gallery_padding_top_bottom"
+    android:paddingBottom="@dimen/gallery_padding_top_bottom"
+    android:orientation="vertical"
+    tools:activity="cat.bcn.vincles.mobile.UI.Contacts.ContactsFragment">
+
+    <cat.bcn.vincles.mobile.UI.Compound.BackCompoundView
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/gallery_back_button_size"
+        android:src="@drawable/tornar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/shape_square_gray_background"
+                android:padding="8dp">
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/akkurat_bold"
+                    android:text="@string/calendar_detail_title"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/calendar_meeting_detail_text_size"
+                    app:layout_constraintTop_toBottomOf="@+id/back"
+                    app:layout_constraintLeft_toLeftOf="parent"/>
+
+                <TextView
+                    android:id="@+id/description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/akkurat"
+                    android:layout_marginTop="8dp"
+                    android:text="descripcio"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/calendar_meeting_detail_text_size"
+                    app:layout_constraintTop_toBottomOf="@+id/back"
+                    app:layout_constraintLeft_toLeftOf="parent"/>
+
+                <TextView
+                    android:id="@+id/date_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/akkurat"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/calendar_detail_date_title"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/calendar_meeting_detail_text_size"
+                    app:layout_constraintTop_toBottomOf="@+id/back"
+                    app:layout_constraintLeft_toLeftOf="parent"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/clockIcon"
+                        android:layout_width="@dimen/content_detail_clock_icon_size"
+                        android:layout_height="@dimen/content_detail_clock_icon_size"
+                        android:background="@drawable/clock"
+                        android:layout_marginRight="8dp"
+                        android:layout_gravity="center_vertical"
+                        app:layout_constraintHorizontal_chainStyle="packed"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toLeftOf="@+id/date"
+                        app:layout_constraintTop_toBottomOf="@+id/back" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/day"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/akkurat"
+                            android:text="Dimecres 30 de maig de 2018"
+                            android:textSize="@dimen/calendar_detail_text_smaller"
+                            android:textColor="@color/colorBlack"/>
+
+                        <TextView
+                            android:id="@+id/hour"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/akkurat"
+                            android:text="12:30 a 13:30"
+                            android:textSize="@dimen/calendar_detail_text_smaller"
+                            android:textColor="@color/colorBlack"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/creator_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/akkurat"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/calendar_detail_host_title"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/calendar_meeting_detail_text_size"
+                    app:layout_constraintTop_toBottomOf="@+id/back"
+                    app:layout_constraintLeft_toLeftOf="parent"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <FrameLayout
+                        android:layout_width="@dimen/calendar_detail_avatar_size"
+                        android:layout_height="@dimen/calendar_detail_avatar_size">
+
+                        <ProgressBar
+                            android:id="@+id/progressbar"
+                            android:visibility="gone"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="8dp"/>
+
+                        <com.makeramen.roundedimageview.RoundedImageView
+                            android:id="@+id/contactsIcon"
+                            android:layout_width="@dimen/calendar_detail_avatar_size"
+                            android:layout_height="@dimen/calendar_detail_avatar_size"
+                            android:layout_gravity="center"
+                            android:scaleType="centerCrop"
+                            app:riv_oval="true" />
+
+                    </FrameLayout>
+
+
+                    <TextView
+                        android:id="@+id/host_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/akkurat"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="8dp"
+                        android:text="Nom creador"
+                        android:textSize="@dimen/calendar_detail_text_smaller"
+                        android:textColor="@color/colorBlack"/>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/guests_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/akkurat_bold"
+                android:layout_marginTop="8dp"
+                android:text="@string/calendar_detail_guests_title"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/calendar_meeting_detail_text_size"
+                app:layout_constraintTop_toBottomOf="@+id/back"
+                app:layout_constraintLeft_toLeftOf="parent"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/gallery_recycler_margin_top"
+                android:layout_marginBottom="@dimen/gallery_padding_top_bottom"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintBottom_toTopOf="@+id/bottom_bar"
+                app:layout_constraintTop_toBottomOf="@+id/day_tv"
+                />
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+
+
+</LinearLayout>

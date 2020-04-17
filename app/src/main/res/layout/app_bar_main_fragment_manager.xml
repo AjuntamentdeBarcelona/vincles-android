@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:activity="cat.bcn.vincles.mobile.UI.FragmentManager.MainFragmentManagerActivity">
+
+    <android.support.design.widget.AppBarLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar android:id="@+id/toolbar"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:minHeight="?attr/actionBarSize"
+            android:contentInsetLeft="0dp"
+            android:contentInsetStart="0dp"
+            app:contentInsetLeft="0dp"
+            app:contentInsetStart="0dp"
+            android:contentInsetRight="0dp"
+            android:contentInsetEnd="0dp"
+            app:contentInsetRight="0dp"
+            app:contentInsetEnd="0dp"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            app:contentInsetStartWithNavigation="0dp"
+            android:background="@color/colorPrimary">
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/general_toolbar_logo_size"
+                android:padding="@dimen/general_toolbar_logo_padding"
+                android:src="@drawable/logo"
+                android:layout_gravity="center"
+                android:layout_marginRight="@dimen/toolbar_title_margin_right"
+                android:id="@+id/toolbar_title" />
+
+
+        </android.support.v7.widget.Toolbar>
+
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/content_main_fragment_manager" />
+
+
+</android.support.design.widget.CoordinatorLayout>

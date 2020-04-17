@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="gallery_number_of_columns">2</integer>
+    <integer name="contacts_number_of_columns">2</integer>
+    <integer name="millis_animation_calling">200</integer>
+    <integer name="seconds_timeout_calls">25</integer>
+    <integer name="calls_number_of_bullets">3</integer>
+    <integer name="help_text_size">14</integer>
+</resources>

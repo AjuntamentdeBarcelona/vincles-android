@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center|left"
+        android:layout_marginRight="@dimen/content_detail_bottom_buttons_margin_half" >
+
+        <ImageView
+            android:id="@+id/cancel_iv"
+            android:layout_width="@dimen/chat_write_bar_icon_size"
+            android:layout_height="@dimen/chat_write_bar_icon_size"
+            android:src="@drawable/selector_close_dialog_background" />
+
+        <TextView
+            android:id="@+id/cancel_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/content_detail_date_inner_margins"
+            android:text="@string/chat_button_exit_text"
+            android:textColor="@color/selector_text_red_white"
+            android:textSize="@dimen/content_detail_help_text_size" />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/message_et"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:layout_width="0dp"
+        android:padding="@dimen/chat_write_bar_edittext_padding"
+        android:background="@drawable/chat_edittext_background"
+        android:gravity="center_vertical"
+        android:layout_gravity="center_vertical"
+        android:textSize="@dimen/chat_element_message_time_text_size"
+        android:hint="@string/chat_message_hint"
+        android:singleLine="false"
+        android:layout_marginLeft="@dimen/general_views_separation"
+        android:layout_marginRight="@dimen/general_views_separation"
+         />
+
+    <LinearLayout
+        android:id="@+id/send"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_marginLeft="@dimen/content_detail_bottom_buttons_margin_half" >
+
+        <ImageView
+            android:id="@+id/send_iv"
+            android:layout_width="@dimen/chat_write_bar_icon_size"
+            android:layout_height="@dimen/chat_write_bar_icon_size"
+            android:layout_gravity="center"
+            android:src="@drawable/selector_send_button"/>
+
+        <TextView
+            android:id="@+id/send_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/content_detail_date_inner_margins"
+            android:text="@string/chat_button_send"
+            android:textColor="@color/selector_text_red_white"
+            android:textSize="@dimen/content_detail_help_text_size" />
+
+    </LinearLayout>
+</LinearLayout>

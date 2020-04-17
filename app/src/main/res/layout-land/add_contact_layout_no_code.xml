@@ -1,0 +1,144 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/gallery_padding_top_bottom"
+    android:paddingLeft="@dimen/gallery_padding_sides"
+    android:paddingRight="@dimen/gallery_padding_sides"
+    android:paddingTop="@dimen/gallery_padding_top_bottom"
+    tools:activity="cat.bcn.vincles.mobile.UI.ContentDetail.ContentDetailFragment">
+
+    <cat.bcn.vincles.mobile.UI.Compound.BackCompoundView
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/gallery_back_button_size"
+        android:src="@drawable/tornar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <LinearLayout
+        android:id="@+id/add_contact_ll"
+        android:layout_width="@dimen/add_contact_layout_no_code_width"
+        android:layout_height="match_parent"
+        android:background="@color/grayClear1"
+        android:clickable="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/contacts_add_in_blocks_margin_up_down"
+        android:paddingLeft="@dimen/contacts_add_in_blocks_margin_sides"
+        android:paddingRight="@dimen/contacts_add_in_blocks_margin_sides"
+        android:paddingTop="@dimen/contacts_add_in_blocks_margin_up_down"
+        android:layout_marginTop="@dimen/add_contact_margin_no_code"
+        android:layout_marginBottom="@dimen/add_contact_margin_no_code"
+        android:layout_centerInParent="true">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/contacts_add_between_blocks_margin"
+            android:gravity="center"
+            android:text="@string/add_contacts_add_code_text"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/contacts_add_text_size" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/contacts_add_blocks_edittext_height"
+            android:orientation="horizontal"
+            android:layout_marginBottom="@dimen/contacts_add_between_blocks_margin">
+
+            <EditText
+                android:id="@+id/add_contact_code_et"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/contacts_add_blocks_edittext_height"
+                android:layout_marginBottom="@dimen/contacts_add_between_blocks_margin"
+                android:background="@color/colorWhite"
+                android:gravity="center"
+                android:hint="@string/add_contacts_add_code_hint"
+                android:inputType="text"
+                android:lines="1"
+                android:layout_weight="2"
+                android:maxLines="1"
+                android:paddingRight="@dimen/contacts_add_between_blocks_margin"
+                android:textSize="@dimen/contacts_add_text_size"
+                android:layout_marginRight="5dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:background="@color/colorWhite"
+                android:layout_marginLeft="5dp">
+                <Spinner
+                    android:id="@+id/relationship_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/add_contact_button"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/contacts_add_blocks_button_height"
+            android:background="@drawable/selector_buttons_background"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/image_bottom_with_text_size"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="@dimen/image_bottom_with_text_margin_right"
+                android:src="@drawable/selector_check_background" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/add_contacts_add_code_button"
+                android:textColor="@color/selector_text_red_white"
+                android:textSize="@dimen/main_bottom_rows_text_size" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/cancel"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/contacts_add_bottom_buttons_height"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/selector_buttons_background"
+        android:clickable="true"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/image_bottom_with_text_size"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="@dimen/image_bottom_with_text_margin_right"
+            android:src="@drawable/selector_no_eliminar_background" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/add_contacts_cancel"
+            android:textColor="@color/selector_text_red_white"
+            android:textSize="@dimen/main_bottom_rows_text_size" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

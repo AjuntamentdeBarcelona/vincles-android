@@ -1,0 +1,10 @@
+<resources>
+
+    <string name="menu">@string/menu_string</string>
+
+    <string name="calendar_edit_date">Editar la cita</string>
+    <string name="calendar_reject_date">Rebutjar la cita</string>
+    <string name="calendar_cancel_date">Cancel·lar la cita</string>
+    <string name="calendar_accept_date">Acceptar la cita</string>
+
+</resources>

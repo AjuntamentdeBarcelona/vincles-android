@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/itemLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/background_iv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        android:layout_alignTop="@+id/linearlayout"
+        android:layout_alignBottom="@+id/linearlayout"
+        android:src="@drawable/pending_meeting_texture"/>
+
+    <LinearLayout
+        android:id="@+id/linearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/calendar_meeting_margin"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/clockIcon"
+            android:layout_width="@dimen/content_detail_clock_icon_size"
+            android:layout_height="@dimen/content_detail_clock_icon_size"
+            android:background="@drawable/clock"
+            android:layout_marginRight="8dp"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/date"
+            app:layout_constraintTop_toBottomOf="@+id/back" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/hour_start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/akkurat"
+                android:text="12:30"
+                android:textSize="@dimen/calendar_text_size"
+                android:textColor="@color/colorBlack"/>
+
+            <TextView
+                android:id="@+id/hour_end"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/akkurat"
+                android:text="13:30"
+                android:textSize="@dimen/calendar_text_size"
+                android:textColor="@color/colorBlack"/>
+
+        </LinearLayout>
+
+
+        <View
+            android:id="@+id/date_divider"
+            android:background="@color/colorBlack"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/calendar_item_vertical_divider_margins"
+            android:layout_marginLeft="@dimen/calendar_item_vertical_divider_margins"
+             />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/meeting_host"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="@font/akkurat"
+                android:layout_marginRight="16dp"
+                android:text="@string/calendar_date_created_by"
+                android:textSize="@dimen/calendar_text_size"
+                android:textColor="@color/colorBlack"/>
+
+            <TextView
+                android:id="@+id/meeting_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:fontFamily="@font/akkurat_bold"
+                android:layout_marginRight="16dp"
+                android:text="@string/calendar_date_description"
+                android:textSize="@dimen/calendar_text_size"
+                android:textColor="@color/colorBlack"/>
+
+            <TextView
+                android:id="@+id/meeting_guests"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="@font/akkurat_bold"
+                android:layout_marginRight="16dp"
+                android:lines="1"
+                android:ellipsize="end"
+                android:textSize="@dimen/calendar_text_size"
+                android:text="@string/calendar_date_guests"
+                />
+
+            <FrameLayout
+                android:id="@+id/meeting_buttons_bar"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/gallery_bottom_buttons_height">
+            </FrameLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
+
+
+

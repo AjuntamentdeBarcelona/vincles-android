@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent">
+
+
+    <!--             CONTACT 1            -->
+    <cat.bcn.vincles.mobile.UI.Home.ContactCompoundView
+        android:id="@+id/contact1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/first_contact_background"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/separation_contacts_vertical_left"
+        app:layout_constraintTop_toBottomOf="@+id/separation_horizontal_big"
+        app:layout_constraintBottom_toTopOf="@+id/separation_contacts_horizontal"
+        />
+
+
+    <!--    VERTICAL DIVIDER    -->
+    <View
+        android:id="@+id/separation_contacts_vertical_left"
+        android:layout_width="@dimen/main_separation_contacts"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/separation_horizontal_big"
+        app:layout_constraintBottom_toTopOf="@+id/separation_contacts_see_contacts"
+        app:layout_constraintStart_toEndOf="@+id/contact1"
+        app:layout_constraintEnd_toStartOf="@+id/contact2" />
+
+    <!--             CONTACT 2            -->
+    <cat.bcn.vincles.mobile.UI.Home.ContactCompoundView
+        android:id="@+id/contact2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/contact_left_background"
+        app:layout_constraintStart_toEndOf="@+id/separation_contacts_vertical_left"
+        app:layout_constraintEnd_toStartOf="@+id/separation_contacts_vertical_right"
+        app:layout_constraintTop_toBottomOf="@+id/separation_horizontal_big"
+        app:layout_constraintBottom_toTopOf="@+id/separation_contacts_horizontal"
+        />
+
+    <View
+        android:id="@+id/separation_contacts_vertical_right"
+        android:layout_width="@dimen/main_separation_contacts"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/separation_horizontal_big"
+        app:layout_constraintBottom_toTopOf="@+id/separation_contacts_see_contacts"
+        app:layout_constraintStart_toEndOf="@+id/contact2"
+        app:layout_constraintEnd_toStartOf="@+id/contact3" />
+
+    <!--             CONTACT 3            -->
+    <cat.bcn.vincles.mobile.UI.Home.ContactCompoundView
+        android:id="@+id/contact3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/second_contact_background"
+        app:layout_constraintStart_toEndOf="@+id/separation_contacts_vertical_right"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/separation_horizontal_big"
+        app:layout_constraintBottom_toTopOf="@+id/separation_contacts_horizontal"/>
+
+
+    <!--    HORIZONTAL DIVIDER    -->
+    <View
+        android:id="@+id/separation_contacts_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/main_separation_contacts"
+        app:layout_constraintTop_toBottomOf="@+id/contact1"
+        app:layout_constraintBottom_toTopOf="@+id/contact4"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="parent" />
+
+    <!--             CONTACT 4            -->
+    <cat.bcn.vincles.mobile.UI.Home.ContactCompoundView
+        android:id="@+id/contact4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/contact_left_background"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/separation_contacts_vertical_left"
+        app:layout_constraintTop_toBottomOf="@+id/separation_contacts_horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/separation_contacts_see_contacts"/>
+
+
+    <!--             CONTACT 5            -->
+    <cat.bcn.vincles.mobile.UI.Home.ContactCompoundView
+        android:id="@+id/contact5"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/contact_left_background"
+        app:layout_constraintStart_toEndOf="@+id/separation_contacts_vertical_left"
+        app:layout_constraintEnd_toStartOf="@+id/separation_contacts_vertical_right"
+        app:layout_constraintTop_toBottomOf="@+id/separation_contacts_horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/separation_contacts_see_contacts"/>
+
+    <!--             CONTACT 6            -->
+    <cat.bcn.vincles.mobile.UI.Home.ContactCompoundView
+        android:id="@+id/contact6"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/contact_right_background"
+        app:layout_constraintStart_toEndOf="@+id/separation_contacts_vertical_right"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/separation_contacts_horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/separation_contacts_see_contacts"/>
+
+
+</merge>

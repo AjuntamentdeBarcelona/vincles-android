@@ -1,0 +1,27 @@
+<android.support.v7.widget.Toolbar android:id="@+id/toolbar_top"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:minHeight="?attr/actionBarSize"
+    android:contentInsetLeft="0dp"
+    android:contentInsetStart="0dp"
+    app:contentInsetLeft="0dp"
+    app:contentInsetStart="0dp"
+    android:contentInsetRight="0dp"
+    android:contentInsetEnd="0dp"
+    app:contentInsetRight="0dp"
+    app:contentInsetEnd="0dp"
+    android:theme="@style/AppTheme.AppBarOverlay"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:text="Toolbar Title"
+        android:src="@drawable/logo"
+        android:layout_gravity="center"
+        android:id="@+id/toolbar_title" />
+
+
+</android.support.v7.widget.Toolbar>

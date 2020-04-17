@@ -1,0 +1,706 @@
+<resources>
+    <string name="app_name">Vincles BCN</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="title_activity_main_fragment_manager">MainFragmentManagerActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="reminder_alert_title">Recordatorio</string>
+    <string name="battery_alert_text">La batería está al %s</string>
+    <string name="network_alert_text">No tienes conectividad con la red</string>
+
+    <string name="processing">Procesando</string>
+    <string name="file_too_big">El archivo es demasiado grande</string>
+
+    <string name="error_audio_format">Este audio no se puede reproducir</string>
+    <string name="error_audio_busy">Otra aplicación está utilizando el micrófono. No es posible grabar el mensaje de audio en este momento.</string>
+    <string name="error_audio_busy_for_video">Otra aplicación está utilizando el micrófono. No es posible grabar un video en este momento.</string>
+
+  <!-- LOGIN -->
+    <string name="text_explanatory_login">Introduce tus credenciales para acceder a Vincles BCN:</string>
+    <string name="email">Usuario o correo electrónico</string>
+    <string name="mail">Correo electrónico</string>
+    <string name="password">Contraseña</string>
+    <string name="enter">Entrar</string>
+    <string name="register_new_user">Registrar un nuevo usuario</string>
+    <string name="passwordrecovery">Recuperar contraseña</string>
+    <string name="recover_pass_accept">Entendido</string>
+    <string name="recover_pass_success">Hemos enviado un correo con las instrucciones del proceso para recuperar su contraseña, por favor revise su correo electrónico para completar el proceso.</string>
+    <string name="register_succed">Hemos enviado un correo con las instrucciones del proceso para finalizar el registro, por favor revise su correo electrónico para completar el proceso.</string>
+    <string name="login_sending_data">Enviando datos</string>
+    <string name="login_loading_user_info">Recuperando información de usuario</string>
+    <string name="saving_file">Guardando archivo</string>
+    <string name="saving_credentials">Guardar datos de acceso</string>
+
+    <!-- HOME -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="check_alerts">Consulta los avisos</string>
+    <string name="welcome_male">Bienvenido a Vincles, %s!</string>
+    <string name="welcome_female">Bienvenida a Vincles, %s!</string>
+    <string name="see_all_album">Fotos y vídeos</string>
+    <string name="see_all_contacts">Ver todos los contactos</string>
+    <string name="see_all_meetings">Calendario</string>
+    <string name="see_all_alerts">Consulta los avisos</string>
+    <string name="camera">Cámara</string>
+
+    <string name="no_contacts">Aún no tienes contactos</string>
+    <string name="no_contacts_group">Aún no tienes grupos</string>
+    <string name="relationship_partner">Socio/a</string>
+    <string name="relationship_child">Hijo/a</string>
+    <string name="relationship_grandchild">Nieto/a</string>
+    <string name="relationship_other">Otros</string>
+    <string name="relationship_friend">Amigo/a</string>
+    <string name="relationship_volunteer">Voluntari/a</string>
+    <string name="relationship_caregiver">Cuidador/a</string>
+
+    <string name="home">Inicio</string>
+    <string name="contacts">Contactos</string>
+    <string name="media">Fotos y vídeos</string>
+    <string name="calendar">Calendario</string>
+    <string name="alerts">Notificaciones</string>
+    <string name="configuration">Configuración</string>
+    <string name="about_vincles">Sobre Vincles BCN</string>
+    <string name="logout">Salir</string>
+
+    <string name="menu_help">Ayuda</string>
+    <string name="menu">@string/empty_string</string>
+    <string name="menu_string">Menú</string>
+
+    <string name="catalan">Catalán</string>
+    <string name="spanish">Castellano</string>
+    <string name="english">English</string>
+    <string name="registration_language">* Idioma de la app Vincles BCN</string>
+    <string name="photography">* Fotografía:</string>
+    <string name="pick_a_photo">Escoger una foto:</string>
+    <string name="take_photo">* Tu foto</string>
+    <string name="first_name">* Nombre</string>
+    <string name="last_name">* Apellidos</string>
+    <string name="birthdate">* Fecha de nacimiento</string>
+    <string name="email_register">* Correo electrónico</string>
+    <string name="password_register">* Contraseña</string>
+    <string name="passwordrepeat_register">* Repite la contraseña</string>
+    <string name="phone">* Teléfono</string>
+    <string name="gender">* Género</string>
+    <string name="female">Mujer</string>
+    <string name="male">Hombre</string>
+    <string name="registration_home">* ¿Vives en Barcelona?</string>
+    <string name="no">No</string>
+    <string name="yes">Sí</string>
+    <string name="register">Registrarme</string>
+    <string name="chose_picture">Escoge una foto</string>
+    <string name="personal_data">Datos personales</string>
+    <string name="pick_date">Seleccionar fecha</string>
+    <string name="hint_date">* DD/MM/YYYY</string>
+
+    <string name="view_all_archives">Ver todos los archivos</string>
+    <string name="view_all_my_files">Ver sólo mis archivos</string>
+    <string name="view_received_files">Ver sólo archivos recibidos</string>
+
+    <string name="change_profile_photo">Cambiar foto de perfil</string>
+    <string name="gallery">Galería</string>
+    <string name="all_files">Todos los archivos</string>
+    <string name="my_files">Mis archivos</string>
+    <string name="received_files">Archivos recibidos</string>
+    <string name="delete">Eliminar</string>
+    <string name="share">Compartir</string>
+    <string name="before">Anterior</string>
+    <string name="next">Siguiente</string>
+    <string name="back">Volver</string>
+    <string name="save_image_in_gallery">¿Quiere guardar la imagen en la galería de la aplicación?</string>
+    <string name="save_image_in_gallery_error">Ha habido un error al guardar el archivo. ¿Quiere volver a intentar?</string>
+    <string name="error_opening_image">Error al abrir la imagen</string>
+    <string name="deleting_file">Eliminando archivo</string>
+    <string name="deleting_files">Eliminando los archivos</string>
+    <string name="deleting_files_not_ok_retry">No se han podido eliminar los archivos. ¿Quiere volver a intentarlo?</string>
+    <string name="deleting_files_partially_ok">No se han podido eliminar algunos de los archivos. ¿Quiere volver a intentarlo?</string>
+
+    <string name="gallery_button_share">Compartir</string>
+    <string name="gallery_button_share_selection">Compartir la selección</string>
+    <string name="gallery_button_foto">Nueva foto</string>
+    <string name="gallery_button_video">Nuevo vídeo</string>
+    <string name="gallery_share_title">Selecciona los archivos</string>
+    <string name="gallery_no_share">Volver y no compartir</string>
+    <string name="contacts_share_title">Selecciona los contactos</string>
+    <string name="gallery_max_items">Puedes compartir 10 elementos como máximo</string>
+    <string name="gallery_max_contacts">Puedes compartir con 5 contactos como máximo</string>
+    <string name="gallery_filter_share">Compartir</string>
+    <string name="gallery_filter_delete">Eliminar</string>
+    <string name="gallery_select_all">Seleccionar todo</string>
+    <string name="gallery_deselect_all">Deseleccionar todo</string>
+    <string name="gallery_no_content">Aún no tienes contenido</string>
+
+    <string name="config_firstname">Nombre</string>
+    <string name="config_lastname">Apellidos</string>
+    <string name="config_username">Nombre de usuario</string>
+    <string name="config_email">Correo electrónico</string>
+    <string name="config_phone">Teléfono</string>
+    <string name="config_bcn">¿Vives en Barcelona?</string>
+
+    <string name="terms_and_conditions">TÉRMINOS Y CONDICIONES</string>
+    <string name="accept">Aceptar</string>s
+    <string name="cancel">Cancelar</string>
+    <string name="error">Error</string>
+    <string name="alert">Alerta</string>
+    <string name="retry">Reintentar</string>
+    <string name="information">Información</string>
+    <string name="signout_info">¿Seguro que quiere cerrar la sesión?</string>
+    <string name="remove_item_info">¿Seguro que quiere eliminar el archivo?</string>
+    <string name="remove_items_info">¿Seguro que quiere eliminar los archivos?</string>
+    <string name="error_removing_content">Ha ocurrido un error al intentar eliminar el contenido</string>
+    <string name="close">Cerrar</string>
+    <string name="close_session">Cerrar sesión</string>
+    <string name="close_session_token_message">Ha caducado la sesión.</string>
+
+
+    <string name="of">de</string>
+    <string-array name="months">
+        <item>Enero</item>
+        <item>Febrero</item>
+        <item>Marzo</item>
+        <item>Abril</item>
+        <item>Mayo</item>
+        <item>Junio</item>
+        <item>Julio</item>
+        <item>Agosto</item>
+        <item>Septiembre</item>
+        <item>Octubre</item>
+        <item>Noviembre</item>
+        <item>Diciembre</item>
+    </string-array>
+
+    <!-- CONTACTS -->
+    <string name="filter_contacts">Filtrar</string>
+    <string name="add_contacts">Añadir contacto</string>
+    <string name="remove_contacts">Eliminar contacto</string>
+    <string name="add_contacts_cancel">No añadir y volver a contactos</string>
+    <string name="add_contacts_see_code_text">Quiero ver mi código de vinculación para que otro contacto me añada</string>
+    <string name="add_contacts_see_code_button">Ver mi código</string>
+    <string name="add_contacts_add_code_text">Tengo el código de vinculación de otro usuario y quiero añadirlo</string>
+    <string name="add_contacts_add_code_button">Añadir contacto</string>
+    <string name="add_contacts_add_code_hint">Escribe el código</string>
+    <string name="add_contacts_add_code_error">El código no puede estar vacío</string>
+    <string name="add_contact_ok_message">Se ha vinculado correctamente el contacto</string>
+    <string-array name="add_contact_relationships">
+        <item>Pareja</item>
+        <item>Hijo/a</item>
+        <item>Nieto/a</item>
+        <item>Amigo/a</item>
+        <item>Voluntari/a</item>
+        <item>Cuidador/a</item>
+        <item>Hermano/a</item>
+        <item>Sobrino/a</item>
+        <item>Otros</item>
+    </string-array>
+    <string name="contacts_filter_all">Ver todos los contactos</string>
+    <string name="contacts_filter_family_friends">Ver familia y amigos</string>
+    <string name="contacts_filter_groups">Ver grupos Vincles</string>
+    <string name="contacts_filter_dynam">Ver los dinamizadores</string>
+    <string name="contacts_filter_all_title">Todos los contactos</string>
+    <string name="contacts_filter_family_friends_title">Familia y amigos</string>
+    <string name="contacts_filter_groups_title">Grupos Vincles</string>
+    <string name="contacts_filter_dynam_title">Dinamizadores</string>
+    <string name="delete_contact_title">Eliminar contacto</string>
+    <string name="delete_contact_explanation">Estás a punto de eliminar a %1$s de tu red de contactos. ¿Estás seguro?</string>
+    <string name="delete_contact_success">%1$s se ha eliminado correctamente</string>
+    <string name="delete_contact_error">No se ha podido eliminar</string>
+    <string name="delete_contact_no">No. Volver y no eliminar</string>
+    <string name="delete_contact_yes">Sí. Eliminar contacto</string>
+    <string name="delete_contact_cancel">No quiero eliminar ningún contacto</string>
+    <string name="media_shared_ok">El contenido se ha compartido correctamente</string>
+    <string name="media_shared_ko">No se ha podido compartir el contenido</string>
+
+    <!-- CHATS -->
+    <string name="chat_button_text">Texto</string>
+    <string name="chat_button_camera">Foto</string>
+    <string name="chat_button_video">Vídeo</string>
+    <string name="chat_button_audio">Audio</string>
+    <string name="chat_button_file">Elegir del álbum</string>
+    <string name="chat_button_exit_text">Salir de texto</string>
+    <string name="chat_button_send">Enviar</string>
+    <string name="chat_message_hint">Escribe aquí tu texto</string>
+    <string name="chat_button_call">Llamar</string>
+    <string name="chat_button_dinamizer">Dinamizador</string>
+    <string name="chat_alert_today">Hoy</string>
+    <string name="chat_alert_not_read">Mensajes no leídos</string>
+    <string name="chat_send_message_error">Ha habido un error al enviar el mensaje. ¿Quiere reintentar?</string>
+    <string name="chat_username_you">Tú</string>
+    <string name="chat_audio_recording">Grabando</string>
+    <string name="chat_alert_missed_call">%1$s te ha llamado el %2$s a las %3$s</string>
+    <string name="chat_send_audio">¿Enviar audio?</string>
+    <string name="chat_repeat_audio">Repetir</string>
+    <string name="chat_stop_audio">Parar</string>
+
+
+    <!-- GROUP DETAIL -->
+    <string name="group_detail_send_invite">Enviar invitación</string>
+    <string name="group_detail_resend_invite">Reinvitar usuario</string>
+
+    <string name="group_detail_send_invite_ok_title">Solicitud de contacto</string>
+    <string name="group_detail_send_invite_ok_message">Tu solicitud de contacto se ha enviado correctamente</string>
+    <string name="group_detail_invite_notification">%1$s te ha invitado a formar parte de sus contactos. Su código de vinculación es %2$s</string>
+
+
+    <!-- CONFIGURATION -->
+    <string name="configuration_photo">Fotografía</string>
+    <string name="configuration_my_photo">Mi foto</string>
+    <string name="configuration_personal_data">Datos personales</string>
+    <string name="configuration_language">Idioma de la app Vincles BCN</string>
+    <string name="configuration_text_size">Tamaño de la letra</string>
+    <string name="configuration_copy_gallery">Copiar imágenes y videos a la galería del dispositivo
+    </string>
+    <string name="configuration_text_small">Pequeño</string>
+    <string name="configuration_text_medium">Mediano</string>
+    <string name="configuration_text_big">Grande</string>
+    <string name="configuration_lives_barcelona">Residente en Barcelona</string>
+    <string name="configuration_save">Guardar</string>
+    <string name="configuration_username">* Nombre de usuario</string>
+    <string name="configuration_autodownload">Descarga automática de archivos</string>
+    <string name="configuration_sync_calendar">Sincronizar citas con el calendario móvil</string>
+    <string name="configuration_new_password">Nueva contraseña</string>
+    <string name="configuration_new_password_verify">Repite la contraseña</string>
+    <string name="configuration_old_password">Contraseña actual</string>
+    <string name="configuration_error_password_format_wrong">Formato de contraseña incorrecto. La contraseña debe tener entre 8 y 16 caracteres, un formato alfanumérico y puede incluir los siguientes caracteres: _!&amp;%$-@</string>
+    <string name="configuration_error_different_passwords">Las contraseñas no coinciden</string>
+    <string name="configuration_error_missing_old_password">Por favor, escribe tu contraseña actual en el campo pertinente</string>
+
+
+    <!-- ABOUT -->
+    <string name="about_text">Vincles es un servicio de soporte y acompañamiento en la conversación, fortalecimiento y creación de vínculos relacionales de las personas mayores usuarias del servicio.\n\nPor una parte, el servicio Vincles consiste en dar soporte en la dinamización de una red personal de la persona mayor; incorporando familiares, amigos, vecinos, y personas de su entorno de confianza a su red. Por otro lado, el servicio Vincles pretende incorporar a la persona mayor en grupos creados con otros usuarios del servicio, fomentando la interacción y promoviendo la participación en actividades tanto online como presenciales.\n\nAyuntamiento de Barcelona\n\nEn caso de consultas, quejas, sugerencias o incidencias, por favor, utilice el formulario disponible en la siguiente web: <a href="http://www.bcn.cat/cgi-bin/queixesIRIS?id=392">http://www.bcn.cat/cgi-bin/queixesIRIS?id=392</a>.\n</string>
+    <string name="about_app_version">Versión de la aplicación: v%1$s</string>
+
+    <!-- CALENDAR -->
+    <string name="calendar_see_today">Ver hoy</string>
+    <string name="calendar_see_tomorrow">Ver mañana</string>
+    <string name="calendar_see_month">Ver mes entero</string>
+    <string name="calendar_create_new_date">Crear nueva cita</string>
+    <string name="calendar_cancel_date">Cancelar</string>
+    <string name="calendar_not_going_date">No asistiré</string>
+    <string name="calendar_edit_date_save">Guardar la cita</string>
+    <string name="calendar_edit_date">Editar</string>
+    <string name="calendar_reject_date">Rechazar</string>
+    <string name="calendar_accept_date">Aceptar</string>
+    <string name="calendar_today_date">Hoy, %1$s</string>
+    <string name="calendar_tomorrow_date">Mañana, %1$s</string>
+    <string name="calendar_date_created_by">Cita creada por: %1$s</string>
+    <string name="calendar_date_guests">Participantes: %1$s</string>
+    <string name="calendar_date_start_time">Inicio de la cita</string>
+    <string name="calendar_date_length">Duración de la cita</string>
+    <string name="calendar_date_length_alert">Duración:</string>
+    <string name="calendar_new_date_description">Escribe aquí el título de la cita</string>
+    <string name="calendar_create_date">Crear la cita</string>
+    <string name="calendar_stop_inviting">Dejar de invitar</string>
+    <string name="calendar_invite_others">Invitar a otros contactos a la cita</string>
+    <string name="calendar_date_description">Escribe aquí el título de la cita</string>
+    <string name="calendar_hour">hora</string>
+    <string name="calendar_minutes">minutos</string>
+    <string name="calendar_detail_title">Detalles de la cita</string>
+    <string name="calendar_detail_date_title">Fecha y hora:</string>
+    <string name="calendar_detail_host_title">Creador:</string>
+    <string name="calendar_detail_guests_title">Invitados</string>
+    <string name="calendar_meeting_duration_30">30 minutos</string>
+    <string name="calendar_meeting_duration_60">1 hora</string>
+    <string name="calendar_meeting_duration_90">1 hora 30 minutos</string>
+    <string name="calendar_meeting_duration_120">2 horas</string>
+    <string name="calendar_hour_is_past">La hora ya ha pasado</string>
+    <string name="calendar_month_monday">LUN</string>
+    <string name="calendar_month_tuesday">MAR</string>
+    <string name="calendar_month_wednesday">MIE</string>
+    <string name="calendar_month_thursday">JUE</string>
+    <string name="calendar_month_friday">VIE</string>
+    <string name="calendar_month_saturday">SÁB</string>
+    <string name="calendar_month_sunday">DOM</string>
+    <string name="calendar_invite_contacts_title">Selecciona los contactos</string>
+    <string name="calendar_invite_contacts_positive">Volver y no invitar</string>
+    <string name="calendar_invite_contacts_negative">Invitarlos a la cita</string>
+    <string name="calendar_no_dates_this_day">No tienes citas este día</string>
+    <string name="calendar_rejected_state">Rebutjat</string>
+    <string name="calendar_accepted_state">Acceptat</string>
+    <string name="calendar_invited_state">Convidat</string>
+    <string name="calendar_cancel_confirmation">¿Seguro que quiere cancelar la cita?</string>
+    <string name="calendar_reject_confirmation">¿Seguro que quiere rechazar la cita?</string>
+    <string name="calendar_meeting_title_missing">El campo "Título" debe ser obligatorio</string>
+
+    <!-- CALLS -->
+    <string name="calls_cancel_call_button">Cancelar la llamada</string>
+    <string name="calls_answer_call_button">Descolgar</string>
+    <string name="calls_hang_call_button">Colgar</string>
+    <string name="calls_send_message_call_button">Enviar mensaje</string>
+    <string name="calls_retry_call_button">Reintentar</string>
+    <string name="calls_calling_title">Llamando a %1$s</string>
+    <string name="calls_being_called_title">Llamada de %1$s</string>
+    <string name="calls_no_answer_title">%1$s no está disponible</string>
+    <string name="calls_sure_exit_alert">¿Seguro que quieres salir de la llamada?</string>
+    <string name="calls_sure_exit_alert_positive">Colgar y salir</string>
+    <string name="calls_sure_exit_alert_negative">No salir</string>
+    <string name="calls_error_before_call">No se puede establecer la llamada, por favor, vuelva a intentarlo</string>
+    <string name="calls_error_during_call">Se ha cortado la llamada, por favor, vuelva a intentarlo más tarde</string>
+
+    <!-- NOTIFICATIONS -->
+    <string name="notifications_title">Avisos</string>
+    <string name="notifications_empty_text">No hay avisos</string>
+    <string name="notifications_new_contact">%1$s es tu nuevo contacto</string>
+    <string name="notifications_no_longer_contact">%1$s ya no es tu contacto</string>
+    <string name="notifications_see_chat">Ir al chat</string>
+    <string name="notifications_see_contacts">Ver contactos</string>
+    <string name="notifications_messages_user">%1$d mensajes nuevos de %2$s</string>
+    <string name="notifications_message_user">%1$d mensaje nuevo de %2$s</string>
+    <string name="notifications_message_photo">Nueva foto</string>
+    <string name="notifications_message_video">Nuevo vídeo</string>
+    <string name="notifications_message_audio">Nuevo audio</string>
+    <string name="notifications_message_message">Nuevo mensaje</string>
+    <string name="notifications_new_group">Te han invitado al grupo %1$s</string>
+    <string name="notifications_deleted_group">Te han eliminado del grupo %1$s</string>
+    <string name="notifications_see_groups">Ver grupos</string>
+    <string name="notifications_new_messages_group">%1$d nuevos mensajes en el chat de grupo %2$s</string>
+    <string name="notifications_new_message_group">%1$d nuevo mensaje en el chat de grupo %2$s</string>
+    <string name="notifications_new_messages_dinam">Nuevos mensajes de %1$s</string>
+    <string name="notifications_new_date">%1$s te ha invitado a una cita el día %2$s a las %3$s</string>
+    <string name="notifications_date_accepted">%1$s ha aceptado la invitación del día %2$s a las %3$s</string>
+    <string name="notifications_date_rejected">%1$s ha rechazado la invitación del día %2$s a las %3$s</string>
+    <string name="notifications_date_updated">%1$s ha actualizado una cita</string>
+    <string name="notifications_date_updated_system">%1$s ha actualizado la cita del día %2$s a las %3$s</string>
+    <string name="notifications_date_revoked">%1$s ha cancelado la invitación del día %2$s a las %3$s</string>
+    <string name="notifications_see_date">Ver cita</string>
+    <string name="notifications_see_calendar">Ir al calendario</string>
+    <string name="notifications_missed_call">Llamada perdida de %1$s</string>
+    <string name="notifications_channel_message_name">Mensajes</string>
+    <string name="notifications_channel_message_description">Notificaciones de mensajes individuales y de grupo</string>
+    <string name="notifications_channel_other_name">Otras notificaciones</string>
+    <string name="notifications_channel_other_description">Notificaciones que no son de mensajes</string>
+    <string name="notifications_channel_notifications_name">Procesando avisos</string>
+    <string name="notifications_channel_notifications_description">Notificaciones para avisar de cuando se están procesando nuevos avisos</string>
+    <string name="notifications_processing_notifications">Procesando avisos</string>
+    <string name="notifications_new_photo">Nueva foto</string>
+    <string name="notifications_new_video">Nuevo vídeo</string>
+    <string name="notifications_new_audio">Nuevo audio</string>
+    <string name="notifications_new_message">Nuevo mensaje</string>
+
+    <!--acces ajuda-->
+    <string name="access_help_menu_navegation_title">Menú de navegación</string>
+    <string name="access_help_menu_navegation_text">Al hacer click en este icono situado a la izquierda de la barra superior podemos navagar a cualquier sección.</string>
+    <string name="access_help_back_main_page_title">Volver a la página principal</string>
+    <string name="access_help_back_main_page_text">Clicar el logotip Vincles situdado en el centro de la barra superior nos redirecciona a la pantalla inicial.</string>
+    <string name="access_help_back_previous_title">Volver a la pantalla anterior</string>
+    <string name="access_help_back_previous_text">Presionar el botón Volver nos redirecciona a la pantalla anteriormente visitada.</string>
+    <string name="access_help_do_action_title">Realizar una acción</string>
+    <string name="access_help_do_action_text">Para realizar cualquiern acción en una pantalla, revisar los botones que aparecen en el margen inferior o bien en el margen superior derecho.</string>
+    <string name="access_help_responsive_title">Aplicación adaptativa</string>
+    <string name="access_help_responsive_text">Ésta aplicación ha sido diseñada para ser visualizada en formato vertical y horizontal. Al girar el dispositivo, el contenido se adaptarà.</string>
+    <string name="access_help_profile_config_title">Configuración del perfil</string>
+    <string name="access_help_profile_config_text">Para cambiar su configuración, desde el menú de navegación, acceda a la sección "Configuración".</string>
+    <string name="access_help_home_access_title">Accesos directos desde la Home</string>
+    <string name="access_help_home_access_text">Desde la página Home, puede acceder a la pantalla contratos, citas y el álbum de fotos y vídeos.</string>
+
+    <!-- CONTEXT HELP -->
+    <string name="context_help_home_notifications">Pulsando aquí, podrás ver todos los avisos pendientes de revisar. Citas pendientes, mensajes y/o llamadas perdidas.</string>
+    <string name="context_help_home_calendar">Al pulsar aquí, podrá acceder a tu calendario y crear nuevas citas.</string>
+    <string name="context_help_home_see_contacts">Al pulsar aquí, tendrá acceso a todos sus contactos.</string>
+    <string name="context_help_home_contacts">Es mostren els contacts que s\'utilitzen amb freqüència per facilitar-hi l\'accés.</string>
+    <string name="context_help_home_album">Al pulsar aquí, podrá acceder a todo el contenido multimedia creado por ti o compartido por tus contactos.</string>
+
+    <string name="context_help_calendar_today">Al pulsar aquí, podrá ver las citas de hoy.</string>
+    <string name="context_help_calendar_tomorrow">Al pulsar aquí, podrá ver las citas de mañana.</string>
+    <string name="context_help_calendar_month">Al pulsar aquí, podrá ver el mes entero y navegar por el calendario, consultar otras citas en otros días y crear nuevas.</string>
+    <string name="context_help_calendar_create">Al pulsar aquí, podrá añadir eventos al calendario e invitar a cualquiera de sus contactos.</string>
+
+    <string name="context_help_contacts_filter">Pulsando aquí, podrá filtrar los contactes por grupos, dinamizadores o familiares y amigos.</string>
+    <string name="context_help_contacts_add">Al pulsar aquí, podrá acceder a las opciones para añadir un nuevo contacto.</string>
+    <string name="context_help_contacts_delete">Al pulsar aquí, podrá seleccionar los contactos que se quiere eliminar.</string>
+    <string name="context_help_contacts_delete_button">Al pulsar aquí, volverá sin eliminar ningún contacto.</string>
+
+    <string name="context_help_gallery_filter">Pulsando aquí, podrá filtrar el contenido en ficheros propios o recibidos.</string>
+    <string name="context_help_gallery_share">Al pulsar aquí, podrá seleccionar el contenido que se quiere eliminar o compartir y con cual de nuestros contactos se quiere compartir.</string>
+    <string name="context_help_gallery_new_photo">Al pulsar aquí, podrá hacer fotos que se añadirán a su galería.</string>
+    <string name="context_help_gallery_new_video">Al pulsar aquí, podrá crear videos que se añadirán a su galería.</string>
+    <string name="context_help_gallery_back">Al pulsar aquí, volverá sin compartir o eliminar ningún elemento.</string>
+    <string name="context_help_gallery_delete">Al pulsar aquí, podrá eliminar los elementos seleccionados.</string>
+    <string name="context_help_gallery_share_contacts">Al pulsar aquí, podrá seleccionar los contactos con los cuales compartir las fotos y videos.</string>
+
+    <string name="context_help_chat_text">Al pulsar aquí, podrá desplegar el teclado y enviar mensajes de texto al momento.</string>
+    <string name="context_help_chat_photo">Al pulsar aquí, podrá hacer fotos para mandarlas al momento.</string>
+    <string name="context_help_chat_video">Al pulsar aquí, podrá crear videos para mandarlos al momento.</string>
+    <string name="context_help_chat_audio">Al pulsar aquí, podrá mandar mensajes de audio al momento.</string>
+    <string name="context_help_chat_gallery">Al pulsar aquí, podrá compartir archivos de la galería del dispositivo.</string>
+    <string name="context_help_chat_call">Al pulsar aquí, podrá iniciar videollamada con el contacto del chat.</string>
+    <string name="context_help_chat_profile">Al pulsar aquí podrà acceder al chat privado con el dinamizador.</string>
+    <string name="context_help_chat_record">Aquí verá los controles para grabar el mensaje de audio.</string>
+    <string name="context_help_chat_send_text">Aquí verá los controles para escribir un mensaje de texto.</string>
+
+    <!-- VALIDATION VIEW -->
+    <string name="validate_title">Clave de validación</string>
+    <string name="validate_code">@string/validate_title</string>
+    <string name="validate_button">Validar</string>
+    <string name="validate_resend_email">Reenviar correo</string>
+    <string name="validate_error">El código debe ser 4 cifras o 1 letra y 4 cifras</string>
+    <string name="validate_resend_email_ok">Correo reenviado</string>
+    <string name="validate_resend_email_error">No se ha podido reenviar el correo</string>
+    <string name="validate_explanation">Por favor, introduce en el siguiente campo el código que has recibido por email para validar tu usuario.</string>
+
+    <!-- SERVER ERROR CODES -->
+    <string name="error_default">Ha ocurrido un error</string>
+    <string name="error_connection">Error de connexión</string>
+    <string name="error_server">No es posible conectar con el servidor, por favor, intentelo más tarde</string>
+    <string name="error_login">Usuario o contraseña incorrectos</string>
+    <string name="error_1001">El usuario no puede acceder a este contenido</string>
+    <string name="error_1002">El usuario no puede acceder a los datos de este otro usuario</string>
+    <string name="error_1003">No se ha podido generar el password.</string>
+    <string name="error_1004">El formato del password es incorrecto.</string>
+    <string name="error_1005">El password se ha utilizado con anterioridad y no se puede volver a hacer servir.</string>
+    <string name="error_1006">Password incorrecto</string>
+    <string name="error_1101">Usuario no encontrado</string>
+    <string name="error_1102">El usuario no es un usuario vincles</string>
+    <string name="error_1103">El usuario no puede ser un usuario vincles</string>
+    <string name="error_1106">Un usuario no puede ser vincles y vinculado a la vez</string>
+    <string name="error_1107">El usuario debe ser vinculado</string>
+    <string name="error_1108">El usuario no puede ser un usuario vinculado</string>
+    <string name="error_1109">El usuario no es manager</string>
+    <string name="error_1110">Éste email ya está asociado a un usuario</string>
+    <string name="error_1111">El dni/nie se encuentra en uso</string>
+    <string name="error_1112">El nombre de usuario se encuentra en uso</string>
+    <string name="error_1113">El teléfono es obligatorio</string>
+    <string name="error_1114">Los usuarios deben ser mayores de 14 años</string>
+    <string name="error_1301">El código de registro es inválido</string>
+    <string name="error_1302">El código de registro ha caducado</string>
+    <string name="error_1310">Círculo no encontrado</string>
+    <string name="error_1320">El usuario no es parte de este círculo</string>
+    <string name="error_1321">El usuario ya está en este círculo</string>
+
+    <string name="error_1322">Un usuario no se puede añadir a su propio círculo</string>
+
+    <string name="error_1401">Contenido no encontrado</string>
+    <string name="error_1402">Solo el propietario de un contenido lo puede eliminar</string>
+    <string name="error_1501">El contenido no se encuentra en la biblioteca</string>
+    <string name="error_1601">El usuario no puede enviar este mensaje</string>
+    <string name="error_1602">Los mensajes solo se pueden enviar entre usuarios vincles y usuarios vinculados del mismo círculo</string>
+    <string name="error_1603">Los mensajes deben tener texto o tener uno o más adjuntos</string>
+    <string name="error_1604">Mensaje no encontrado</string>
+    <string name="error_1605">El usuario no puede acceder a este mensaje</string>
+    <string name="error_1606">Solo el receptor del mensaje puede marcarlo como leído</string>
+    <string name="error_1607">Solo el receptor del mensaje lo puede borrar</string>
+    <string name="error_1701">Solo un usuario identificado puede añadir una instalación</string>
+    <string name="error_1702">Ya tiene una instalación</string>
+    <string name="error_1703">No tiene ninguna instalación</string>
+    <string name="error_1704">No tiene ninguna instalación</string>
+    <string name="error_1801">La notificación no existe</string>
+    <string name="error_1802">El usuario no puede acceder a esta notificación</string>
+    <string name="error_1901">Calendario no encontrado</string>
+    <string name="error_1902">Evento no encontrado</string>
+    <string name="error_1903">El evento no pertenece a este calendario</string>
+    <string name="error_1904">El usuario no puede acceder a este calendario</string>
+    <string name="error_1905">Solo los eventos pendientes pueden ser recordados</string>
+    <string name="error_1906">Solo el propietario de un calendario puede aceptar o rechazar un evento</string>
+    <string name="error_1907">El usuario no puede acceder a este evento</string>
+    <string name="error_1908">El usuario no puede modificar este evento</string>
+    <string name="error_1909">El usuario no puede eliminar este evento</string>
+    <string name="error_1910">El usuario no puede añadir eventos a este calendario</string>
+    <string name="error_1911">El usuario que ha creado un evento es el único que lo puede recordar</string>
+    <string name="error_2001">No se ha encontrado el grupo</string>
+    <string name="error_2002">El usuario no es dinamizador</string>
+    <string name="error_2003">El usuario no puede enviar la invitación</string>
+    <string name="error_2004">Invitación no encontrada</string>
+    <string name="error_2005">La invitación no es para este grupo</string>
+    <string name="error_2006">La invitación no es para este usuario</string>
+    <string name="error_2007">El usuario ya forma parte del grupo</string>
+    <string name="error_2008">El usuario no está autorizado para acceder a la información de este grupo</string>
+    <string name="error_2009">El usuario no está autorizado a añadir usuarios en este grupo</string>
+    <string name="error_2101">No se ha encontrado el chat</string>
+    <string name="error_2102">El usuario no puede acceder a este chat</string>
+    <string name="error_2103">Mensaje de chat no encontrado</string>
+    <string name="error_2104">El mensaje no forma parte de este chat</string>
+    <string name="error_2105">El mensaje de chat no tiene ningún contenido</string>
+    <string name="error_2106">Los mensajes deben tener un texto o un adjunto</string>
+    <string name="error_2201">El usuario no puede realizar esta llamada</string>
+    <string name="error_2601">Mail no enviado</string>
+    <string name="error_2602">Formato de mail inválido</string>
+    <string name="error_2701">Código de registro de usuario incorrecto</string>
+    <string name="error_2801">Sólo se pueden migrar los usuarios vincles</string>
+    <string name="error_2802">El usuario ya está migrado</string>
+    <string name="error_2803">Código de migración de usuario incorrecto</string>
+    <string name="error_2804">Memoria llena. Por favor, borre contenido de su dispositivo.</string>
+    <string name="error_code_generator">No se ha podido generar el código. Vuélvalo a intentar más tarde.</string>
+    <string name="error_code_generator_send">El código de vinculación introducido no es correcto</string>
+    <string name="error_afegir_contacte_no_network">No se ha podido añadir el contacto. Vuélvalo a intentar más tarde.</string>
+
+    <!-- ERRORS VALIDATION USER REGISTER -->
+    <string name="not_valid_date">El campo es obligatorio</string>
+    <string name="not_valid_email">E-mail no es válido</string>
+    <string name="not_valid_name">El campo es obligatorio</string>
+    <string name="not_valid_last_name">El campo es obligatorio</string>
+    <string name="password_not_secure">El campo es obligatorio</string>
+    <string name="last_name_can_not_contains_number">El apellido no puede contener números</string>
+    <string name="password_and_repeat_password_not_matches">Las contraseñas no coinciden</string>
+    <string name="not_valid_phone">El número de teléfono no es válido</string>
+    <string name="required_photo">Foto obligatoria</string>
+    <string name="error_passwords_repeat">Las contraseñas no coinciden, o tienen menos de 8 carácteres o más de 16</string>
+
+    <string name="termsandconditions">
+    <![CDATA[
+    <html>
+    <head>
+    <style>
+        ul
+        {
+            padding: 0;
+            list-style-type: none;
+        }
+        ol {
+            counter-reset: item;
+        }
+
+        ol > li {
+            counter-increment: item;
+        }
+
+        ol ol > li {
+            display: block;
+        }
+
+        ol ol > li:before {
+            content: counters(item, ".") ". ";
+            margin-left: -20px;
+        }
+    </style>
+    </head>
+    <body>
+    <h2>Condiciones Generales de uso de los participantes de la red personal de las personas usuarias de VINCLES BCN</h2>
+    <small>Versión 14, fecha 28.11.2016</small>
+    <p>VINCLES BCN es un nuevo servicio del Ayuntamiento de Barcelona dirigido a personas de 65 años o más. VINCLES BCN quiere reforzar las relaciones sociales de las personas mayores que se sienten solas y mejorar su bienestar, utilizando la tecnología como herramienta. Puede encontrar más información en <a href="http://www.barcelona.cat/vinclesbcn">www.barcelona.cat/vinclesbcn</a>.</p>
+    <p>Las presentes Condiciones Generales de Uso (en adelante, las “Condiciones Generales”) rigen el acceso y la utilización del servicio ofrecido mediante la aplicación móvil VINCLES BCN (en adelante, “VINCLES BCN”), titularidad del Ayuntamiento de Barcelona.</p>
+    <p>La utilización de VINCLES BCN atribuye a quien haga uso de ella la condición de participante, según corresponda, e implica la aceptación de todos los términos incluidos en estas Condiciones Generales. En caso de no estar de acuerdo con estas Condiciones Generales, el participante debe dejar de utilizar VINCLES BCN inmediatamente.</p>
+    <p>Al aceptar las presentes Condiciones Generales, el participante manifiesta:</p>
+    <ul>
+    <li>a. Que ha leído, entiende y comprende lo aquí expuesto;</li>
+    <li>b. que tiene más de 14 años; y</li>
+    <li>c. que asume todas las obligaciones aquí dispuestas.</li>
+    </ul>
+
+    <h3><b>1. <u>Definiciones:</u></b></h3>
+    <ul>
+        <li><b>1.1 VINCLES BCN:</b> hace referencia al servicio de apoyo social que el Ayuntamiento de Barcelona ofrece a las personas mayores para la conservación, el fortalecimiento y la creación de vínculos relacionales. Actualmente, dicho servicio es un piloto en fase de pruebas.</li>
+        <li><b>1.2 Ayuntamiento:</b> el Ayuntamiento de Barcelona, titular de VINCLES BCN.</li>
+        <li><b>1.3 Participante:</b> persona física que utiliza VINCLES BCN y que tiene relación directa con la persona usuaria del servicio.</li>
+    </ul>
+
+    <h3><b>2. <u>Contacto:</u></b></h3>
+    <ul>
+        <li><b>2.1</b> Si desea contactar con el <b>servicio de atención de VINCLES BCN</b>, puede:</li>
+        <li>
+            <ul>
+            <li>a. Llamar al número de teléfono de información y tramitación 010</li>
+            <li>b. enviar un mensaje a través del servicio de atención en línea de la web <a href="http://www.barcelona.cat/">www.barcelona.cat</a>; o</li>
+            <li>c. consultar información general sobre el proyecto VINCLES BCN en la página web <a href="http://www.barcelona.cat/vinclesbcn">www.barcelona.cat/vinclesbcn</a>.</li>
+            </ul>
+        </li>
+    </ul>
+
+    <h3><b>3. <u>Modificaciones:</u></b></h3>
+    <ul>
+        <li><b>3.1</b> Debido al esfuerzo por mantener en constante evolución el proyecto VINCLES BCN, el Ayuntamiento de Barcelona se reserva la facultad de modificarlo o actualizarlo en cualquier momento, así como de modificar o actualizar las presentes Condiciones Generales. Cuando la modificación o actualización implique una modificación sustancial de las condiciones del servicio, se informará de ello al participante, por lo menos enviando un mensaje por medios electrónicos.</li>
+        <li><b>3.2</b> La última versión de estas Condiciones Generales puede consultarse en: <a href="http://ajuntament.barcelona.cat/vinclesbcn/">http://ajuntament.barcelona.cat/vinclesbcn/</a>.</li>
+    </ul>
+
+    <h3><b>4. <u>Acceso a VINCLES BCN:</u></b></h3>
+    <ul>
+        <li><b>4.1</b> Para poder utilizar VINCLES BCN es necesario haber recibido una invitación de un usuario, disponer de conexión a Internet, descargar la aplicación móvil titularidad del Ayuntamiento de Barcelona e instalarla en un dispositivo móvil que reúna los requisitos técnicos mínimamente necesarios para ello. Para acceder a VINCLES BCN, el participante debe haberse registrado, facilitando, como mínimo, los datos señalados como obligatorios que se le soliciten.</li>
+        <li><b>4.2</b> El participante registrado será responsable en todo momento de la custodia de su password, asumiendo en consecuencia cualesquiera daños y perjuicios que pudieran derivarse de su uso indebido, así como de la cesión, revelación o extravío del mismo. A estos efectos, el acceso a áreas restringidas y/o el uso de los servicios y contenidos realizado bajo el password de un participante registrado se reputarán realizados por dicho participante registrado, quien responderá en todo caso de dicho acceso y uso.</li>
+        <li><b>4.3</b> La referida aplicación móvil solo está disponible para los dispositivos que tengan el sistema operativo Android o iOS. En el web del servicio VINCLES BCN se podrá consultar más detalle de las versiones de los dispositivos compatibles con la aplicación móvil.</li>
+        <li><b>4.4</b> El Ayuntamiento de Barcelona se reserva el derecho a restringir o cancelar, en cualquier momento y sin previo aviso, el acceso de cualquier participante a VINCLES BCN. De igual modo, el Ayuntamiento podrá cancelar o dar por finalizado en cualquier momento el proyecto VINCLES BCN. En tales supuestos, el Ayuntamiento no estará obligado a indemnizar ni a compensar de ningún modo al participante.</li>
+        <li><b>4.5</b> Se recuerda al participante que el uso de Internet desde un dispositivo electrónico puede suponerle un coste adicional.</li>
+        <li><b>4.6</b> Los requisitos técnicos mínimos se pueden consultar en la siguiente página web: <a href="http://ajuntament.barcelona.cat/vinclesbcn/ca/">http://ajuntament.barcelona.cat/vinclesbcn/ca/</a>.</li>
+    </ul>
+
+    <h3><b>5. <u>Analítica de uso:</u></b></h3>
+    <p>Con el fin de realizar seguimiento del uso del servicio VINCLES BCN, los participantes saben y aceptan que el Ayuntamiento podrá llevar a cabo análisis estadísticos del uso de la actividad con relación a las comunicaciones que se establezcan a través de VINCLES BCN.</p>
+
+    <h3><b>6. <u>Información facilitada por el participante:</u></b></h3>
+    <p>Los datos y la información personal indicados por el participante deben ser exactos, actuales y veraces. El participante será responsable en todo momento de los datos y la información que proporcione a través de VINCLES BCN.</p>
+
+    <h3><b>7. <u>Normas de utilización de VINCLES BCN:</u></b></h3>
+    <ul>
+        <li><b>7.1</b> El participante se obliga a utilizar VINCLES BCN conforme a lo establecido en la Ley, la moral, el orden público y las presentes Condiciones Generales.</li>
+        <li><b>7.2</b> A título enunciativo, pero en ningún caso limitativo o excluyente, el participante se compromete a:</li>
+        <li>
+            <p>
+            <ul>
+            <li>a. No introducir o difundir contenido o propaganda de carácter racista, xenófobo, pornográfico, relativos a la apología del terrorismo o que atenten contra los derechos humanos;</li>
+            <li>b. no introducir o difundir virus o software nocivo susceptibles de provocar daños en los sistemas informáticos del Ayuntamiento, a otros participantes o a cualquier otro tercero;</li>
+            <li>c. no difundir, transmitir o poner a disposición de terceros:
+                <p>
+                <ul>
+                <li><small>* Ningún tipo de información, elemento o contenido que atente contra los derechos fundamentales y las libertades públicas reconocidos constitucionalmente y en los tratados internacionales;</small></li>
+                <li><small>* información, elementos o contenidos que constituyan publicidad ilícita o desleal;</small></li>
+                <li><small>* publicidad no solicitada o no autorizada, material publicitario, “correo basura”, “cartas en cadena” o “estructuras piramidales”;</small></li>
+                <li><small>* información o contenidos falsos, ambiguos o inexactos, que induzcan a error a los receptores de la información;</small></li>
+                <li><small>* información, elementos o contenidos que supongan una violación de los derechos de propiedad intelectual o industrial;</small></li>
+                <li><small>* información, elementos o contenidos que supongan una violación del secreto de las comunicaciones o de la legislación sobre la protección de datos personales.</small></li>
+                </ul>
+                </p>
+            </li>
+            <li>d. no suplantar a otros participantes.</li>
+            </ul>
+            </p>
+        </li>
+    </ul>
+
+    <h3><b>8. <u>Propiedad intelectual e industrial:</u></b></h3>
+    <ul>
+        <li><b>8.1</b> VINCLES BCN y todos los elementos que lo componen (entendiendo por estos, a título meramente enunciativo, los textos, fotografías, gráficos, imágenes, iconos, tecnología, software, vínculos y demás contenidos audiovisuales o sonoros, así como su diseño gráfico y códigos fuente) son propiedad intelectual del Ayuntamiento de Barcelona o de terceros licenciantes de este.</li>
+        <li><b>8.2</b> El Ayuntamiento de Barcelona concede al participante una licencia no exclusiva de uso sobre VINCLES BCN. El participante podrá utilizar la aplicación tanto dentro del territorio español como fuere de este.</li>
+        <li><b>8.3</b> En cuanto a los contenidos introducidos o publicados por el participante en VINCLES BCN, conserva todos los derechos sobre estos y asume toda la responsabilidad en caso de que dichos contenidos vulneren los derechos de cualquier tercero. En este sentido, el participante se hace responsable de los contenidos que cargue o introduzca en VINCLES BCN.</li>
+        <li><b>8.4</b> La marca VINCLES BCN® es titularidad del Ayuntamiento de Barcelona, sin que pueda entenderse cedido ningún derecho sobre esta al participante.</li>
+    </ul>
+
+    <h3><b>9. <u>Responsabilidad:</u></b></h3>
+    <ul>
+        <li><b>9.1</b> VINCLES BCN no es un medio oficial de comunicación con el Ayuntamiento.</li>
+        <li><b>9.2</b> El participante se obliga a mantener completamente indemne al Ayuntamiento ante cualquier posible reclamación, multa, pena o sanción que pueda estar obligado a soportar como consecuencia de su incumplimiento de lo establecido en las presentes Condiciones Generales, reservándose además el Ayuntamiento el derecho a solicitar la indemnización por daños y perjuicios que pueda corresponder.</li>
+        <li><b>9.3</b> El participante no podrá hacer ningún tipo de reclamación al Ayuntamiento de Barcelona en caso de que la persona usuaria decida darse de baja de VINCLES BCN.</li>
+        <li><b>9.4</b> El Ayuntamiento de Barcelona no se responsabiliza de los daños y/o perjuicios producidos en el dispositivo móvil del participante durante la utilización de VINCLES BCN, ni de los daños o perjuicios de cualquier tipo producidos en el participante que sean causa de fallos o desconexiones en las redes de telecomunicaciones que produzcan la suspensión, cancelación, interrupción o mal funcionamiento de VINCLES BCN.</li>
+        <li><b>9.5</b> El Ayuntamiento no garantiza ni efectúa ninguna manifestación sobre la idoneidad de VINCLES BCN con relación a las expectativas o los fines perseguidos por el participante.</li>
+        <li><b>9.6</b> Sin perjuicio de las limitaciones de responsabilidad establecidas en estas Condiciones Generales y en la medida en que la legislación aplicable lo permita, la responsabilidad máxima del Ayuntamiento por cualquier perjuicio derivado del uso de VINCLES BCN estará limitada a los daños dolosos y directos que pueda sufrir el participante, siempre que hayan sido causados directamente por el Ayuntamiento.</li>
+    </ul>
+
+    <h3><b>10. <u>Protección de datos personales:</u></b></h3>
+    <ul>
+        <li><b>10.1</b> Los datos personales que el participante facilite durante su registro en VINCLES BCN y aquellos que proporcione en el transcurso de su participación, así como su posterior tratamiento, se incluirán en un fichero titularidad del Ayuntamiento de Barcelona para las siguientes finalidades: (i) gestionar su participación en VINCLES BCN; (ii) monitorizar y llevar a cabo análisis estadísticos de la actividad de los participantes; y (iii) mantener informado al participante, incluso por medios electrónicos, de los servicios sociales y las noticias de temática social relacionadas con el Ayuntamiento.</li>
+        <li><b>10.2</b> El hecho de utilizar VINCLES BCN implica la aceptación en bloque de todas las finalidades de tratamiento indicadas en el párrafo anterior.</li>
+        <li><b>10.3</b> En el caso que sea necesario prestar soporte social a la persona mayor usuaria principal del servicio, el Ayuntamiento de Barcelona puede acceder a la información que el participante publique i comparta en VINCLES BCN. Por el hecho de utilizar una aplicación móvil cuyo objeto es prestar servicios sociales de apoyo, el participante del proyecto sabe y acepta que el Ayuntamiento de Barcelona puede tener acceso a la información que publique y comparta en VINCLES BCN. Las finalidades de acceso son prestar el apoyo social necesario a personas mayores en el uso de las tecnologías de la información y optimizar la prestación de los servicios sociales dirigidos al usuario en el marco del proyecto.</li>
+        <li><b>10.4</b> El participante puede ejercer sus derechos de acceso, rectificación, cancelación y oposición, así como aquellos que la normativa de protección de datos vigente reconozca, enviando una solicitud escrita, indicando “Ejercicio de derechos LOPD” al
+            <br /><br />Registro General del Ayuntamiento de Barcelona, Pl. Sant Jaume, 1, 08002 Barcelona<br /><br />
+            Para obtener más información, puede consultar la página web de la Sede electrónica municipal: <a href="https://ajuntament.barcelona.cat/protecciodedades">https://ajuntament.barcelona.cat/protecciodedades</a></li>
+    </ul>
+
+    <h3><b>11. <u>Baja del participante:</u></b></h3>
+    <ul>
+        <li><b>11.1</b> <u>Perfil del participante</u>: el participante puede darse de baja de VINCLES BCN desinstalando la aplicación móvil. En el momento en que el participante desinstale VINCLES BCN, perderá el acceso a los datos contenidos en ella, y todo el contenido se borrará automáticamente, exceptuando aquel que el Ayuntamiento deba conservar por motivos legales durante un plazo de 5 años. Transcurrido dicho período, se procederá a la cancelación de los datos, quedando a disposición del Ayuntamiento aquellos que sean necesarios para finalidades estadísticas.</li>
+        <li><b>11.2</b> En caso de que el participante pertenezca a más de una red personal dentro de VINCLES BCN, podrá darse de baja de cualquiera de ellas mediante la propia funcionalidad dispuesta a tal efecto.</li>
+        <li><b>11.3</b> La aplicación VINCLES BCN no está diseñada para ser utilizada como sistema de backup o de almacenamiento de datos y contenidos, por lo que el participante deberá abstenerse de utilizarlo con tal finalidad, de acuerdo con lo establecido al respecto en el contrato de alta del usuario.</li>
+    </ul>
+
+    <h3><b>12. <u>Nulidad e ineficacia de las cláusulas</u>:</b></h3>
+    <p>Si cualquier cláusula incluida en las presentes Condiciones Generales fuese declarada total o parcialmente nula o ineficaz, tal nulidad o ineficacia solo afectará a la cláusula o a la parte de la cláusula que resulte nula o ineficaz, subsistiendo las presentes Condiciones Generales en todo lo demás y considerándose tal disposición total o parcialmente por no incluida.</p>
+
+    <h3><b>13. <u>Legislación aplicable y jurisdicción competente</u>:</b></h3>
+    <p>Estas Condiciones Generales se regirán e interpretarán de acuerdo con las leyes de España. Cualquier controversia que pudiera suscitarse sobre VINCLES BCN o estas Condiciones Generales se someterá a los Juzgados y Tribunales de la ciudad de Barcelona, España, salvo que la ley establezca obligatoriamente otra cosa.</p>
+
+    <p>El proyecto VINCLES BCN, titularidad del Ayuntamiento de Barcelona, ha sido una de las cinco ideas ganadoras del premio Mayors Challenge, gestionado por Bloomberg Philanthropies (<a href="http://www.bloomberg.org">www.bloomberg.org</a>).</p>
+    </body>
+    </html>
+    ]]>
+    </string>
+
+    <!-- PERMISSIONS -->
+
+    <string name="required_permissions">Vincles BCN necesita que aceptes los permisos para poder funcionar correctamente</string>
+    <string name="required_permissions_settings">Vincles BCN necesita que aceptes los permisos para poder funcionar correctamente. Puedes hacerlo en la Configuración de tu dispositivo.</string>
+    <string name="should_accept_permissions_camera_photo">Necesitas activar el permiso para utilizar la cámara en la sección de Ajustes de tu dispositivo.</string>
+    <string name="should_accept_permissions_camera_video">Necesitas activar el permiso de cámara i de micrófono para utilizar la cámara en la sección de Ajustes de tu dispositivo.</string>
+    <string name="should_accept_permissions_gallery">Necesitas activar el permiso para acceder a la galeria del dispositivo en la sección de Ajustes de tu dispositivo.</string>
+    <string name="should_accept_permissions_microphone">Necesitas activar el permiso para utilizar el microfono en la sección de Ajustes de tu dispositivo.</string>
+    <string name="should_accept_permissions_phone_call">Necesitas activar los permisos de cámara y micrófono para hacer llamadas en la sección de Ajustes de tu dispositivo.</string>
+    <string name="should_accept_permissions_calendar">Necesitas activar el permiso para acceder al calendario en la sección de Ajustes de tu dispositivo.</string>
+
+</resources>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:id="@+id/event_bullet"
+        android:layout_width="@dimen/calendar_month_bullet_size"
+        android:layout_height="@dimen/calendar_month_bullet_size"
+        android:layout_marginTop="@dimen/calendar_month_bullet_margin"
+        android:layout_marginRight="@dimen/calendar_month_bullet_margin"
+        android:visibility="gone"
+        android:background="@drawable/black_bullet_calendar"
+        android:layout_gravity="top|right"/>
+
+    <TextView
+        android:id="@+id/day_tv"
+        android:minHeight="@dimen/calendar_month_cell_min_height"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:fontFamily="@font/akkurat"
+        android:textSize="@dimen/calendar_month_day_text_size"
+        android:text="1"/>
+
+</FrameLayout>

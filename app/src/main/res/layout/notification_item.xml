@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/chat_element_alert_margin"
+    android:background="@drawable/chat_alert_background"
+    android:orientation="horizontal">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/avatar"
+        android:layout_width="@dimen/notifications_avatar_size"
+        android:layout_height="@dimen/notifications_avatar_size"
+        android:layout_gravity="top"
+        android:scaleType="centerCrop"
+        android:src="@drawable/user"
+        app:riv_oval="true" />
+
+    <ImageView
+        android:layout_width="@dimen/notifications_clock_size"
+        android:layout_height="@dimen/notifications_clock_size"
+        android:layout_marginLeft="@dimen/notifications_clock_margin_left"
+        android:layout_marginRight="@dimen/notifications_clock_margin_right"
+        android:src="@drawable/clock"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <cat.bcn.vincles.mobile.UI.Compound.DeleteNotificationCompoundView
+            android:id="@+id/delete"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/notifications_delete_size"
+            android:layout_marginLeft="8dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true" />
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/notifications_item_text_size"
+            android:text="hora"
+            android:layout_toLeftOf="@+id/delete"/>
+
+        <TextView
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/date"
+            android:textStyle="bold"
+            android:textSize="@dimen/notifications_item_text_size"
+            android:text="missatges"
+            android:layout_toLeftOf="@+id/delete"/>
+
+        <FrameLayout
+            android:id="@+id/action_button"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/notifications_action_height"
+            android:layout_marginTop="@dimen/notifications_action_margin_top"
+            android:background="@drawable/selector_buttons_background"
+            android:layout_below="@+id/content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/notifications_action_height"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/action_icon"
+                    android:layout_width="@dimen/general_bottom_bar_icon_size"
+                    android:layout_height="@dimen/general_bottom_bar_icon_size"
+                    android:layout_gravity="center"
+                    android:src="@drawable/selector_filter_button" />
+
+                <TextView
+                    android:id="@+id/action_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/content_detail_date_inner_margins"
+                    android:text="@string/filter_contacts"
+                    android:textColor="@color/selector_text_red_white"
+                    android:textSize="@dimen/content_detail_help_text_size" />
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>
+
+
+

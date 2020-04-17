@@ -1,0 +1,103 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingRight="@dimen/gallery_padding_sides"
+    android:paddingLeft="@dimen/gallery_padding_sides"
+    android:paddingTop="@dimen/gallery_padding_top_bottom"
+    android:paddingBottom="@dimen/gallery_padding_top_bottom"
+    tools:activity="cat.bcn.vincles.mobile.UI.Gallery.GalleryFragment">
+
+
+    <cat.bcn.vincles.mobile.UI.Compound.BackCompoundView
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/gallery_back_button_size"
+        android:src="@drawable/tornar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/gallery_back_button_size"
+        android:fontFamily="@font/akkurat_bold"
+        android:text="@string/all_files"
+        android:textColor="@color/colorBlack"
+        android:paddingLeft="2dp"
+        android:gravity="center"
+        android:textSize="@dimen/contact_title_text_size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/back"
+        app:layout_constraintTop_toTopOf="@+id/back" />
+
+
+    <Button
+        android:layout_marginTop="8dp"
+        android:id="@+id/selectAll"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/gallery_bottom_buttons_height"
+        android:text="@string/gallery_select_all"
+        android:fontFamily="@font/akkurat_bold"
+        android:textAllCaps="false"
+        android:textColor="@color/selector_text_red_white"
+        android:background="@drawable/selector_buttons_background"
+        android:padding="4dp"
+        android:textSize="@dimen/contact_title_text_size"
+        android:src="@drawable/selector_camera_button"
+        app:layout_constraintTop_toBottomOf="@id/back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/gallery_recycler_margin_top"
+        android:layout_marginBottom="@dimen/gallery_padding_top_bottom"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_bar"
+        app:layout_constraintTop_toBottomOf="@+id/selectAll"/>
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/noContentLabel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="@string/gallery_no_content"
+        android:fontFamily="@font/akkurat_bold"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/contact_title_text_size"
+        />
+    <ProgressBar
+        android:id="@+id/progressbar"
+        android:layout_width="@dimen/adapter_progressbar_size"
+        android:layout_height="@dimen/adapter_progressbar_size"
+        android:visibility="gone"
+        app:layout_constraintLeft_toLeftOf="@+id/recyclerView"
+        app:layout_constraintRight_toRightOf="@+id/recyclerView"
+        app:layout_constraintBottom_toBottomOf="@+id/recyclerView"
+        app:layout_constraintTop_toTopOf="@+id/recyclerView"/>
+
+    <FrameLayout
+        android:id="@+id/bottom_bar"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/gallery_bottom_buttons_height"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+
+
+
+
+
+
+</android.support.constraint.ConstraintLayout>

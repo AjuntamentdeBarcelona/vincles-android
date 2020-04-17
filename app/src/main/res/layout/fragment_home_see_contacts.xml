@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent">
+
+
+    <LinearLayout
+        android:id="@+id/see_contacts"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="@drawable/all_contacts_small_background"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/family_iv"
+            android:layout_width="@dimen/main_bottom_rows_icon_size"
+            android:layout_height="@dimen/main_bottom_rows_icon_size"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:layout_marginLeft="@dimen/main_screen_see_contacts_separation"
+            android:layout_marginRight="@dimen/main_screen_see_contacts_separation"
+            android:src="@drawable/all_contacts" />
+
+        <TextView
+            android:id="@+id/family_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/main_screen_see_contacts_separation"
+            android:layout_marginRight="@dimen/main_screen_see_contacts_separation"
+            android:text="@string/contacts_filter_all_title"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/main_bottom_rows_text_size" />
+
+    </LinearLayout>
+
+
+
+
+
+</merge>

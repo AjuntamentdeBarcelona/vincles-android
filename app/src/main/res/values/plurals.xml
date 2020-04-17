@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="notifications_messages_user_plurals">
+        <item quantity="one">@string/notifications_message_user</item>
+        <item quantity="other">@string/notifications_messages_user</item>
+    </plurals>
+
+    <plurals name="notifications_messages_group_plurals">
+        <item quantity="one">@string/notifications_new_message_group</item>
+        <item quantity="other">@string/notifications_new_messages_group</item>
+    </plurals>
+</resources>

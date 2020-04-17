@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <dimen name="toolbar_title_margin_right">0dp</dimen>
+
+    <!--MAIN SCREEN-->
+    <dimen name="main_row_height">56dp</dimen>
+    <dimen name="main_bells_width">256dp</dimen>
+    <dimen name="main_text_icon_separation">8dp</dimen>
+    <dimen name="main_calendar_number_size">24dp</dimen>
+    <dimen name="main_calendar_number_text_size">13sp</dimen>
+    <dimen name="main_screen_padding_up_down">16dp</dimen>
+    <dimen name="main_bottom_rows_icon_size">28dp</dimen>
+    <dimen name="main_bells_number_margin_left">18dp</dimen>
+    <dimen name="main_bells_textview_size">18dp</dimen>
+    <dimen name="main_bells_text_size">9sp</dimen>
+    <dimen name="main_contact_text_size">13sp</dimen>
+    <dimen name="main_contact_padding_text">6dp</dimen>
+    <dimen name="main_contact_padding_icon">6dp</dimen>
+    <dimen name="main_contact_padding_smaller">2dp</dimen>
+    <dimen name="main_separation_groups">6dp</dimen>
+    <dimen name="main_separation_groups_half">3dp</dimen>
+    <dimen name="main_separation_contacts">3dp</dimen>
+    <dimen name="main_text_avatar_padding_left">82dp</dimen> <!--main_avatar_radius_margin+main_row_height + 16-->
+    <dimen name="main_calendar_text_margin_top">8dp</dimen>
+
+    <!--CONTACTS-->
+    <dimen name="contacts_add_sections_margin">8dp</dimen>
+    <dimen name="contacts_add_in_blocks_margin_up_down">8dp</dimen>
+    <dimen name="contacts_add_bottom_buttons_height">48dp</dimen>
+    <dimen name="contacts_text_size">15sp</dimen>
+    <dimen name="contacts_icon_size">100dp</dimen>
+    <dimen name="add_contact_layout_no_code_width">600dp</dimen>
+    <dimen name="add_contact_layout_no_code_heignt">300dp</dimen>
+    <dimen name="add_contact_margin_no_code">60dp</dimen>
+
+    <!--CALENDAR-->
+    <dimen name="calendar_month_cell_min_height">0dp</dimen>
+    <dimen name="calendar_month_margin_left">170dp</dimen>
+    <dimen name="calendar_month_margin_top">8dp</dimen>
+    <dimen name="calendar_month_day_text_size">14sp</dimen>
+    <dimen name="calendar_month_bullet_size">6dp</dimen>
+    <dimen name="calendar_month_bullet_margin">3dp</dimen>
+    <dimen name="calendar_month_month_bar_height">40dp</dimen>
+    <dimen name="calendar_month_month_bar_button_width">60dp</dimen>
+    <dimen name="calendar_month_days_bar_height">32dp</dimen>
+    <dimen name="calendar_month_text_size">17sp</dimen>
+
+
+    <!--CALENDAR-->
+    <dimen name="calendar_item_buttons_text_size">14sp</dimen>
+    <dimen name="calendar_item_buttons_inner_margins">8dp</dimen>
+    <dimen name="calendar_item_vertical_divider_margins">16dp</dimen>
+
+
+    <dimen name="calls_avatar_size_big">120dp</dimen>
+
+</resources>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/filterLayout"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/gallery_bottom_buttons_height"
+        android:background="@drawable/selector_buttons_background"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:layout_marginRight="@dimen/content_detail_bottom_buttons_margin_half" >
+
+        <ImageView
+            android:id="@+id/filterImageView"
+            android:layout_width="@dimen/general_bottom_bar_icon_size"
+            android:layout_height="@dimen/general_bottom_bar_icon_size"
+            android:src="@drawable/selector_filter_button" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/addLayout"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/gallery_bottom_buttons_height"
+        android:background="@drawable/selector_buttons_background"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:layout_marginRight="@dimen/content_detail_bottom_buttons_margin_half"
+        android:layout_marginLeft="@dimen/content_detail_bottom_buttons_margin_half" >
+
+        <ImageView
+            android:id="@+id/addImageView"
+            android:layout_width="@dimen/general_bottom_bar_icon_size"
+            android:layout_height="@dimen/general_bottom_bar_icon_size"
+            android:layout_gravity="center"
+            android:src="@drawable/selector_add_contact_button" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/removeLayout"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/gallery_bottom_buttons_height"
+        android:background="@drawable/selector_buttons_background"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:layout_marginLeft="@dimen/content_detail_bottom_buttons_margin_half" >
+
+        <ImageView
+            android:id="@+id/removeImageView"
+            android:layout_width="@dimen/general_bottom_bar_icon_size"
+            android:layout_height="@dimen/general_bottom_bar_icon_size"
+            android:layout_gravity="center"
+            android:src="@drawable/selector_delete_button"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>
